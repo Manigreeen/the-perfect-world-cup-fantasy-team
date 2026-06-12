@@ -1,0 +1,18 @@
+# Secrets
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Data snapshots (large / regenerable) — versionar selectivamente si se necesita backtest
+# data/raw/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
