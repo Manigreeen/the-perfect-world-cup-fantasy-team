@@ -4,9 +4,10 @@
 > El *porqué* de cada fase y los principios de trabajo viven en
 > [docs/04-plan-de-ejecucion.md](docs/04-plan-de-ejecucion.md).
 
-**Ahora:** Fase 1 ✅ cerrada (datos validados: FIFA es la fuente del torneo; API-Football
-requiere plan pago, diferido al R32). Fase 2 avanzada: loop diseñado, estrategia encodeada, capa
-de datos + matchups + priors históricos listos. **Siguiente: motor de proyección v0.**
+**Ahora:** Fase 1 ✅ cerrada. Fase 2 casi completa: proyección v0, ranking (`wcf rank`) y
+recomendador de transfers (`wcf transfers`) funcionando end-to-end, con priors históricos y
+noticias RSS integrados. **Falta para cerrar Fase 2:** plan de capitanía + reporte MD2 en
+`outputs/`. Los coeficientes v0 se calibran cuando MD1 cierre (18 jun) y haya datos reales.
 **Próximo deadline: lockout MD2 — 18 jun 2026, 17:00 (UTC+1).** Fuente viva: `wcf rounds`.
 
 ---
@@ -49,10 +50,11 @@ de datos + matchups + priors históricos listos. **Siguiente: motor de proyecci�
       histórico free queda como mejora futura.)* *(2026-06-13)*
 - [x] Ranking de profitability + `wcf rank` (`--by value|proj`, `--pos`, `--risk`): marca squad y
       scouting <5% *(2026-06-13)*
-- [ ] Recomendador de transfers: mejor par salir/entrar con las 2 libres (+rollover), con
-      justificación, usando los umbrales del dial de riesgo (`strategy.RISK_PROFILES`)
+- [x] Recomendador de transfers (`recommender.py` + `wcf transfers`): greedy del mejor par
+      salir/entrar sujeto a posición/presupuesto/máx-país, con umbral del dial de riesgo y
+      justificación; "plantarse" es salida válida *(2026-06-13)*
 - [ ] Plan de capitanía MD2: orden de switches por horario con umbrales stick-or-twist
-- [ ] Reporte legible en `outputs/md2-reporte.md`
+- [ ] Reporte legible en `outputs/md2-reporte.md` (XI + banca + capitán + transfers)
 - [ ] Plan de capitanía MD2: orden de switches por horario con umbrales stick-or-twist
 - [ ] Reporte legible en `outputs/md2-reporte.md`
 - [ ] Refresco pre-lockout: `wcf pool` justo antes de decidir (ownership al día)

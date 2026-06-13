@@ -43,6 +43,7 @@ src/wcf/
 ├── myteam.py        # parsea data/my-team.md y lo valida contra el pool oficial
 ├── historical.py    # priors WC2022 (free tier) para P7, acotados a selecciones vivas y peso bajo
 ├── projection.py    # proyección v0 de pts esperados + ranking de profitability (FIFA + matchup + prior)
+├── recommender.py   # recomendador de transfers (greedy + umbrales del dial de riesgo) o plantarse
 ├── cli.py           # comandos `wcf <comando>` (argparse)
 └── sources/
     ├── fifa_fantasy.py   # endpoints públicos del juego: players/squads/rounds.json
@@ -84,6 +85,7 @@ cp .env.example .env        # pegar API_FOOTBALL_KEY (gratis en dashboard.api-fo
 | `wcf history` | Baja priors históricos (WC2022) de selecciones vivas — acotado, cacheado, resumible | Sí (histórico) |
 | `wcf news` | Titulares RSS gratis (BBC/Guardian/Sky) filtrados a tu squad (P1: lesiones/rotación) | No |
 | `wcf rank` | Ranking de profitability (proyección v0) para la próxima ronda: `--by value\|proj`, `--pos`, `--risk` | No |
+| `wcf transfers` | Recomienda las transfers de la próxima ronda (o plantarse) según el dial de riesgo | No |
 | `wcf fixtures` / `injuries` / `players` | Datos en vivo de API-Football **(plan pago — 2026 bloqueado en Free)** | Sí (pago) |
 
 Ritual mínimo por ronda: `wcf pool` antes de cada lockout (el ownership cambia intradía) — todo

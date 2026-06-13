@@ -126,7 +126,7 @@ def rank_pool(risk: strategy.RiskProfile) -> dict:
         prior = historical.prior_for(p["firstName"], p["lastName"], nation, prior_index)
         proj = project(p, z, fixture, prior)
         scout = expected_scouting(p, proj["proj"], risk)
-        total = proj["proj"] + scout
+        total = round(proj["proj"] + scout, 2)
         rows.append({
             "id": p["id"],
             "name": p.get("knownName") or f"{p['firstName']} {p['lastName']}",

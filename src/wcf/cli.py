@@ -3,8 +3,8 @@
 import argparse
 import sys
 
-from . import historical, myteam, pool, projection, store, strategy
-from .config import ROUND_LABELS
+from . import historical, myteam, pool, projection, recommender, store, strategy
+from .config import FREE_TRANSFERS, ROUND_LABELS
 from .sources import api_football, fifa_fantasy
 from .sources import news as news_src
 
@@ -209,6 +209,30 @@ def cmd_rank(args) -> None:
               f"{r['price']:>5} {r['proj']:>5} {r['value']:>5}  {r['ownership']}%")
 
 
+def cmd_transfers(args) -> None:
+    """Recomienda las transfers de la próxima ronda (o plantarse) según el dial de riesgo."""
+    try:
+        risk = strategy.active_profile(args.risk)
+        label = ROUND_LABELS.get(pool.upcoming_round(pool.load_rounds())["id"], "?")
+        free = args.free if args.free is not None else (FREE_TRANSFERS.get(label) or 2)
+        rec = recommender.recommend(risk, free_transfers=free, phase=label)
+    except (pool.NoSnapshotError, ValueError) as exc:
+        sys.exit(f"error: {exc}")
+
+    print(f"Transfers {label} · {free} libres · riesgo {risk.name} (umbral +{rec['threshold']} pts) "
+          f"· banco ${rec['bank']}M · pool {rec['captured_at'][:10]}\n")
+    if not rec["swaps"]:
+        print("  ✋ Plantarse: ningún cambio supera el umbral. Guardar las transfers")
+        print("     (en grupos, 1 transfer sin usar hace rollover a la siguiente ronda).")
+        return
+    for i, s in enumerate(rec["swaps"], 1):
+        o, n = s["out"], s["in"]
+        print(f"  {i}. OUT {o['name']} ({o['pos']} {o['nation']}, ${o['price']}, proj {o['proj']})")
+        print(f"     IN  {n['name']} ({n['pos']} {n['nation']}, ${n['price']}, proj {n['proj']})")
+        print(f"     +{s['gain']} pts · {s['why']}\n")
+    print(f"  Ganancia proyectada total: +{rec['total_gain']} pts · banco resultante ${rec['bank']}M")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(prog="wcf", description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
@@ -231,6 +255,9 @@ def main() -> None:
     p_rank.add_argument("--pos", choices=["GK", "DEF", "MID", "FWD"], help="filtrar por posición")
     p_rank.add_argument("--limit", type=int, default=25, help="cuántos mostrar")
     p_rank.add_argument("--risk", choices=["conservative", "moderate", "aggressive"], help="override del dial de riesgo")
+    p_tr = sub.add_parser("transfers", help="Recomienda las transfers de la próxima ronda (o plantarse)")
+    p_tr.add_argument("--risk", choices=["conservative", "moderate", "aggressive"], help="override del dial de riesgo")
+    p_tr.add_argument("--free", type=int, help="transfers libres disponibles (default: las de la ronda)")
 
     args = parser.parse_args()
     handler = {
@@ -245,6 +272,7 @@ def main() -> None:
         "history": cmd_history,
         "news": cmd_news,
         "rank": cmd_rank,
+        "transfers": cmd_transfers,
     }[args.command]
     try:
         handler(args)
