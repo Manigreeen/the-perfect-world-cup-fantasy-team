@@ -6,6 +6,7 @@ import sys
 from . import historical, myteam, pool, store
 from .config import ROUND_LABELS
 from .sources import api_football, fifa_fantasy
+from .sources import news as news_src
 
 
 def cmd_status(_args) -> None:
@@ -132,6 +133,46 @@ def cmd_history(args) -> None:
             print(f"  {name:<20} — sin histórico WC2022 (prior por defecto)")
 
 
+def cmd_news(args) -> None:
+    """Titulares relevantes para mi squad desde RSS gratis (P1: lesiones/rotación de último momento)."""
+    items = news_src.fetch_all()
+    if not items:
+        sys.exit("error: ninguna fuente RSS respondió")
+    store.save_snapshot("news", items)
+
+    # Dos clases de entidad: nombres de jugadores (señal alta) y naciones (contexto, más ruidoso —
+    # 'Spain' matchea F1/dardos). Se filtra con ambas pero se reportan por separado.
+    player_ents: set[str] = set()
+    nation_ents: set[str] = set()
+    squad_names = {sid: s["name"] for sid, s in pool.load_squads().items()}
+    _, players = pool.load_players()
+    for row in myteam.parse_my_team():
+        p = myteam.find_player(row, players, squad_names)
+        if not p:
+            continue
+        player_ents.add(p.get("knownName") or p["lastName"])
+        nation_ents.add(squad_names.get(p["squadId"], ""))
+
+    hits = news_src.filter_by_entities(items, sorted(player_ents | nation_ents))
+    direct = [h for h in hits if any(m in player_ents for m in h["matched"])]
+    context = [h for h in hits if h not in direct]
+    print(f"{len(items)} titulares de {len(news_src.FEEDS)} fuentes · "
+          f"{len(direct)} mencionan a tus jugadores, {len(context)} contexto de selección\n")
+
+    def show(title, rows):
+        if not rows:
+            return
+        print(title)
+        for it in rows[: args.limit]:
+            when = it["published"][:16] if it["published"] else ""
+            print(f"  [{it['source']}] {it['title']}")
+            print(f"    ⮑ {', '.join(it['matched'])} · {when}")
+        print()
+
+    show("🎯 Menciones directas de tus jugadores", direct)
+    show("🌍 Contexto de tus selecciones (ruido posible)", context)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(prog="wcf", description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
@@ -147,6 +188,8 @@ def main() -> None:
     sub.add_parser("matchups", help="Fixtures de la próxima ronda para tu squad (rival, horario, ownership)")
     p_hist = sub.add_parser("history", help="Baja priors históricos (WC2022) de selecciones vivas — acotado, resumible")
     p_hist.add_argument("--max-requests", type=int, default=80, help="tope de requests por corrida (quota free: 100/día)")
+    p_news = sub.add_parser("news", help="Titulares RSS gratis (BBC/Guardian/Sky) filtrados a tu squad")
+    p_news.add_argument("--limit", type=int, default=15, help="máximo de titulares a mostrar")
 
     args = parser.parse_args()
     handler = {
@@ -159,6 +202,7 @@ def main() -> None:
         "myteam": cmd_myteam,
         "matchups": cmd_matchups,
         "history": cmd_history,
+        "news": cmd_news,
     }[args.command]
     try:
         handler(args)

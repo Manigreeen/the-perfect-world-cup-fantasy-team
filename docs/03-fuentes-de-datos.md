@@ -58,15 +58,27 @@ el único hueco (P7) con *priors*. Módulo `src/wcf/historical.py`, comando `wcf
   usan prior por defecto de posición. Dado el peso bajo, es tolerable; se podría enriquecer con
   Euro/Copa 2024 (también en el free tier) más adelante.
 
-### 2. Football News Aggregator Live (RapidAPI)
+### 2. Noticias vía RSS — gratis, sin API key ✅ (reemplaza al agregador de pago de RapidAPI)
 
-`rapidapi.com/arkasarkar2000/api/football-news-aggregator-live` — noticias agregadas de medios.
+RapidAPI ofrece agregadores de noticias, pero son de pago. **Alternativa gratis y sencilla,
+validada 2026-06-13: RSS de medios confiables.** Módulo `src/wcf/sources/news.py`, comando
+`wcf news`.
 
-- **Uso:** señal cualitativa para P1 — rumores de rotación, lesiones de último minuto, ruedas de
-  prensa ("X no se entrenó hoy"), antes de que aparezcan en datos estructurados.
-- **Rol elevado:** como API-Football no cubre `injuries` del Mundial (§1), esta sería la única
-  fuente *forward-looking* de lesiones; aun así, para el MVP la revisión puede ser manual/asistida.
-- **Pendiente validar:** qué medios agrega, latencia, filtro por selección/jugador, cuánto ruido.
+| Fuente | Feed RSS | Estado |
+|---|---|---|
+| BBC Sport | `feeds.bbci.co.uk/sport/football/rss.xml` | ✅ ~87 ítems |
+| The Guardian | `theguardian.com/football/rss` | ✅ ~62 ítems |
+| Sky Sports | `skysports.com/rss/12040` | ✅ ~20 ítems |
+
+- **Uso (P1):** señal cualitativa *forward-looking* de lesiones/rotación — el único canal de
+  lesiones que tenemos, dado `injuries=False` en API-Football (§1).
+- **Filtrado a entidades:** `wcf news` cruza los titulares con los apellidos de mi squad (señal
+  alta) y sus naciones (contexto, más ruidoso), y los separa. Robusto: 3 fuentes; si una cae, las
+  demás siguen. Snapshot a `data/snapshots/`.
+- **Limitación conocida:** el match por nación genera falsos positivos (p. ej. "Spain" matchea F1
+  o dardos). Por eso la sección de jugadores va aparte; la de naciones se marca "ruido posible".
+  Para el MVP la lectura final es manual/asistida — el comando reduce el universo, no decide.
+- **Descartado:** Reddit r/soccer JSON (403, ya exige auth). Ampliable con más feeds en `FEEDS`.
 
 ### 3. El propio juego (play.fifa.com) — datos fantasy que NINGUNA otra fuente tiene
 

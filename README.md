@@ -45,7 +45,8 @@ src/wcf/
 ├── cli.py           # comandos `wcf <comando>` (argparse)
 └── sources/
     ├── fifa_fantasy.py   # endpoints públicos del juego: players/squads/rounds.json
-    └── api_football.py   # cliente API-Football (throttled): histórico 2022-24; el 2026 es de pago
+    ├── api_football.py   # cliente API-Football (throttled): histórico 2022-24; el 2026 es de pago
+    └── news.py           # noticias vía RSS (BBC/Guardian/Sky), gratis, filtradas por entidad
 ```
 
 Capas y regla de dependencia: `sources/` (HTTP crudo) → `store` (persistencia) → modelo
@@ -80,6 +81,7 @@ cp .env.example .env        # pegar API_FOOTBALL_KEY (gratis en dashboard.api-fo
 | `wcf matchups` | Fixtures de la próxima ronda para tu squad: rival, horario, ownership, flag scouting <5% | No |
 | `wcf status` | Plan y cuota usada de API-Football | Sí |
 | `wcf history` | Baja priors históricos (WC2022) de selecciones vivas — acotado, cacheado, resumible | Sí (histórico) |
+| `wcf news` | Titulares RSS gratis (BBC/Guardian/Sky) filtrados a tu squad (P1: lesiones/rotación) | No |
 | `wcf fixtures` / `injuries` / `players` | Datos en vivo de API-Football **(plan pago — 2026 bloqueado en Free)** | Sí (pago) |
 
 Ritual mínimo por ronda: `wcf pool` antes de cada lockout (el ownership cambia intradía) — todo

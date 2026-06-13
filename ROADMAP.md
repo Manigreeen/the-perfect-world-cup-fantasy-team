@@ -26,8 +26,9 @@ de datos + matchups + priors históricos listos. **Siguiente: motor de proyecci�
       **el plan Free NO accede a 2026** (solo 2022-2024) e **`injuries` no se cubre** ni pagando.
       → El Mundial requiere plan pago; FIFA queda como única fuente accesible. Detalle en
       [docs/03](docs/03-fuentes-de-datos.md). **Decisión de upgrade diferida al R32.**
-- [ ] *(opcional, fuera del camino crítico)* Evaluar news aggregator de RapidAPI — único forward-
-      looking de lesiones dado `injuries=False`
+- [x] Noticias *forward-looking* (P1, único canal de lesiones dado `injuries=False`): en vez del
+      RapidAPI de pago, **RSS gratis** (BBC/Guardian/Sky) → `sources/news.py` + `wcf news`,
+      filtrado a entidades del squad *(2026-06-13)*
 
 ## Fase 2 — MVP de decisión para MD2 (→ 18 jun 17:00 UTC+1)
 
