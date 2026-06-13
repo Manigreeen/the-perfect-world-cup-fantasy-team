@@ -42,6 +42,26 @@ DEFAULT_RISK = "moderate"
 # (próximo MD a peso pleno, el siguiente a la mitad). El R32 reinicia el bloque (knockout).
 HORIZON_WEIGHTS = (1.0, 0.5)
 
+# Peso del prior histórico (Mundial 2022) en las tasas por-90 que alimentan P3/P7/P8.
+# Equivale a ~1 partido de evidencia: con 0 partidos 2026 el prior llena el hueco, pero se
+# diluye rápido (1 partido → 50%, 3 → 25%) porque un jugador pudo cambiar de nivel desde 2022.
+# Decisión de Mani: el histórico tiene VOZ BAJA sobre la "plantilla óptima".
+HIST_PRIOR_STRENGTH = 1.0
+
+
+def blend_rate(hist_rate: float | None, live_rate: float, live_games: int) -> float:
+    """Mezcla bayesiana del prior histórico con el rendimiento 2026 en vivo.
+
+    Shrinkage: w_live = partidos 2026 jugados; w_hist = HIST_PRIOR_STRENGTH (constante baja).
+    Sin histórico, devuelve el live tal cual. El histórico nunca domina: su peso solo importa
+    cuando casi no hay datos del torneo, y se desvanece ronda a ronda.
+    """
+    if hist_rate is None:
+        return live_rate
+    w_live = float(live_games)
+    total = HIST_PRIOR_STRENGTH + w_live
+    return (HIST_PRIOR_STRENGTH * hist_rate + w_live * live_rate) / total if total else 0.0
+
 
 def active_profile(override: str | None = None) -> RiskProfile:
     """Resuelve el perfil de riesgo: override del CLI > WCF_RISK del entorno > default."""

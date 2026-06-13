@@ -5,8 +5,8 @@
 > [docs/04-plan-de-ejecucion.md](docs/04-plan-de-ejecucion.md).
 
 **Ahora:** Fase 1 ✅ cerrada (datos validados: FIFA es la fuente del torneo; API-Football
-requiere plan pago, diferido al R32). Fase 2 en marcha: loop diseñado y estrategia encodeada;
-sigue la proyección v0.
+requiere plan pago, diferido al R32). Fase 2 avanzada: loop diseñado, estrategia encodeada, capa
+de datos + matchups + priors históricos listos. **Siguiente: motor de proyección v0.**
 **Próximo deadline: lockout MD2 — 18 jun 2026, 17:00 (UTC+1).** Fuente viva: `wcf rounds`.
 
 ---
@@ -37,9 +37,14 @@ sigue la proyección v0.
       **moderate, dial ajustable** (`WCF_RISK`) → `src/wcf/strategy.py` *(2026-06-13)*
 - [x] Capa de datos `pool.py` + `wcf matchups`: fixtures de la próxima ronda para mi squad
       (rival, horario, flag scouting <5%) *(2026-06-13)*
-- [ ] Proyección v0 de puntos esperados por jugador para MD2 (heurística, sin ML; sale con
-      datos de FIFA solos: `roundPoints` + `form` + matchup de `rounds.json`).
-      *Calidad plena recién el 18 jun, cuando MD1 cierre y haya 1 dato real por jugador.*
+- [x] Priors históricos (WC2022) para tapar P7: módulo `historical.py` + `wcf history`, acotado
+      a selecciones vivas, cacheado/resumible/throttled, **peso bajo decayente**
+      (`strategy.blend_rate`). Cobertura: **26 selecciones cacheadas, 10/15 de mi squad con prior**
+      (los 5 sin prior no jugaron el WC2022). *(2026-06-13)*
+- [ ] Proyección v0 de puntos esperados por jugador para MD2 (heurística, sin ML). Insumos:
+      FIFA `roundPoints`/`form` (señal viva) + matchup de `rounds.json` + priors históricos
+      (peso bajo). *Calidad plena recién el 18 jun, cuando MD1 cierre y haya 1 dato real/jugador.*
+- [ ] Modelo de fuerza de selección (Elo con histórico free) → P2/P4 y dificultad de matchup
 - [ ] Ranking de profitability v0: proyección + flag scouting (<5% y P(pts≥5)) + horizonte MD3
 - [ ] Recomendador de transfers: mejor par salir/entrar con las 2 libres (+rollover), con justificación
 - [ ] Plan de capitanía MD2: orden de switches por horario con umbrales stick-or-twist

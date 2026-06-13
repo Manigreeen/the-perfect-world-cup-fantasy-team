@@ -37,14 +37,15 @@ puerta de entrada a todo el pipeline.
 src/wcf/
 ├── config.py        # paths, .env y constantes del torneo (presupuestos, límites, lockouts reales)
 ├── scoring.py       # tabla oficial de puntos (docs/01-reglas.md §8) como datos
-├── strategy.py      # dial de riesgo (WCF_RISK) y horizonte del recomendador (docs/05)
+├── strategy.py      # dial de riesgo (WCF_RISK), horizonte y peso del prior histórico (docs/05)
 ├── store.py         # snapshots versionables: save/load en data/snapshots/<fecha>/
 ├── pool.py          # capa de datos: une pool + selecciones + fixtures de la próxima ronda
 ├── myteam.py        # parsea data/my-team.md y lo valida contra el pool oficial
+├── historical.py    # priors WC2022 (free tier) para P7, acotados a selecciones vivas y peso bajo
 ├── cli.py           # comandos `wcf <comando>` (argparse)
 └── sources/
     ├── fifa_fantasy.py   # endpoints públicos del juego: players/squads/rounds.json
-    └── api_football.py   # cliente API-Football: fixtures, players, injuries, odds
+    └── api_football.py   # cliente API-Football (throttled): histórico 2022-24; el 2026 es de pago
 ```
 
 Capas y regla de dependencia: `sources/` (HTTP crudo) → `store` (persistencia) → modelo
@@ -78,7 +79,8 @@ cp .env.example .env        # pegar API_FOOTBALL_KEY (gratis en dashboard.api-fo
 | `wcf myteam` | Valida `data/my-team.md` contra el pool (precios, posiciones, límites, presupuesto) | No |
 | `wcf matchups` | Fixtures de la próxima ronda para tu squad: rival, horario, ownership, flag scouting <5% | No |
 | `wcf status` | Plan y cuota usada de API-Football | Sí |
-| `wcf fixtures` / `injuries` / `players` | Descarga y snapshotea datos de API-Football | Sí |
+| `wcf history` | Baja priors históricos (WC2022) de selecciones vivas — acotado, cacheado, resumible | Sí (histórico) |
+| `wcf fixtures` / `injuries` / `players` | Datos en vivo de API-Football **(plan pago — 2026 bloqueado en Free)** | Sí (pago) |
 
 Ritual mínimo por ronda: `wcf pool` antes de cada lockout (el ownership cambia intradía) — todo
 queda en `data/snapshots/<fecha>/` para auditar después qué sabía el modelo al recomendar.

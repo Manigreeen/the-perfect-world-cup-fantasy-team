@@ -1,0 +1,2571 @@
+{
+  "nation": "Morocco",
+  "team_id": 31,
+  "players": [
+    {
+      "player": {
+        "id": 412,
+        "name": "A. Harit",
+        "firstname": "Amine",
+        "lastname": "Harit",
+        "age": 28,
+        "birth": {
+          "date": "1997-06-18",
+          "place": "Pontoise",
+          "country": "France"
+        },
+        "nationality": "Morocco",
+        "height": "180",
+        "weight": "67",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/412.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 0,
+            "lineups": 0,
+            "minutes": 0,
+            "number": null,
+            "position": "Midfielder",
+            "rating": null,
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 0
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": null,
+            "assists": null,
+            "saves": null
+          },
+          "passes": {
+            "total": null,
+            "key": null,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": null,
+            "won": null
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": null,
+            "missed": null,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 2701,
+        "name": "Y. Bounou",
+        "firstname": "Yassine",
+        "lastname": "Bounou",
+        "age": 34,
+        "birth": {
+          "date": "1991-04-05",
+          "place": "Montréal",
+          "country": "Canada"
+        },
+        "nationality": "Morocco",
+        "height": "195",
+        "weight": "78",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/2701.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 6,
+            "lineups": 6,
+            "minutes": 570,
+            "number": 1,
+            "position": "Goalkeeper",
+            "rating": "7.07",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 0
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 5,
+            "assists": 0,
+            "saves": 7
+          },
+          "passes": {
+            "total": 191,
+            "key": null,
+            "accuracy": 72
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 2,
+            "won": 2
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 1,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": 0
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 9,
+        "name": "A. Hakimi",
+        "firstname": "Achraf",
+        "lastname": "Hakimi Mouh",
+        "age": 27,
+        "birth": {
+          "date": "1998-11-04",
+          "place": "Madrid",
+          "country": "Spain"
+        },
+        "nationality": "Morocco",
+        "height": "181",
+        "weight": "73",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/9.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 7,
+            "lineups": 7,
+            "minutes": 633,
+            "number": 2,
+            "position": "Defender",
+            "rating": "6.9",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 2,
+            "bench": 0
+          },
+          "shots": {
+            "total": 3,
+            "on": 1
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 302,
+            "key": 6,
+            "accuracy": 83
+          },
+          "tackles": {
+            "total": 26,
+            "blocks": 1,
+            "interceptions": 9
+          },
+          "duels": {
+            "total": 88,
+            "won": 46
+          },
+          "dribbles": {
+            "attempts": 11,
+            "success": 2,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 13,
+            "committed": 6
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 21694,
+        "name": "N. Aguerd",
+        "firstname": "Nayef",
+        "lastname": "Aguerd",
+        "age": 29,
+        "birth": {
+          "date": "1996-03-30",
+          "place": "Kénitra",
+          "country": "Morocco"
+        },
+        "nationality": "Morocco",
+        "height": "190",
+        "weight": "76",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/21694.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 4,
+            "minutes": 354,
+            "number": 5,
+            "position": "Defender",
+            "rating": "6.98",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 1,
+            "bench": 1
+          },
+          "shots": {
+            "total": 1,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 158,
+            "key": 1,
+            "accuracy": 86
+          },
+          "tackles": {
+            "total": 4,
+            "blocks": 2,
+            "interceptions": 4
+          },
+          "duels": {
+            "total": 13,
+            "won": 9
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": 2
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 2716,
+        "name": "R. Saïss",
+        "firstname": "Romain Ghanem Paul",
+        "lastname": "Saïss",
+        "age": 35,
+        "birth": {
+          "date": "1990-03-26",
+          "place": "Bourg-de-Peage",
+          "country": "France"
+        },
+        "nationality": "Morocco",
+        "height": "188",
+        "weight": "80",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/2716.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 6,
+            "lineups": 6,
+            "minutes": 468,
+            "number": 6,
+            "position": "Defender",
+            "rating": "6.93",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 2,
+            "bench": 1
+          },
+          "shots": {
+            "total": 1,
+            "on": 1
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 198,
+            "key": null,
+            "accuracy": 80
+          },
+          "tackles": {
+            "total": 5,
+            "blocks": 1,
+            "interceptions": 3
+          },
+          "duels": {
+            "total": 21,
+            "won": 13
+          },
+          "dribbles": {
+            "attempts": 2,
+            "success": 1,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": 4
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 545,
+        "name": "N. Mazraoui",
+        "firstname": "Noussair",
+        "lastname": "Mazraoui",
+        "age": 28,
+        "birth": {
+          "date": "1997-11-14",
+          "place": "Leiderdorp",
+          "country": "Netherlands"
+        },
+        "nationality": "Morocco",
+        "height": "183",
+        "weight": "63",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/545.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 5,
+            "lineups": 5,
+            "minutes": 367,
+            "number": 3,
+            "position": "Defender",
+            "rating": "6.9",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 3,
+            "bench": 0
+          },
+          "shots": {
+            "total": 3,
+            "on": 2
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 97,
+            "key": 1,
+            "accuracy": 82
+          },
+          "tackles": {
+            "total": 14,
+            "blocks": 1,
+            "interceptions": 1
+          },
+          "duels": {
+            "total": 30,
+            "won": 17
+          },
+          "dribbles": {
+            "attempts": 4,
+            "success": 1,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 1,
+            "committed": 3
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 129678,
+        "name": "A. Ounahi",
+        "firstname": "Azzedine",
+        "lastname": "Ounahi",
+        "age": 25,
+        "birth": {
+          "date": "2000-04-19",
+          "place": "Casablanca",
+          "country": "Morocco"
+        },
+        "nationality": "Morocco",
+        "height": "182",
+        "weight": "62",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/129678.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 7,
+            "lineups": 6,
+            "minutes": 570,
+            "number": 8,
+            "position": "Midfielder",
+            "rating": "6.89",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 4,
+            "bench": 1
+          },
+          "shots": {
+            "total": 3,
+            "on": 1
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 258,
+            "key": 6,
+            "accuracy": 83
+          },
+          "tackles": {
+            "total": 9,
+            "blocks": 1,
+            "interceptions": 7
+          },
+          "duels": {
+            "total": 50,
+            "won": 33
+          },
+          "dribbles": {
+            "attempts": 12,
+            "success": 10,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 13,
+            "committed": 3
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 74,
+        "name": "S. Amrabat",
+        "firstname": "Sofyan",
+        "lastname": "Amrabat",
+        "age": 29,
+        "birth": {
+          "date": "1996-08-21",
+          "place": "Huizen",
+          "country": "Netherlands"
+        },
+        "nationality": "Morocco",
+        "height": "183",
+        "weight": "82",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/74.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 7,
+            "lineups": 7,
+            "minutes": 660,
+            "number": 4,
+            "position": "Midfielder",
+            "rating": "6.89",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 0
+          },
+          "shots": {
+            "total": 1,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 314,
+            "key": 2,
+            "accuracy": 85
+          },
+          "tackles": {
+            "total": 16,
+            "blocks": 1,
+            "interceptions": 6
+          },
+          "duels": {
+            "total": 50,
+            "won": 24
+          },
+          "dribbles": {
+            "attempts": 2,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 6,
+            "committed": 14
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 8587,
+        "name": "S. Amallah",
+        "firstname": "Selim",
+        "lastname": "Amallah",
+        "age": 29,
+        "birth": {
+          "date": "1996-11-15",
+          "place": "Hautrage",
+          "country": "Belgium"
+        },
+        "nationality": "Morocco",
+        "height": "186 cm",
+        "weight": "82 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/8587.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 7,
+            "lineups": 4,
+            "minutes": 409,
+            "number": 15,
+            "position": "Midfielder",
+            "rating": "6.66",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 3,
+            "out": 4,
+            "bench": 3
+          },
+          "shots": {
+            "total": 2,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 85,
+            "key": 3,
+            "accuracy": 76
+          },
+          "tackles": {
+            "total": 13,
+            "blocks": 1,
+            "interceptions": 8
+          },
+          "duels": {
+            "total": 55,
+            "won": 24
+          },
+          "dribbles": {
+            "attempts": 3,
+            "success": 1,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 8,
+            "committed": 11
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 548,
+        "name": "H. Ziyech",
+        "firstname": "Hakim",
+        "lastname": "Ziyech",
+        "age": 32,
+        "birth": {
+          "date": "1993-03-19",
+          "place": "Dronten",
+          "country": "Netherlands"
+        },
+        "nationality": "Morocco",
+        "height": "180 cm",
+        "weight": "65 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/548.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 7,
+            "lineups": 7,
+            "minutes": 638,
+            "number": 7,
+            "position": "Attacker",
+            "rating": "6.91",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 2,
+            "bench": 0
+          },
+          "shots": {
+            "total": 8,
+            "on": 2
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 265,
+            "key": 7,
+            "accuracy": 77
+          },
+          "tackles": {
+            "total": 10,
+            "blocks": null,
+            "interceptions": 10
+          },
+          "duels": {
+            "total": 84,
+            "won": 32
+          },
+          "dribbles": {
+            "attempts": 28,
+            "success": 12,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 7,
+            "committed": 12
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 47422,
+        "name": "Y. En-Nesyri",
+        "firstname": "Youssef",
+        "lastname": "En-Nesyri",
+        "age": 28,
+        "birth": {
+          "date": "1997-06-01",
+          "place": "Fès",
+          "country": "Morocco"
+        },
+        "nationality": "Morocco",
+        "height": "188",
+        "weight": "73",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/47422.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 7,
+            "lineups": 7,
+            "minutes": 547,
+            "number": 19,
+            "position": "Attacker",
+            "rating": "6.86",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 5,
+            "bench": 0
+          },
+          "shots": {
+            "total": 7,
+            "on": 3
+          },
+          "goals": {
+            "total": 2,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 79,
+            "key": 1,
+            "accuracy": 63
+          },
+          "tackles": {
+            "total": 3,
+            "blocks": null,
+            "interceptions": 1
+          },
+          "duels": {
+            "total": 55,
+            "won": 33
+          },
+          "dribbles": {
+            "attempts": 8,
+            "success": 5,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 4,
+            "committed": 2
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 2710,
+        "name": "S. Boufal",
+        "firstname": "Sofiane",
+        "lastname": "Boufal",
+        "age": 32,
+        "birth": {
+          "date": "1993-09-17",
+          "place": "Paris",
+          "country": "France"
+        },
+        "nationality": "Morocco",
+        "height": "175",
+        "weight": "70",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/2710.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 7,
+            "lineups": 7,
+            "minutes": 482,
+            "number": 17,
+            "position": "Attacker",
+            "rating": "6.83",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 7,
+            "bench": 0
+          },
+          "shots": {
+            "total": 5,
+            "on": 1
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 124,
+            "key": 4,
+            "accuracy": 76
+          },
+          "tackles": {
+            "total": 11,
+            "blocks": null,
+            "interceptions": 2
+          },
+          "duels": {
+            "total": 78,
+            "won": 42
+          },
+          "dribbles": {
+            "attempts": 24,
+            "success": 14,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 13,
+            "committed": 11
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 2702,
+        "name": "M. Mohamedi",
+        "firstname": "Munir Mohand",
+        "lastname": "Mohamedi El Kajoui",
+        "age": 36,
+        "birth": {
+          "date": "1989-05-10",
+          "place": "Melilla",
+          "country": "Spain"
+        },
+        "nationality": "Morocco",
+        "height": "190",
+        "weight": "89",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/2702.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 1,
+            "lineups": 1,
+            "minutes": 90,
+            "number": 12,
+            "position": "Goalkeeper",
+            "rating": "7.5",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 6
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": 3
+          },
+          "passes": {
+            "total": 24,
+            "key": null,
+            "accuracy": 62
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 1,
+            "won": null
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": 0
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 2703,
+        "name": "A. Tagnaouti",
+        "firstname": "Ahmed Reda",
+        "lastname": "Tagnaouti",
+        "age": 29,
+        "birth": {
+          "date": "1996-04-05",
+          "place": "Casablanca",
+          "country": "Morocco"
+        },
+        "nationality": "Morocco",
+        "height": "192 cm",
+        "weight": "76 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/2703.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 0,
+            "lineups": 0,
+            "minutes": null,
+            "number": 22,
+            "position": "Goalkeeper",
+            "rating": null,
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 7
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": null,
+            "key": null,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": null,
+            "won": null
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 135836,
+        "name": "Y. Attiat-Allah",
+        "firstname": "Yahya",
+        "lastname": "Attiat-Allah El Idrissi",
+        "age": 30,
+        "birth": {
+          "date": "1995-03-02",
+          "place": "Safi",
+          "country": "Morocco"
+        },
+        "nationality": "Morocco",
+        "height": "176",
+        "weight": "70",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/135836.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 6,
+            "lineups": 2,
+            "minutes": 316,
+            "number": 25,
+            "position": "Defender",
+            "rating": "6.63",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 4,
+            "out": 0,
+            "bench": 5
+          },
+          "shots": {
+            "total": 2,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 104,
+            "key": 5,
+            "accuracy": 75
+          },
+          "tackles": {
+            "total": 4,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 28,
+            "won": 7
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 3,
+            "committed": 8
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 31386,
+        "name": "J. El Yamiq",
+        "firstname": "Jawad",
+        "lastname": "El Yamiq",
+        "age": 33,
+        "birth": {
+          "date": "1992-02-29",
+          "place": "Khouribga",
+          "country": "Morocco"
+        },
+        "nationality": "Morocco",
+        "height": "193",
+        "weight": "80",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/31386.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 6,
+            "lineups": 3,
+            "minutes": 308,
+            "number": 18,
+            "position": "Defender",
+            "rating": "6.97",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 3,
+            "out": 1,
+            "bench": 4
+          },
+          "shots": {
+            "total": 1,
+            "on": 1
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 162,
+            "key": null,
+            "accuracy": 88
+          },
+          "tackles": {
+            "total": 4,
+            "blocks": 6,
+            "interceptions": 5
+          },
+          "duels": {
+            "total": 16,
+            "won": 14
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 4,
+            "committed": 1
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 36556,
+        "name": "B. Benoun",
+        "firstname": "Badr",
+        "lastname": "Benoun",
+        "age": 32,
+        "birth": {
+          "date": "1993-09-30",
+          "place": "Casablanca",
+          "country": "Morocco"
+        },
+        "nationality": "Morocco",
+        "height": "193 cm",
+        "weight": "78 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/36556.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 3,
+            "lineups": 0,
+            "minutes": 52,
+            "number": 24,
+            "position": "Defender",
+            "rating": "6.3",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 3,
+            "out": 0,
+            "bench": 7
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 22,
+            "key": null,
+            "accuracy": 95
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": 1
+          },
+          "duels": {
+            "total": 4,
+            "won": null
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": 2
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 36540,
+        "name": "A. Dari",
+        "firstname": "Achraf",
+        "lastname": "Dari",
+        "age": 26,
+        "birth": {
+          "date": "1999-05-06",
+          "place": "Casablanca",
+          "country": "Morocco"
+        },
+        "nationality": "Morocco",
+        "height": "188",
+        "weight": "84",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/36540.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 3,
+            "lineups": 2,
+            "minutes": 187,
+            "number": 20,
+            "position": "Defender",
+            "rating": "6.83",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 1,
+            "bench": 5
+          },
+          "shots": {
+            "total": 1,
+            "on": 1
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 111,
+            "key": null,
+            "accuracy": 89
+          },
+          "tackles": {
+            "total": 1,
+            "blocks": 4,
+            "interceptions": 5
+          },
+          "duels": {
+            "total": 17,
+            "won": 7
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 1,
+            "committed": 2
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 340573,
+        "name": "B. El Khannouss",
+        "firstname": "Bilal",
+        "lastname": "El Khannouss",
+        "age": 21,
+        "birth": {
+          "date": "2004-05-10",
+          "place": "Strombeek-Bever",
+          "country": "Belgium"
+        },
+        "nationality": "Morocco",
+        "height": "180",
+        "weight": "70",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/340573.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 1,
+            "lineups": 1,
+            "minutes": 56,
+            "number": 23,
+            "position": "Midfielder",
+            "rating": "6.5",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 1,
+            "bench": 6
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 24,
+            "key": null,
+            "accuracy": 83
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 3,
+            "won": 1
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 1,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 36544,
+        "name": "Y. Jabrane",
+        "firstname": "Yahya",
+        "lastname": "Jabrane",
+        "age": 34,
+        "birth": {
+          "date": "1991-06-18",
+          "place": "Settat",
+          "country": "Morocco"
+        },
+        "nationality": "Morocco",
+        "height": "187 cm",
+        "weight": "83 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/36544.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 2,
+            "lineups": 0,
+            "minutes": 17,
+            "number": 26,
+            "position": "Midfielder",
+            "rating": "6.25",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 2,
+            "out": 0,
+            "bench": 7
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 4,
+            "key": null,
+            "accuracy": 50
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 2,
+            "won": null
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 19053,
+        "name": "A. Sabiri",
+        "firstname": "Abdelhamid",
+        "lastname": "Sabiri",
+        "age": 29,
+        "birth": {
+          "date": "1996-11-28",
+          "place": "Goulmima",
+          "country": "Morocco"
+        },
+        "nationality": "Morocco",
+        "height": "183",
+        "weight": "80",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/19053.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 5,
+            "lineups": 2,
+            "minutes": 178,
+            "number": 11,
+            "position": "Midfielder",
+            "rating": "6.58",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 3,
+            "out": 2,
+            "bench": 5
+          },
+          "shots": {
+            "total": 1,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 57,
+            "key": 3,
+            "accuracy": 77
+          },
+          "tackles": {
+            "total": 3,
+            "blocks": 1,
+            "interceptions": 5
+          },
+          "duels": {
+            "total": 22,
+            "won": 8
+          },
+          "dribbles": {
+            "attempts": 3,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 3,
+            "committed": 2
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 44325,
+        "name": "A. Hamed Allah",
+        "firstname": "Abderrazzaq",
+        "lastname": "Hamed Allah",
+        "age": 35,
+        "birth": {
+          "date": "1990-12-17",
+          "place": "Safi",
+          "country": "Morocco"
+        },
+        "nationality": "Morocco",
+        "height": "179",
+        "weight": "75",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/44325.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 0,
+            "minutes": 64,
+            "number": 9,
+            "position": "Attacker",
+            "rating": "6.48",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 4,
+            "out": 0,
+            "bench": 7
+          },
+          "shots": {
+            "total": 2,
+            "on": 2
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 15,
+            "key": null,
+            "accuracy": 53
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 20,
+            "won": 5
+          },
+          "dribbles": {
+            "attempts": 3,
+            "success": 2,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 2,
+            "committed": 3
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 243,
+        "name": "Z. Aboukhlal",
+        "firstname": "Zakaria",
+        "lastname": "Aboukhlal",
+        "age": 25,
+        "birth": {
+          "date": "2000-02-18",
+          "place": "Rotterdam",
+          "country": "Netherlands"
+        },
+        "nationality": "Morocco",
+        "height": "179",
+        "weight": "74",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/243.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 0,
+            "minutes": 73,
+            "number": 14,
+            "position": "Attacker",
+            "rating": "6.65",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 4,
+            "out": 0,
+            "bench": 7
+          },
+          "shots": {
+            "total": 3,
+            "on": 2
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 12,
+            "key": null,
+            "accuracy": 50
+          },
+          "tackles": {
+            "total": 1,
+            "blocks": null,
+            "interceptions": 1
+          },
+          "duels": {
+            "total": 6,
+            "won": 3
+          },
+          "dribbles": {
+            "attempts": 1,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": 1
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 17632,
+        "name": "I. Chair",
+        "firstname": "Ilias Emilian",
+        "lastname": "Chair",
+        "age": 28,
+        "birth": {
+          "date": "1997-10-30",
+          "place": "Antwerp",
+          "country": "Belgium"
+        },
+        "nationality": "Morocco",
+        "height": "171",
+        "weight": "74",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/17632.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 1,
+            "lineups": 0,
+            "minutes": 45,
+            "number": 13,
+            "position": "Midfielder",
+            "rating": "6.2",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 0,
+            "bench": 7
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 13,
+            "key": null,
+            "accuracy": 100
+          },
+          "tackles": {
+            "total": 1,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 4,
+            "won": 1
+          },
+          "dribbles": {
+            "attempts": 1,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 181421,
+        "name": "A. Ezzalzouli",
+        "firstname": "Abdessamad",
+        "lastname": "Ezzalzouli",
+        "age": 24,
+        "birth": {
+          "date": "2001-12-17",
+          "place": "Beni Melal",
+          "country": "Morocco"
+        },
+        "nationality": "Morocco",
+        "height": "177",
+        "weight": "73",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/181421.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 3,
+            "lineups": 0,
+            "minutes": 91,
+            "number": 16,
+            "position": "Attacker",
+            "rating": "6.67",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 3,
+            "out": 0,
+            "bench": 7
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 11,
+            "key": 2,
+            "accuracy": 81
+          },
+          "tackles": {
+            "total": 3,
+            "blocks": 1,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 13,
+            "won": 5
+          },
+          "dribbles": {
+            "attempts": 2,
+            "success": 1,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": 4
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 128478,
+        "name": "W. Cheddira",
+        "firstname": "Walid",
+        "lastname": "Cheddira",
+        "age": 27,
+        "birth": {
+          "date": "1998-01-22",
+          "place": "Loreto",
+          "country": "Italy"
+        },
+        "nationality": "Morocco",
+        "height": "187",
+        "weight": "80",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/128478.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 2,
+            "lineups": 0,
+            "minutes": 66,
+            "number": 21,
+            "position": "Attacker",
+            "rating": "6.25",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 2,
+            "out": 0,
+            "bench": 6
+          },
+          "shots": {
+            "total": 2,
+            "on": 1
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 8,
+            "key": null,
+            "accuracy": 50
+          },
+          "tackles": {
+            "total": 1,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 10,
+            "won": 3
+          },
+          "dribbles": {
+            "attempts": 1,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": 5
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 1,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 129169,
+        "name": "A. Zaroury",
+        "firstname": "Anass",
+        "lastname": "Zaroury",
+        "age": 25,
+        "birth": {
+          "date": "2000-11-07",
+          "place": "Mechelen",
+          "country": "Belgium"
+        },
+        "nationality": "Morocco",
+        "height": "176 cm",
+        "weight": "70 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/129169.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 31,
+            "name": "Morocco",
+            "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 1,
+            "lineups": 0,
+            "minutes": 26,
+            "number": 10,
+            "position": "Attacker",
+            "rating": "6.6",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 0,
+            "bench": 7
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 10,
+            "key": null,
+            "accuracy": 80
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 1,
+            "won": 1
+          },
+          "dribbles": {
+            "attempts": 1,
+            "success": 1,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    }
+  ]
+}

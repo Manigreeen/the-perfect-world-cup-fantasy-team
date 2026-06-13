@@ -36,6 +36,28 @@ Cliente en `src/wcf/sources/api_football.py`.
   (mejor dificultad de matchup P2/P4) — NO lesiones. Recomendación: evaluar el upgrade recién
   para el **reset del R32** (máximo apalancamiento), no antes.
 
+#### 1b. Histórico del free tier (2022-2024) como prior de baja confianza ✅
+
+Aunque el 2026 en vivo está bloqueado, **el free tier SÍ da histórico 2022-2024 con stats
+granulares** (validado: tiros, key passes, tackles, tarjetas por jugador). Lo usamos para tapar
+el único hueco (P7) con *priors*. Módulo `src/wcf/historical.py`, comando `wcf history`.
+
+- **Fuente v1:** Mundial 2022 (`league=1, season=2022`) — contexto de selección, lo más comparable.
+- **Acotado y evolutivo** (decisión de Mani): solo se bajan las selecciones **vivas** relevantes
+  para la ronda; al eliminarse equipos, salen del set. Se baja **por equipo** (no de a 1.500
+  jugadores): `teams?league=1&season=2022` da el mapa nación→id en 1 request, luego
+  `players?team=<id>&season=2022` por selección.
+- **Inmutable y cacheado:** el histórico no cambia → cada selección se baja una vez a
+  `data/historical/2022/team-<id>.json` y no se vuelve a pedir. Fetch **resumible** y **throttled**
+  (free tier ~10 req/min, 100 req/día).
+- **Peso BAJO y decayente** (decisión de Mani): el prior entra con shrinkage bayesiano
+  (`strategy.HIST_PRIOR_STRENGTH` ≈ 1 partido de evidencia) y el rendimiento 2026 lo diluye ronda
+  a ronda (1 partido → 50%, 3 → 25%). Un jugador pudo cambiar de nivel desde 2022: el histórico
+  **nunca domina** la plantilla óptima.
+- **Cobertura parcial aceptada:** selecciones que no jugaron el WC2022 (p. ej. Noruega, Colombia)
+  usan prior por defecto de posición. Dado el peso bajo, es tolerable; se podría enriquecer con
+  Euro/Copa 2024 (también en el free tier) más adelante.
+
 ### 2. Football News Aggregator Live (RapidAPI)
 
 `rapidapi.com/arkasarkar2000/api/football-news-aggregator-live` — noticias agregadas de medios.

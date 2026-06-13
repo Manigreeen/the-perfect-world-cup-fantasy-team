@@ -1,0 +1,2476 @@
+{
+  "nation": "Brazil",
+  "team_id": 6,
+  "players": [
+    {
+      "player": {
+        "id": 280,
+        "name": "Alisson Becker",
+        "firstname": "Alisson Ramsés",
+        "lastname": "Becker",
+        "age": 33,
+        "birth": {
+          "date": "1992-10-02",
+          "place": "Novo Hamburgo",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "193",
+        "weight": "91",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/280.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 4,
+            "minutes": 380,
+            "number": 1,
+            "position": "Goalkeeper",
+            "rating": "6.9",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 1,
+            "bench": 1
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 2,
+            "assists": 0,
+            "saves": 5
+          },
+          "passes": {
+            "total": 81,
+            "key": null,
+            "accuracy": 83
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 2,
+            "won": 2
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 1,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": 0
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 618,
+        "name": "Danilo",
+        "firstname": "Danilo Luiz",
+        "lastname": "da Silva",
+        "age": 34,
+        "birth": {
+          "date": "1991-07-15",
+          "place": "Bicas",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "184",
+        "weight": "78",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/618.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 3,
+            "lineups": 3,
+            "minutes": 282,
+            "number": 2,
+            "position": "Defender",
+            "rating": "6.97",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 1,
+            "bench": 0
+          },
+          "shots": {
+            "total": 2,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 239,
+            "key": null,
+            "accuracy": 88
+          },
+          "tackles": {
+            "total": 5,
+            "blocks": 1,
+            "interceptions": 3
+          },
+          "duels": {
+            "total": 17,
+            "won": 11
+          },
+          "dribbles": {
+            "attempts": 1,
+            "success": 1,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 1,
+            "committed": 3
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 257,
+        "name": "Marquinhos",
+        "firstname": "Marcos",
+        "lastname": "Aoás Corrêa",
+        "age": 31,
+        "birth": {
+          "date": "1994-05-14",
+          "place": "São Paulo",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "183",
+        "weight": "75",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/257.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 5,
+            "lineups": 4,
+            "minutes": 426,
+            "number": 4,
+            "position": "Defender",
+            "rating": "7.02",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 0,
+            "bench": 1
+          },
+          "shots": {
+            "total": 1,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 363,
+            "key": 4,
+            "accuracy": 95
+          },
+          "tackles": {
+            "total": 5,
+            "blocks": 1,
+            "interceptions": 2
+          },
+          "duels": {
+            "total": 18,
+            "won": 12
+          },
+          "dribbles": {
+            "attempts": 1,
+            "success": 1,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 2,
+            "committed": 1
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 259,
+        "name": "Thiago Silva",
+        "firstname": "Thiago",
+        "lastname": "Emiliano da Silva",
+        "age": 41,
+        "birth": {
+          "date": "1984-09-22",
+          "place": "Rio de Janeiro",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "183",
+        "weight": "79",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/259.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 4,
+            "minutes": 390,
+            "number": 3,
+            "position": "Defender",
+            "rating": "7.4",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 1
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 344,
+            "key": 4,
+            "accuracy": 93
+          },
+          "tackles": {
+            "total": 3,
+            "blocks": 1,
+            "interceptions": 5
+          },
+          "duels": {
+            "total": 18,
+            "won": 12
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 3,
+            "committed": 2
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 860,
+        "name": "Alex Sandro",
+        "firstname": "Alex Sandro",
+        "lastname": "Lobo Silva",
+        "age": 34,
+        "birth": {
+          "date": "1991-01-26",
+          "place": "Catanduva",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "180",
+        "weight": "80",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/860.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 3,
+            "lineups": 2,
+            "minutes": 191,
+            "number": 6,
+            "position": "Defender",
+            "rating": "7.23",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 1,
+            "bench": 1
+          },
+          "shots": {
+            "total": 1,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 143,
+            "key": 1,
+            "accuracy": 91
+          },
+          "tackles": {
+            "total": 8,
+            "blocks": null,
+            "interceptions": 3
+          },
+          "duels": {
+            "total": 19,
+            "won": 14
+          },
+          "dribbles": {
+            "attempts": 2,
+            "success": 1,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 2,
+            "committed": 3
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 1646,
+        "name": "Lucas Paquetá",
+        "firstname": "Lucas",
+        "lastname": "Tolentino Coelho de Lima",
+        "age": 28,
+        "birth": {
+          "date": "1997-08-27",
+          "place": "Rio de Janeiro",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "180",
+        "weight": "72",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/1646.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 4,
+            "minutes": 315,
+            "number": 7,
+            "position": "Midfielder",
+            "rating": "7.05",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 3,
+            "bench": 1
+          },
+          "shots": {
+            "total": 4,
+            "on": 4
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 191,
+            "key": 6,
+            "accuracy": 84
+          },
+          "tackles": {
+            "total": 7,
+            "blocks": 1,
+            "interceptions": 2
+          },
+          "duels": {
+            "total": 26,
+            "won": 12
+          },
+          "dribbles": {
+            "attempts": 1,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 2,
+            "committed": 4
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 747,
+        "name": "Casemiro",
+        "firstname": "Carlos Henrique",
+        "lastname": "Casimiro",
+        "age": 33,
+        "birth": {
+          "date": "1992-02-23",
+          "place": "São José dos Campos",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "185",
+        "weight": "84",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/747.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 4,
+            "minutes": 390,
+            "number": 5,
+            "position": "Midfielder",
+            "rating": "7.6",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 1
+          },
+          "shots": {
+            "total": 6,
+            "on": 3
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 248,
+            "key": 4,
+            "accuracy": 83
+          },
+          "tackles": {
+            "total": 11,
+            "blocks": 2,
+            "interceptions": 7
+          },
+          "duels": {
+            "total": 35,
+            "won": 18
+          },
+          "dribbles": {
+            "attempts": 2,
+            "success": 1,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 3,
+            "committed": 7
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 1496,
+        "name": "Raphinha",
+        "firstname": "Raphael",
+        "lastname": "Dias Belloli",
+        "age": 29,
+        "birth": {
+          "date": "1996-12-14",
+          "place": "Porto Alegre",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "176",
+        "weight": "72",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/1496.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 5,
+            "lineups": 4,
+            "minutes": 317,
+            "number": 11,
+            "position": "Midfielder",
+            "rating": "7.08",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 3,
+            "bench": 1
+          },
+          "shots": {
+            "total": 7,
+            "on": 6
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 124,
+            "key": 9,
+            "accuracy": 83
+          },
+          "tackles": {
+            "total": 8,
+            "blocks": null,
+            "interceptions": 3
+          },
+          "duels": {
+            "total": 38,
+            "won": 17
+          },
+          "dribbles": {
+            "attempts": 11,
+            "success": 4,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 5,
+            "committed": 2
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 276,
+        "name": "Neymar",
+        "firstname": "Neymar",
+        "lastname": "da Silva Santos Júnior",
+        "age": 33,
+        "birth": {
+          "date": "1992-02-05",
+          "place": "Mogi das Cruzes",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "175",
+        "weight": "68",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/276.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 3,
+            "lineups": 3,
+            "minutes": 281,
+            "number": 10,
+            "position": "Midfielder",
+            "rating": "6.93",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 2,
+            "bench": 0
+          },
+          "shots": {
+            "total": 9,
+            "on": 6
+          },
+          "goals": {
+            "total": 2,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 143,
+            "key": 6,
+            "accuracy": 80
+          },
+          "tackles": {
+            "total": 1,
+            "blocks": null,
+            "interceptions": 1
+          },
+          "duels": {
+            "total": 55,
+            "won": 23
+          },
+          "dribbles": {
+            "attempts": 19,
+            "success": 6,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 16,
+            "committed": 4
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 1,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 762,
+        "name": "Vinícius Júnior",
+        "firstname": "Vinícius José",
+        "lastname": "Paixão de Oliveira Júnior",
+        "age": 25,
+        "birth": {
+          "date": "2000-07-12",
+          "place": "São Gonçalo",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "176",
+        "weight": "73",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/762.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 4,
+            "minutes": 302,
+            "number": 20,
+            "position": "Midfielder",
+            "rating": "7",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 3,
+            "bench": 1
+          },
+          "shots": {
+            "total": 8,
+            "on": 4
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 2,
+            "saves": null
+          },
+          "passes": {
+            "total": 76,
+            "key": 8,
+            "accuracy": 86
+          },
+          "tackles": {
+            "total": 3,
+            "blocks": 1,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 36,
+            "won": 15
+          },
+          "dribbles": {
+            "attempts": 13,
+            "success": 5,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 7,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 2413,
+        "name": "Richarlison",
+        "firstname": "Richarlison",
+        "lastname": "de Andrade",
+        "age": 28,
+        "birth": {
+          "date": "1997-05-10",
+          "place": "Nova Venécia",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "184",
+        "weight": "83",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/2413.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 4,
+            "minutes": 326,
+            "number": 9,
+            "position": "Attacker",
+            "rating": "7.43",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 3,
+            "bench": 1
+          },
+          "shots": {
+            "total": 5,
+            "on": 4
+          },
+          "goals": {
+            "total": 3,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 56,
+            "key": 6,
+            "accuracy": 71
+          },
+          "tackles": {
+            "total": 2,
+            "blocks": null,
+            "interceptions": 1
+          },
+          "duels": {
+            "total": 32,
+            "won": 12
+          },
+          "dribbles": {
+            "attempts": 4,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 6,
+            "committed": 5
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": 1,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 617,
+        "name": "Ederson",
+        "firstname": "Ederson",
+        "lastname": "Santana de Moraes",
+        "age": 32,
+        "birth": {
+          "date": "1993-08-17",
+          "place": "Osasco",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "188",
+        "weight": "86",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/617.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 1,
+            "lineups": 1,
+            "minutes": 90,
+            "number": 23,
+            "position": "Goalkeeper",
+            "rating": "6.9",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 4
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 1,
+            "assists": 0,
+            "saves": 2
+          },
+          "passes": {
+            "total": 21,
+            "key": null,
+            "accuracy": 90
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": null,
+            "won": null
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": 0
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 2410,
+        "name": "Weverton",
+        "firstname": "Weverton",
+        "lastname": "Pereira da Silva",
+        "age": 38,
+        "birth": {
+          "date": "1987-12-13",
+          "place": "Rio Branco",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "189",
+        "weight": "91",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/2410.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 1,
+            "lineups": 0,
+            "minutes": 10,
+            "number": 12,
+            "position": "Goalkeeper",
+            "rating": "6.3",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 0,
+            "bench": 5
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 5,
+            "key": null,
+            "accuracy": 60
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": null,
+            "won": null
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": 0
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 30497,
+        "name": "Bremer",
+        "firstname": "Gleison Bremer",
+        "lastname": "Silva Nascimento",
+        "age": 28,
+        "birth": {
+          "date": "1997-03-18",
+          "place": "Itapitanga",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "188",
+        "weight": "80",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/30497.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 2,
+            "lineups": 1,
+            "minutes": 108,
+            "number": 24,
+            "position": "Defender",
+            "rating": "6.55",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 0,
+            "bench": 4
+          },
+          "shots": {
+            "total": 1,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 81,
+            "key": null,
+            "accuracy": 95
+          },
+          "tackles": {
+            "total": 1,
+            "blocks": null,
+            "interceptions": 1
+          },
+          "duels": {
+            "total": 9,
+            "won": 6
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": 2
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 372,
+        "name": "Éder Militão",
+        "firstname": "Éder Gabriel",
+        "lastname": "Militão",
+        "age": 27,
+        "birth": {
+          "date": "1998-01-18",
+          "place": "Sertãozinho",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "186",
+        "weight": "78",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/372.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 4,
+            "minutes": 348,
+            "number": 14,
+            "position": "Defender",
+            "rating": "6.85",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 2,
+            "bench": 1
+          },
+          "shots": {
+            "total": 1,
+            "on": 1
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 255,
+            "key": 1,
+            "accuracy": 91
+          },
+          "tackles": {
+            "total": 6,
+            "blocks": null,
+            "interceptions": 3
+          },
+          "duels": {
+            "total": 27,
+            "won": 13
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 3,
+            "committed": 7
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 256,
+        "name": "Dani Alves",
+        "firstname": "Daniel",
+        "lastname": "Alves da Silva",
+        "age": 42,
+        "birth": {
+          "date": "1983-05-06",
+          "place": "Juazeiro",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "172",
+        "weight": "70",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/256.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 2,
+            "lineups": 1,
+            "minutes": 117,
+            "number": 13,
+            "position": "Defender",
+            "rating": "6.8",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 0,
+            "bench": 4
+          },
+          "shots": {
+            "total": 2,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 80,
+            "key": null,
+            "accuracy": 88
+          },
+          "tackles": {
+            "total": 5,
+            "blocks": 1,
+            "interceptions": 2
+          },
+          "duels": {
+            "total": 20,
+            "won": 9
+          },
+          "dribbles": {
+            "attempts": 1,
+            "success": 1,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 2,
+            "committed": 5
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 378,
+        "name": "Alex Telles",
+        "firstname": "Alex",
+        "lastname": "Nicolao Telles",
+        "age": 33,
+        "birth": {
+          "date": "1992-12-15",
+          "place": "Caxias do Sul",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "181",
+        "weight": "71",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/378.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 2,
+            "lineups": 1,
+            "minutes": 64,
+            "number": 16,
+            "position": "Defender",
+            "rating": "6.65",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 1,
+            "bench": 2
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 36,
+            "key": null,
+            "accuracy": 83
+          },
+          "tackles": {
+            "total": 2,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 5,
+            "won": 3
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": 1
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 905,
+        "name": "Fred",
+        "firstname": "Frederico",
+        "lastname": "Rodrigues de Paula Santos",
+        "age": 32,
+        "birth": {
+          "date": "1993-03-05",
+          "place": "Belo Horizonte",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "169",
+        "weight": "64",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/905.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 2,
+            "minutes": 143,
+            "number": 8,
+            "position": "Midfielder",
+            "rating": "6.75",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 2,
+            "out": 2,
+            "bench": 3
+          },
+          "shots": {
+            "total": 2,
+            "on": 1
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 82,
+            "key": 4,
+            "accuracy": 85
+          },
+          "tackles": {
+            "total": 3,
+            "blocks": 1,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 8,
+            "won": 3
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": 3
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 299,
+        "name": "Fabinho",
+        "firstname": "Fábio Henrique",
+        "lastname": "Tavares",
+        "age": 32,
+        "birth": {
+          "date": "1993-10-23",
+          "place": "Campinas",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "188",
+        "weight": "78",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/299.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 1,
+            "lineups": 1,
+            "minutes": 90,
+            "number": 15,
+            "position": "Midfielder",
+            "rating": "7",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 4
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 57,
+            "key": null,
+            "accuracy": 89
+          },
+          "tackles": {
+            "total": 3,
+            "blocks": null,
+            "interceptions": 1
+          },
+          "duels": {
+            "total": 12,
+            "won": 4
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": 2
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 127769,
+        "name": "Gabriel Martinelli",
+        "firstname": "Gabriel Teodoro",
+        "lastname": "Martinelli Silva",
+        "age": 24,
+        "birth": {
+          "date": "2001-06-18",
+          "place": "Guarulhos",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "178",
+        "weight": "75",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/127769.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 3,
+            "lineups": 1,
+            "minutes": 119,
+            "number": 26,
+            "position": "Attacker",
+            "rating": "6.43",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 2,
+            "out": 0,
+            "bench": 4
+          },
+          "shots": {
+            "total": 4,
+            "on": 3
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 36,
+            "key": 3,
+            "accuracy": 80
+          },
+          "tackles": {
+            "total": 2,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 19,
+            "won": 8
+          },
+          "dribbles": {
+            "attempts": 7,
+            "success": 3,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 3,
+            "committed": 2
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 10135,
+        "name": "Bruno Guimarães",
+        "firstname": "Bruno",
+        "lastname": "Guimarães Rodriguez Moura",
+        "age": 28,
+        "birth": {
+          "date": "1997-11-16",
+          "place": "Rio de Janeiro",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "182",
+        "weight": "74",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/10135.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 2,
+            "lineups": 0,
+            "minutes": 67,
+            "number": 17,
+            "position": "Midfielder",
+            "rating": "6.45",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 2,
+            "out": 0,
+            "bench": 5
+          },
+          "shots": {
+            "total": 4,
+            "on": 2
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 50,
+            "key": null,
+            "accuracy": 84
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 9,
+            "won": 5
+          },
+          "dribbles": {
+            "attempts": 2,
+            "success": 2,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 2,
+            "committed": 2
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 10168,
+        "name": "Éverton Ribeiro",
+        "firstname": "Éverton Augusto",
+        "lastname": "de Barros Ribeiro",
+        "age": 36,
+        "birth": {
+          "date": "1989-04-10",
+          "place": "Arujá",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "171",
+        "weight": "68",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/10168.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 1,
+            "lineups": 0,
+            "minutes": 35,
+            "number": 22,
+            "position": "Midfielder",
+            "rating": "6.7",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 0,
+            "bench": 5
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 16,
+            "key": 2,
+            "accuracy": 87
+          },
+          "tackles": {
+            "total": 1,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 3,
+            "won": 1
+          },
+          "dribbles": {
+            "attempts": 1,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 9971,
+        "name": "Antony",
+        "firstname": "Antony Matheus",
+        "lastname": "dos Santos",
+        "age": 25,
+        "birth": {
+          "date": "2000-02-24",
+          "place": "Osasco",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "174",
+        "weight": "63",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/9971.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 1,
+            "minutes": 170,
+            "number": 19,
+            "position": "Attacker",
+            "rating": "6.78",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 3,
+            "out": 1,
+            "bench": 4
+          },
+          "shots": {
+            "total": 6,
+            "on": 2
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 99,
+            "key": 3,
+            "accuracy": 86
+          },
+          "tackles": {
+            "total": 3,
+            "blocks": null,
+            "interceptions": 1
+          },
+          "duels": {
+            "total": 32,
+            "won": 13
+          },
+          "dribbles": {
+            "attempts": 13,
+            "success": 4,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 5,
+            "committed": 2
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 10009,
+        "name": "Rodrygo",
+        "firstname": "Rodrygo",
+        "lastname": "Silva de Goes",
+        "age": 24,
+        "birth": {
+          "date": "2001-01-09",
+          "place": "Osasco",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "174",
+        "weight": "64",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/10009.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 5,
+            "lineups": 1,
+            "minutes": 179,
+            "number": 21,
+            "position": "Attacker",
+            "rating": "6.68",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 4,
+            "out": 1,
+            "bench": 4
+          },
+          "shots": {
+            "total": 4,
+            "on": 2
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 101,
+            "key": 6,
+            "accuracy": 86
+          },
+          "tackles": {
+            "total": 4,
+            "blocks": 1,
+            "interceptions": 2
+          },
+          "duels": {
+            "total": 30,
+            "won": 12
+          },
+          "dribbles": {
+            "attempts": 7,
+            "success": 2,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 6,
+            "committed": 3
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 10321,
+        "name": "Pedro",
+        "firstname": "Pedro Guilherme",
+        "lastname": "Abreu dos Santos",
+        "age": 28,
+        "birth": {
+          "date": "1997-06-20",
+          "place": "Rio de Janeiro",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "185",
+        "weight": "78",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/10321.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 2,
+            "lineups": 0,
+            "minutes": 62,
+            "number": 25,
+            "position": "Attacker",
+            "rating": "6.75",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 2,
+            "out": 0,
+            "bench": 5
+          },
+          "shots": {
+            "total": 4,
+            "on": 1
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 13,
+            "key": null,
+            "accuracy": 76
+          },
+          "tackles": {
+            "total": 2,
+            "blocks": null,
+            "interceptions": 1
+          },
+          "duels": {
+            "total": 7,
+            "won": 3
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 1,
+            "committed": 2
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 643,
+        "name": "Gabriel Jesus",
+        "firstname": "Gabriel Fernando",
+        "lastname": "de Jesus",
+        "age": 28,
+        "birth": {
+          "date": "1997-04-03",
+          "place": "São Paulo",
+          "country": "Brazil"
+        },
+        "nationality": "Brazil",
+        "height": "175",
+        "weight": "73",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/643.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 6,
+            "name": "Brazil",
+            "logo": "https://media.api-sports.io/football/teams/6.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 3,
+            "lineups": 1,
+            "minutes": 92,
+            "number": 18,
+            "position": "Attacker",
+            "rating": "6.9",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 2,
+            "out": 1,
+            "bench": 2
+          },
+          "shots": {
+            "total": 2,
+            "on": 1
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 26,
+            "key": 4,
+            "accuracy": 80
+          },
+          "tackles": {
+            "total": 2,
+            "blocks": null,
+            "interceptions": 2
+          },
+          "duels": {
+            "total": 11,
+            "won": 8
+          },
+          "dribbles": {
+            "attempts": 2,
+            "success": 1,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 4,
+            "committed": 1
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    }
+  ]
+}

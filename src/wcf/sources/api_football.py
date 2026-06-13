@@ -9,11 +9,17 @@ ni pagando. Mientras tanto, la fuente del torneo es FIFA (sources/fifa_fantasy.p
 Free tier: ~100 requests/día — cachear agresivo y no refrescar lo que no cambia.
 """
 
+import time
+
 import requests
 
 from ..config import API_FOOTBALL_KEY, API_FOOTBALL_LEAGUE_ID, SEASON
 
 BASE_URL = "https://v3.football.api-sports.io"
+
+# Free tier: ~10 requests/min. Espaciamos las llamadas para no chocar el rate limit (429).
+MIN_INTERVAL = 7.0
+_last_request = 0.0
 
 
 class ApiFootballError(RuntimeError):
@@ -21,14 +27,26 @@ class ApiFootballError(RuntimeError):
 
 
 def _get(endpoint: str, **params) -> dict:
+    global _last_request
     if not API_FOOTBALL_KEY:
         raise ApiFootballError("Falta API_FOOTBALL_KEY en .env (plantilla en .env.example)")
-    resp = requests.get(
-        f"{BASE_URL}/{endpoint}",
-        headers={"x-apisports-key": API_FOOTBALL_KEY},
-        params=params,
-        timeout=30,
-    )
+
+    for attempt in range(4):
+        wait = MIN_INTERVAL - (time.monotonic() - _last_request)
+        if wait > 0:
+            time.sleep(wait)
+        resp = requests.get(
+            f"{BASE_URL}/{endpoint}",
+            headers={"x-apisports-key": API_FOOTBALL_KEY},
+            params=params,
+            timeout=30,
+        )
+        _last_request = time.monotonic()
+        if resp.status_code == 429:  # rate limited → backoff y reintento
+            time.sleep(10 * (attempt + 1))
+            continue
+        break
+
     resp.raise_for_status()
     body = resp.json()
     if body.get("errors"):
@@ -60,3 +78,15 @@ def players(page: int = 1) -> dict:
 def odds(fixture_id: int) -> dict:
     """Cuotas por fixture (P2, P4)."""
     return _get("odds", fixture=fixture_id)
+
+
+# --- Histórico accesible en el free tier (2022-2024): priors de baja confianza (P3/P7/P8) ---
+
+def wc2022_teams() -> dict:
+    """Las 32 selecciones del Mundial 2022 con sus team-ids (1 request). Mapa nación→id."""
+    return _get("teams", league=API_FOOTBALL_LEAGUE_ID, season=2022)
+
+
+def team_player_stats(team_id: int, season: int = 2022, page: int = 1) -> dict:
+    """Stats por jugador de una selección en una temporada histórica (acotado por equipo)."""
+    return _get("players", team=team_id, league=API_FOOTBALL_LEAGUE_ID, season=season, page=page)

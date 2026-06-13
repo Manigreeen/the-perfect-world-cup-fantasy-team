@@ -1,0 +1,2476 @@
+{
+  "nation": "Netherlands",
+  "team_id": 1118,
+  "players": [
+    {
+      "player": {
+        "id": 31632,
+        "name": "A. Noppert",
+        "firstname": "Andries",
+        "lastname": "Noppert",
+        "age": 31,
+        "birth": {
+          "date": "1994-04-07",
+          "place": "Heerenveen",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "203",
+        "weight": "94",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/31632.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 5,
+            "lineups": 5,
+            "minutes": 480,
+            "number": 23,
+            "position": "Goalkeeper",
+            "rating": "7.3",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 0
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 4,
+            "assists": 0,
+            "saves": 18
+          },
+          "passes": {
+            "total": 158,
+            "key": null,
+            "accuracy": 77
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": null,
+            "won": null
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": 0
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 532,
+        "name": "M. de Ligt",
+        "firstname": "Matthijs",
+        "lastname": "de Ligt",
+        "age": 26,
+        "birth": {
+          "date": "1999-08-12",
+          "place": "Leiderdorp",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "187",
+        "weight": "89",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/532.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 2,
+            "lineups": 1,
+            "minutes": 91,
+            "number": 3,
+            "position": "Defender",
+            "rating": "6.9",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 0,
+            "bench": 4
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 45,
+            "key": null,
+            "accuracy": 91
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 13,
+            "won": 6
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 1,
+            "committed": 4
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 290,
+        "name": "V. van Dijk",
+        "firstname": "Virgil",
+        "lastname": "van Dijk",
+        "age": 34,
+        "birth": {
+          "date": "1991-07-08",
+          "place": "Breda",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "195",
+        "weight": "92",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/290.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 5,
+            "lineups": 5,
+            "minutes": 480,
+            "number": 4,
+            "position": "Defender",
+            "rating": "7.1",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 0
+          },
+          "shots": {
+            "total": 3,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 355,
+            "key": 2,
+            "accuracy": 87
+          },
+          "tackles": {
+            "total": 2,
+            "blocks": 7,
+            "interceptions": 4
+          },
+          "duels": {
+            "total": 31,
+            "won": 17
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 2,
+            "committed": 5
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 18861,
+        "name": "N. Aké",
+        "firstname": "Nathan Benjamin",
+        "lastname": "Aké",
+        "age": 30,
+        "birth": {
+          "date": "1995-02-18",
+          "place": "Den Haag",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "180",
+        "weight": "75",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/18861.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 5,
+            "lineups": 5,
+            "minutes": 479,
+            "number": 5,
+            "position": "Defender",
+            "rating": "7",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 1,
+            "bench": 0
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 338,
+            "key": null,
+            "accuracy": 89
+          },
+          "tackles": {
+            "total": 6,
+            "blocks": 2,
+            "interceptions": 8
+          },
+          "duels": {
+            "total": 38,
+            "won": 22
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 6,
+            "committed": 4
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 226,
+        "name": "D. Dumfries",
+        "firstname": "Denzel Justus Morris",
+        "lastname": "Dumfries",
+        "age": 29,
+        "birth": {
+          "date": "1996-04-18",
+          "place": "Rotterdam",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "188",
+        "weight": "80",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/226.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 5,
+            "lineups": 5,
+            "minutes": 480,
+            "number": 22,
+            "position": "Midfielder",
+            "rating": "6.88",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 0
+          },
+          "shots": {
+            "total": 1,
+            "on": 1
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 2,
+            "saves": null
+          },
+          "passes": {
+            "total": 159,
+            "key": 2,
+            "accuracy": 71
+          },
+          "tackles": {
+            "total": 8,
+            "blocks": 1,
+            "interceptions": 7
+          },
+          "duels": {
+            "total": 65,
+            "won": 24
+          },
+          "dribbles": {
+            "attempts": 6,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 7,
+            "committed": 17
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 1,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": 1,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 37160,
+        "name": "S. Berghuis",
+        "firstname": "Steven",
+        "lastname": "Berghuis",
+        "age": 34,
+        "birth": {
+          "date": "1991-12-19",
+          "place": "Apeldoorn",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "182",
+        "weight": "75",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/37160.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 1,
+            "minutes": 199,
+            "number": 11,
+            "position": "Midfielder",
+            "rating": "6.58",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 3,
+            "out": 1,
+            "bench": 4
+          },
+          "shots": {
+            "total": 2,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 116,
+            "key": 2,
+            "accuracy": 80
+          },
+          "tackles": {
+            "total": 2,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 15,
+            "won": 4
+          },
+          "dribbles": {
+            "attempts": 4,
+            "success": 1,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": 4
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 538,
+        "name": "F. de Jong",
+        "firstname": "Frenkie",
+        "lastname": "de Jong",
+        "age": 28,
+        "birth": {
+          "date": "1997-05-12",
+          "place": "Arkel",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "182",
+        "weight": "75",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/538.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 5,
+            "lineups": 5,
+            "minutes": 476,
+            "number": 21,
+            "position": "Midfielder",
+            "rating": "7.32",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 1,
+            "bench": 0
+          },
+          "shots": {
+            "total": 1,
+            "on": 1
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 358,
+            "key": 4,
+            "accuracy": 89
+          },
+          "tackles": {
+            "total": 12,
+            "blocks": 3,
+            "interceptions": 6
+          },
+          "duels": {
+            "total": 42,
+            "won": 29
+          },
+          "dribbles": {
+            "attempts": 6,
+            "success": 3,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 6,
+            "committed": 4
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 531,
+        "name": "D. Blind",
+        "firstname": "Daley",
+        "lastname": "Blind",
+        "age": 35,
+        "birth": {
+          "date": "1990-03-09",
+          "place": "Amsterdam",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "180",
+        "weight": "72",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/531.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 5,
+            "lineups": 5,
+            "minutes": 424,
+            "number": 17,
+            "position": "Midfielder",
+            "rating": "7.44",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 1,
+            "bench": 0
+          },
+          "shots": {
+            "total": 5,
+            "on": 2
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 265,
+            "key": 2,
+            "accuracy": 84
+          },
+          "tackles": {
+            "total": 14,
+            "blocks": 1,
+            "interceptions": 5
+          },
+          "duels": {
+            "total": 36,
+            "won": 21
+          },
+          "dribbles": {
+            "attempts": 2,
+            "success": 1,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 1,
+            "committed": 3
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 247,
+        "name": "C. Gakpo",
+        "firstname": "Cody Mathès",
+        "lastname": "Gakpo",
+        "age": 26,
+        "birth": {
+          "date": "1999-05-07",
+          "place": "Eindhoven",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "193",
+        "weight": "76",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/247.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 5,
+            "lineups": 5,
+            "minutes": 453,
+            "number": 8,
+            "position": "Attacker",
+            "rating": "7.48",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 5,
+            "bench": 0
+          },
+          "shots": {
+            "total": 3,
+            "on": 3
+          },
+          "goals": {
+            "total": 3,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 110,
+            "key": 10,
+            "accuracy": 73
+          },
+          "tackles": {
+            "total": 8,
+            "blocks": 1,
+            "interceptions": 3
+          },
+          "duels": {
+            "total": 50,
+            "won": 23
+          },
+          "dribbles": {
+            "attempts": 10,
+            "success": 5,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 5,
+            "committed": 8
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 183,
+        "name": "V. Janssen",
+        "firstname": "Vincent",
+        "lastname": "Janssen",
+        "age": 31,
+        "birth": {
+          "date": "1994-06-15",
+          "place": "Heesch",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "184",
+        "weight": "79",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/183.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 2,
+            "lineups": 1,
+            "minutes": 86,
+            "number": 18,
+            "position": "Attacker",
+            "rating": "6.65",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 1,
+            "bench": 4
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 20,
+            "key": 1,
+            "accuracy": 80
+          },
+          "tackles": {
+            "total": 2,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 11,
+            "won": 6
+          },
+          "dribbles": {
+            "attempts": 1,
+            "success": 1,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 2,
+            "committed": 2
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 244,
+        "name": "S. Bergwijn",
+        "firstname": "Steven Charles",
+        "lastname": "Bergwijn",
+        "age": 28,
+        "birth": {
+          "date": "1997-10-08",
+          "place": "Amsterdam",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "171",
+        "weight": "74",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/244.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 3,
+            "minutes": 214,
+            "number": 7,
+            "position": "Attacker",
+            "rating": "6.58",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 3,
+            "bench": 2
+          },
+          "shots": {
+            "total": 2,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 71,
+            "key": null,
+            "accuracy": 88
+          },
+          "tackles": {
+            "total": 1,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 13,
+            "won": 6
+          },
+          "dribbles": {
+            "attempts": 3,
+            "success": 1,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 4,
+            "committed": 2
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 37113,
+        "name": "R. Pasveer",
+        "firstname": "Remko Jurian",
+        "lastname": "Pasveer",
+        "age": 42,
+        "birth": {
+          "date": "1983-11-08",
+          "place": "Enschede",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "188",
+        "weight": "88",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/37113.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 0,
+            "lineups": 0,
+            "minutes": null,
+            "number": 1,
+            "position": "Goalkeeper",
+            "rating": null,
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 5
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": null,
+            "key": null,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": null,
+            "won": null
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 37137,
+        "name": "J. Bijlow",
+        "firstname": "Justin",
+        "lastname": "Bijlow",
+        "age": 27,
+        "birth": {
+          "date": "1998-01-22",
+          "place": "Rotterdam",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "188",
+        "weight": "76",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/37137.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 0,
+            "lineups": 0,
+            "minutes": null,
+            "number": 13,
+            "position": "Goalkeeper",
+            "rating": null,
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 5
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": null,
+            "key": null,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": null,
+            "won": null
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 38746,
+        "name": "J. Timber",
+        "firstname": "Jurriën David Norman",
+        "lastname": "Timber",
+        "age": 24,
+        "birth": {
+          "date": "2001-06-17",
+          "place": "Utrecht",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "179",
+        "weight": "79",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/38746.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 4,
+            "minutes": 390,
+            "number": 2,
+            "position": "Defender",
+            "rating": "6.95",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 1
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 307,
+            "key": null,
+            "accuracy": 90
+          },
+          "tackles": {
+            "total": 12,
+            "blocks": null,
+            "interceptions": 10
+          },
+          "duels": {
+            "total": 46,
+            "won": 24
+          },
+          "dribbles": {
+            "attempts": 5,
+            "success": 4,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 4,
+            "committed": 17
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 152654,
+        "name": "J. Frimpong",
+        "firstname": "Jeremie Agyekum",
+        "lastname": "Frimpong",
+        "age": 25,
+        "birth": {
+          "date": "2000-12-10",
+          "place": "Amsterdam",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "171",
+        "weight": "63",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/152654.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 0,
+            "lineups": 0,
+            "minutes": null,
+            "number": 26,
+            "position": "Defender",
+            "rating": null,
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 5
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": null,
+            "key": null,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": null,
+            "won": null
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 37145,
+        "name": "T. Malacia",
+        "firstname": "Tyrell Johannes Chicco",
+        "lastname": "Malacia",
+        "age": 26,
+        "birth": {
+          "date": "1999-08-17",
+          "place": "Rotterdam",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "170",
+        "weight": "67",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/37145.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 0,
+            "lineups": 0,
+            "minutes": null,
+            "number": 16,
+            "position": "Defender",
+            "rating": null,
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 5
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": null,
+            "key": null,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": null,
+            "won": null
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 194,
+        "name": "S. de Vrij",
+        "firstname": "Stefan",
+        "lastname": "de Vrij",
+        "age": 33,
+        "birth": {
+          "date": "1992-02-05",
+          "place": "Ouderkerk aan den IJssel",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "190",
+        "weight": "78",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/194.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 0,
+            "lineups": 0,
+            "minutes": null,
+            "number": 6,
+            "position": "Defender",
+            "rating": null,
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 5
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": null,
+            "key": null,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": null,
+            "won": null
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 30432,
+        "name": "M. de Roon",
+        "firstname": "Marten Elco",
+        "lastname": "de Roon",
+        "age": 34,
+        "birth": {
+          "date": "1991-03-29",
+          "place": "Zwijndrecht",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "186",
+        "weight": "76",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/30432.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 5,
+            "lineups": 3,
+            "minutes": 185,
+            "number": 15,
+            "position": "Midfielder",
+            "rating": "6.75",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 2,
+            "out": 3,
+            "bench": 2
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 117,
+            "key": null,
+            "accuracy": 82
+          },
+          "tackles": {
+            "total": 7,
+            "blocks": null,
+            "interceptions": 2
+          },
+          "duels": {
+            "total": 21,
+            "won": 11
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": 3
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 162016,
+        "name": "X. Simons",
+        "firstname": "Xavier Quentin Shay",
+        "lastname": "Simons",
+        "age": 22,
+        "birth": {
+          "date": "2003-04-21",
+          "place": "Amsterdam",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "179",
+        "weight": "58",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/162016.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 1,
+            "lineups": 0,
+            "minutes": 14,
+            "number": 25,
+            "position": "Midfielder",
+            "rating": "6.6",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 0,
+            "bench": 5
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 10,
+            "key": null,
+            "accuracy": 60
+          },
+          "tackles": {
+            "total": 1,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 4,
+            "won": 3
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 1,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 38749,
+        "name": "K. Taylor",
+        "firstname": "Kenneth",
+        "lastname": "Taylor",
+        "age": 23,
+        "birth": {
+          "date": "2002-05-16",
+          "place": "Alkmaar",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "182",
+        "weight": "75",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/38749.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 1,
+            "lineups": 0,
+            "minutes": 11,
+            "number": 24,
+            "position": "Midfielder",
+            "rating": "6.7",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 0,
+            "bench": 5
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 8,
+            "key": null,
+            "accuracy": 100
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": null,
+            "won": null
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 25321,
+        "name": "D. Klaassen",
+        "firstname": "Davy",
+        "lastname": "Klaassen",
+        "age": 32,
+        "birth": {
+          "date": "1993-02-21",
+          "place": "Hilversum",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "179",
+        "weight": "70",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/25321.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 3,
+            "minutes": 191,
+            "number": 14,
+            "position": "Midfielder",
+            "rating": "7.08",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 3,
+            "bench": 2
+          },
+          "shots": {
+            "total": 2,
+            "on": 1
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 2,
+            "saves": null
+          },
+          "passes": {
+            "total": 75,
+            "key": 4,
+            "accuracy": 78
+          },
+          "tackles": {
+            "total": 3,
+            "blocks": null,
+            "interceptions": 1
+          },
+          "duels": {
+            "total": 15,
+            "won": 8
+          },
+          "dribbles": {
+            "attempts": 1,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 3,
+            "committed": 1
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 36899,
+        "name": "T. Koopmeiners",
+        "firstname": "Teun",
+        "lastname": "Koopmeiners",
+        "age": 27,
+        "birth": {
+          "date": "1998-02-28",
+          "place": "Amsterdam",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "184",
+        "weight": "77",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/36899.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 5,
+            "lineups": 1,
+            "minutes": 224,
+            "number": 20,
+            "position": "Midfielder",
+            "rating": "6.64",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 4,
+            "out": 1,
+            "bench": 4
+          },
+          "shots": {
+            "total": 2,
+            "on": 1
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 114,
+            "key": 2,
+            "accuracy": 78
+          },
+          "tackles": {
+            "total": 10,
+            "blocks": 1,
+            "interceptions": 4
+          },
+          "duels": {
+            "total": 32,
+            "won": 16
+          },
+          "dribbles": {
+            "attempts": 1,
+            "success": 1,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 1,
+            "committed": 6
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 25416,
+        "name": "W. Weghorst",
+        "firstname": "Wout",
+        "lastname": "Weghorst",
+        "age": 33,
+        "birth": {
+          "date": "1992-08-07",
+          "place": "Borne",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "197",
+        "weight": "84",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/25416.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 0,
+            "minutes": 61,
+            "number": 19,
+            "position": "Attacker",
+            "rating": "6.97",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 4,
+            "out": 0,
+            "bench": 5
+          },
+          "shots": {
+            "total": 2,
+            "on": 2
+          },
+          "goals": {
+            "total": 2,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 15,
+            "key": 1,
+            "accuracy": 60
+          },
+          "tackles": {
+            "total": null,
+            "blocks": 1,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 10,
+            "won": 3
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 1,
+            "committed": 5
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 246,
+        "name": "L. de Jong",
+        "firstname": "Luuk",
+        "lastname": "de Jong",
+        "age": 35,
+        "birth": {
+          "date": "1990-08-27",
+          "place": "Aigle",
+          "country": "Switzerland"
+        },
+        "nationality": "Netherlands",
+        "height": "188",
+        "weight": "86",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/246.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 1,
+            "lineups": 0,
+            "minutes": 56,
+            "number": 9,
+            "position": "Attacker",
+            "rating": "6.9",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 0,
+            "bench": 5
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 12,
+            "key": null,
+            "accuracy": 66
+          },
+          "tackles": {
+            "total": 2,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 12,
+            "won": 6
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 1,
+            "committed": 1
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 544,
+        "name": "N. Lang",
+        "firstname": "Noa Noëll",
+        "lastname": "Lang",
+        "age": 26,
+        "birth": {
+          "date": "1999-06-17",
+          "place": "Capelle aan den IJssel",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "173",
+        "weight": "70",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/544.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 1,
+            "lineups": 0,
+            "minutes": 9,
+            "number": 12,
+            "position": "Attacker",
+            "rating": "6.9",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 0,
+            "bench": 5
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 2,
+            "key": null,
+            "accuracy": 50
+          },
+          "tackles": {
+            "total": null,
+            "blocks": 1,
+            "interceptions": 1
+          },
+          "duels": {
+            "total": 1,
+            "won": null
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 667,
+        "name": "M. Depay",
+        "firstname": "Memphis",
+        "lastname": "Depay",
+        "age": 31,
+        "birth": {
+          "date": "1994-02-13",
+          "place": "Moordrecht",
+          "country": "Netherlands"
+        },
+        "nationality": "Netherlands",
+        "height": "178",
+        "weight": "78",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/667.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 1118,
+            "name": "Netherlands",
+            "logo": "https://media.api-sports.io/football/teams/1118.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 5,
+            "lineups": 3,
+            "minutes": 300,
+            "number": 10,
+            "position": "Attacker",
+            "rating": "6.62",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 2,
+            "out": 3,
+            "bench": 2
+          },
+          "shots": {
+            "total": 9,
+            "on": 5
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 118,
+            "key": 3,
+            "accuracy": 77
+          },
+          "tackles": {
+            "total": 1,
+            "blocks": null,
+            "interceptions": 1
+          },
+          "duels": {
+            "total": 32,
+            "won": 10
+          },
+          "dribbles": {
+            "attempts": 9,
+            "success": 2,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 5,
+            "committed": 1
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    }
+  ]
+}

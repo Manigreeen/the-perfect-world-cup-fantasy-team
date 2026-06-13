@@ -3,7 +3,7 @@
 import argparse
 import sys
 
-from . import myteam, pool, store
+from . import historical, myteam, pool, store
 from .config import ROUND_LABELS
 from .sources import api_football, fifa_fantasy
 
@@ -95,6 +95,43 @@ def cmd_matchups(_args) -> None:
               f"own {row['ownership']}%{scout}")
 
 
+def cmd_history(args) -> None:
+    """Baja priors históricos (WC2022) de las selecciones vivas, acotado y resumible."""
+    try:
+        summary = historical.run_fetch(max_requests=args.max_requests)
+    except api_football.ApiFootballError as exc:
+        sys.exit(f"error: {exc}")
+    print(f"Bajadas {len(summary['fetched'])} selecciones · ya cacheadas {summary['skipped_cached']} "
+          f"· requests usados {summary['requests_used']}")
+    if summary["fetched"]:
+        print("  nuevas: " + ", ".join(summary["fetched"]))
+    if summary["missing_from_2022"]:
+        print(f"  sin histórico WC2022 ({len(summary['missing_from_2022'])}, usan prior por defecto): "
+              + ", ".join(summary["missing_from_2022"]))
+    if summary["stopped_early"]:
+        print("  ⚠ corte por tope de quota — corre `wcf history` de nuevo mañana para continuar")
+
+    # Feedback: cobertura de priors sobre mi propio squad
+    index = historical.build_priors()
+    if not index:
+        return
+    print("\nPriors de mi squad (tasas por-90 del WC2022):")
+    squad_names = {sid: s["name"] for sid, s in pool.load_squads().items()}
+    _, players = pool.load_players()
+    for row in myteam.parse_my_team():
+        p = myteam.find_player(row, players, squad_names)
+        if not p:
+            continue
+        nation = squad_names.get(p["squadId"], "")
+        pr = historical.prior_for(p["firstName"], p["lastName"], nation, index)
+        name = p.get("knownName") or f"{p['firstName']} {p['lastName']}"
+        if pr:
+            print(f"  {name:<20} tiros/90={pr['shots90']:<5} keyp/90={pr['key_passes90']:<5} "
+                  f"tackles/90={pr['tackles90']:<5} GI/90={pr['goal_involvement90']:<5} ({pr['minutes']}min)")
+        else:
+            print(f"  {name:<20} — sin histórico WC2022 (prior por defecto)")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(prog="wcf", description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
@@ -108,6 +145,8 @@ def main() -> None:
     sub.add_parser("rounds", help="Rondas con lockouts reales y fixtures, desde play.fifa.com")
     sub.add_parser("myteam", help="Valida data/my-team.md contra el último snapshot del pool")
     sub.add_parser("matchups", help="Fixtures de la próxima ronda para tu squad (rival, horario, ownership)")
+    p_hist = sub.add_parser("history", help="Baja priors históricos (WC2022) de selecciones vivas — acotado, resumible")
+    p_hist.add_argument("--max-requests", type=int, default=80, help="tope de requests por corrida (quota free: 100/día)")
 
     args = parser.parse_args()
     handler = {
@@ -119,6 +158,7 @@ def main() -> None:
         "rounds": cmd_rounds,
         "myteam": cmd_myteam,
         "matchups": cmd_matchups,
+        "history": cmd_history,
     }[args.command]
     try:
         handler(args)

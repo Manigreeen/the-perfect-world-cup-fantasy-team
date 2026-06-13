@@ -1,0 +1,2381 @@
+{
+  "nation": "France",
+  "team_id": 2,
+  "players": [
+    {
+      "player": {
+        "id": 159,
+        "name": "H. Lloris",
+        "firstname": "Hugo Hadrien Dominique",
+        "lastname": "Lloris",
+        "age": 39,
+        "birth": {
+          "date": "1986-12-26",
+          "place": "Nice",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "188",
+        "weight": "82",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/159.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 6,
+            "lineups": 6,
+            "minutes": 570,
+            "number": 1,
+            "position": "Goalkeeper",
+            "rating": "6.9",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 1
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 7,
+            "assists": 0,
+            "saves": 17
+          },
+          "passes": {
+            "total": 159,
+            "key": null,
+            "accuracy": 55
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 4,
+            "won": 4
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 1,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": 0
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 1257,
+        "name": "J. Koundé",
+        "firstname": "Jules Olivier",
+        "lastname": "Koundé",
+        "age": 27,
+        "birth": {
+          "date": "1998-11-12",
+          "place": "Paris",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "181",
+        "weight": "84",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/1257.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 6,
+            "lineups": 5,
+            "minutes": 487,
+            "number": 5,
+            "position": "Defender",
+            "rating": "6.95",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 2,
+            "bench": 2
+          },
+          "shots": {
+            "total": 2,
+            "on": 2
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 263,
+            "key": 1,
+            "accuracy": 82
+          },
+          "tackles": {
+            "total": 11,
+            "blocks": 4,
+            "interceptions": 5
+          },
+          "duels": {
+            "total": 41,
+            "won": 21
+          },
+          "dribbles": {
+            "attempts": 3,
+            "success": 3,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 2,
+            "committed": 4
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 742,
+        "name": "R. Varane",
+        "firstname": "Raphaël Xavier",
+        "lastname": "Varane",
+        "age": 31,
+        "birth": {
+          "date": "1993-04-25",
+          "place": "Lille",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "191 cm",
+        "weight": "81 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/742.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 6,
+            "lineups": 6,
+            "minutes": 521,
+            "number": 4,
+            "position": "Defender",
+            "rating": "6.72",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 3,
+            "bench": 1
+          },
+          "shots": {
+            "total": 3,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 284,
+            "key": null,
+            "accuracy": 89
+          },
+          "tackles": {
+            "total": 1,
+            "blocks": 3,
+            "interceptions": 6
+          },
+          "duels": {
+            "total": 15,
+            "won": 7
+          },
+          "dribbles": {
+            "attempts": 1,
+            "success": 1,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 1,
+            "committed": 1
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 1149,
+        "name": "D. Upamecano",
+        "firstname": "Dayotchanculle Oswald",
+        "lastname": "Upamecano",
+        "age": 27,
+        "birth": {
+          "date": "1998-10-27",
+          "place": "Evreux",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "186",
+        "weight": "90",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/1149.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 5,
+            "lineups": 5,
+            "minutes": 480,
+            "number": 18,
+            "position": "Midfielder",
+            "rating": "7.08",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 2
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 348,
+            "key": 2,
+            "accuracy": 89
+          },
+          "tackles": {
+            "total": 11,
+            "blocks": 4,
+            "interceptions": 6
+          },
+          "duels": {
+            "total": 32,
+            "won": 21
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 3,
+            "committed": 4
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": 1,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 47300,
+        "name": "T. Hernández",
+        "firstname": "Théo Bernard François",
+        "lastname": "Hernández",
+        "age": 28,
+        "birth": {
+          "date": "1997-10-06",
+          "place": "Marseille",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "184",
+        "weight": "81",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/47300.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 6,
+            "lineups": 5,
+            "minutes": 508,
+            "number": 22,
+            "position": "Defender",
+            "rating": "7.32",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 1,
+            "bench": 2
+          },
+          "shots": {
+            "total": 5,
+            "on": 2
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 2,
+            "saves": null
+          },
+          "passes": {
+            "total": 280,
+            "key": 11,
+            "accuracy": 86
+          },
+          "tackles": {
+            "total": 16,
+            "blocks": 2,
+            "interceptions": 4
+          },
+          "duels": {
+            "total": 59,
+            "won": 39
+          },
+          "dribbles": {
+            "attempts": 2,
+            "success": 2,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 13,
+            "committed": 6
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": 1,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 1271,
+        "name": "A. Tchouaméni",
+        "firstname": "Aurélien Djani",
+        "lastname": "Tchouaméni",
+        "age": 25,
+        "birth": {
+          "date": "2000-01-27",
+          "place": "Rouen",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "187",
+        "weight": "81",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/1271.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 7,
+            "lineups": 7,
+            "minutes": 623,
+            "number": 8,
+            "position": "Midfielder",
+            "rating": "7.01",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 2,
+            "bench": 0
+          },
+          "shots": {
+            "total": 2,
+            "on": 2
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 468,
+            "key": 6,
+            "accuracy": 90
+          },
+          "tackles": {
+            "total": 11,
+            "blocks": 1,
+            "interceptions": 14
+          },
+          "duels": {
+            "total": 45,
+            "won": 29
+          },
+          "dribbles": {
+            "attempts": 5,
+            "success": 3,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 10,
+            "committed": 8
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": 1,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 272,
+        "name": "A. Rabiot",
+        "firstname": "Adrien Thibault Marie",
+        "lastname": "Rabiot-Provost",
+        "age": 30,
+        "birth": {
+          "date": "1995-04-03",
+          "place": "Saint-Maurice",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "188",
+        "weight": "72",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/272.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 6,
+            "lineups": 5,
+            "minutes": 483,
+            "number": 14,
+            "position": "Defender",
+            "rating": "7.12",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 1,
+            "bench": 1
+          },
+          "shots": {
+            "total": 7,
+            "on": 4
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 274,
+            "key": 3,
+            "accuracy": 85
+          },
+          "tackles": {
+            "total": 12,
+            "blocks": 2,
+            "interceptions": 10
+          },
+          "duels": {
+            "total": 63,
+            "won": 33
+          },
+          "dribbles": {
+            "attempts": 4,
+            "success": 2,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 4,
+            "committed": 10
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 153,
+        "name": "O. Dembélé",
+        "firstname": "Masour Ousmane",
+        "lastname": "Dembélé",
+        "age": 28,
+        "birth": {
+          "date": "1997-05-15",
+          "place": "Vernon",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "178",
+        "weight": "67",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/153.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 7,
+            "lineups": 6,
+            "minutes": 438,
+            "number": 11,
+            "position": "Midfielder",
+            "rating": "6.86",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 6,
+            "bench": 1
+          },
+          "shots": {
+            "total": 3,
+            "on": 2
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 2,
+            "saves": null
+          },
+          "passes": {
+            "total": 171,
+            "key": 11,
+            "accuracy": 80
+          },
+          "tackles": {
+            "total": 11,
+            "blocks": null,
+            "interceptions": 2
+          },
+          "duels": {
+            "total": 52,
+            "won": 25
+          },
+          "dribbles": {
+            "attempts": 20,
+            "success": 9,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 3,
+            "committed": 6
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": 1,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 56,
+        "name": "A. Griezmann",
+        "firstname": "Antoine",
+        "lastname": "Griezmann",
+        "age": 34,
+        "birth": {
+          "date": "1991-03-21",
+          "place": "Mâcon",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "176",
+        "weight": "73",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/56.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 7,
+            "lineups": 6,
+            "minutes": 537,
+            "number": 7,
+            "position": "Midfielder",
+            "rating": "7.7",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 2,
+            "bench": 1
+          },
+          "shots": {
+            "total": 5,
+            "on": 3
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 3,
+            "saves": null
+          },
+          "passes": {
+            "total": 285,
+            "key": 22,
+            "accuracy": 83
+          },
+          "tackles": {
+            "total": 14,
+            "blocks": 3,
+            "interceptions": 8
+          },
+          "duels": {
+            "total": 55,
+            "won": 32
+          },
+          "dribbles": {
+            "attempts": 9,
+            "success": 4,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 9,
+            "committed": 3
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 278,
+        "name": "Kylian Mbappé",
+        "firstname": "Kylian",
+        "lastname": "Mbappé Lottin",
+        "age": 27,
+        "birth": {
+          "date": "1998-12-20",
+          "place": "Paris",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "178",
+        "weight": "75",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/278.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 7,
+            "lineups": 6,
+            "minutes": 597,
+            "number": 10,
+            "position": "Midfielder",
+            "rating": "7.61",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 0,
+            "bench": 1
+          },
+          "shots": {
+            "total": 21,
+            "on": 14
+          },
+          "goals": {
+            "total": 8,
+            "conceded": 0,
+            "assists": 2,
+            "saves": null
+          },
+          "passes": {
+            "total": 200,
+            "key": 11,
+            "accuracy": 82
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 77,
+            "won": 33
+          },
+          "dribbles": {
+            "attempts": 48,
+            "success": 25,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 7,
+            "committed": 7
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 2,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 2295,
+        "name": "O. Giroud",
+        "firstname": "Olivier Jonathan",
+        "lastname": "Giroud",
+        "age": 39,
+        "birth": {
+          "date": "1986-09-30",
+          "place": "Chambéry",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "193",
+        "weight": "91",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/2295.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 6,
+            "lineups": 6,
+            "minutes": 423,
+            "number": 9,
+            "position": "Attacker",
+            "rating": "7.23",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 5,
+            "bench": 1
+          },
+          "shots": {
+            "total": 15,
+            "on": 6
+          },
+          "goals": {
+            "total": 4,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 73,
+            "key": 2,
+            "accuracy": 65
+          },
+          "tackles": {
+            "total": 1,
+            "blocks": null,
+            "interceptions": 1
+          },
+          "duels": {
+            "total": 43,
+            "won": 24
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 4,
+            "committed": 2
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 1897,
+        "name": "S. Mandanda",
+        "firstname": "Steve",
+        "lastname": "Mandanda Mpidi",
+        "age": 40,
+        "birth": {
+          "date": "1985-03-28",
+          "place": "Kinshasa",
+          "country": "Congo DR"
+        },
+        "nationality": "France",
+        "height": "187 cm",
+        "weight": "88 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/1897.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 1,
+            "lineups": 1,
+            "minutes": 90,
+            "number": 16,
+            "position": "Goalkeeper",
+            "rating": "6.7",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 6
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 1,
+            "assists": 0,
+            "saves": 2
+          },
+          "passes": {
+            "total": 25,
+            "key": null,
+            "accuracy": 52
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": null,
+            "won": null
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": 0
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 253,
+        "name": "A. Areola",
+        "firstname": "Alphonse Francis",
+        "lastname": "Areola",
+        "age": 32,
+        "birth": {
+          "date": "1993-02-27",
+          "place": "Paris",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "195",
+        "weight": "94",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/253.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 0,
+            "lineups": 0,
+            "minutes": null,
+            "number": 23,
+            "position": "Goalkeeper",
+            "rating": null,
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 7
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": null,
+            "key": null,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": null,
+            "won": null
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 2725,
+        "name": "B. Pavard",
+        "firstname": "Benjamin Jacques Marcel",
+        "lastname": "Pavard",
+        "age": 29,
+        "birth": {
+          "date": "1996-03-28",
+          "place": "Maubeuge",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "186",
+        "weight": "76",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/2725.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 1,
+            "lineups": 1,
+            "minutes": 89,
+            "number": 2,
+            "position": "Defender",
+            "rating": "6.6",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 1,
+            "bench": 6
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 84,
+            "key": null,
+            "accuracy": 91
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": 1
+          },
+          "duels": {
+            "total": null,
+            "won": null
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 1145,
+        "name": "I. Konaté",
+        "firstname": "Ibrahima",
+        "lastname": "Konaté",
+        "age": 26,
+        "birth": {
+          "date": "1999-05-25",
+          "place": "Paris",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "194",
+        "weight": "95",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/1145.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 5,
+            "lineups": 3,
+            "minutes": 296,
+            "number": 24,
+            "position": "Defender",
+            "rating": "7.32",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 2,
+            "out": 0,
+            "bench": 4
+          },
+          "shots": {
+            "total": 2,
+            "on": 1
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 233,
+            "key": 2,
+            "accuracy": 91
+          },
+          "tackles": {
+            "total": 15,
+            "blocks": 2,
+            "interceptions": 7
+          },
+          "duels": {
+            "total": 29,
+            "won": 24
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 4,
+            "committed": 2
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 22090,
+        "name": "W. Saliba",
+        "firstname": "William Alain André Gabriel",
+        "lastname": "Saliba",
+        "age": 24,
+        "birth": {
+          "date": "2001-03-24",
+          "place": "Bondy",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "192",
+        "weight": "92",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/22090.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 1,
+            "lineups": 0,
+            "minutes": 27,
+            "number": 17,
+            "position": "Defender",
+            "rating": "6.9",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 0,
+            "bench": 7
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 37,
+            "key": 1,
+            "accuracy": 100
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 2,
+            "won": 2
+          },
+          "dribbles": {
+            "attempts": 1,
+            "success": 1,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 1,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 21998,
+        "name": "A. Disasi",
+        "firstname": "Axel Wilson Arthur",
+        "lastname": "Disasi Mhakinis Belho",
+        "age": 27,
+        "birth": {
+          "date": "1998-03-11",
+          "place": "Gonesse",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "190 cm",
+        "weight": "83 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/21998.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 3,
+            "lineups": 1,
+            "minutes": 99,
+            "number": 3,
+            "position": "Defender",
+            "rating": "6.55",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 2,
+            "out": 0,
+            "bench": 6
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 60,
+            "key": null,
+            "accuracy": 73
+          },
+          "tackles": {
+            "total": 3,
+            "blocks": null,
+            "interceptions": 3
+          },
+          "duels": {
+            "total": 13,
+            "won": 9
+          },
+          "dribbles": {
+            "attempts": 2,
+            "success": 1,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 1,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 30409,
+        "name": "J. Veretout",
+        "firstname": "Jordan Marcel Gilbert",
+        "lastname": "Veretout",
+        "age": 32,
+        "birth": {
+          "date": "1993-03-01",
+          "place": "Ancenis",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "177 cm",
+        "weight": "67 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/30409.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 1,
+            "lineups": 1,
+            "minutes": 63,
+            "number": 15,
+            "position": "Midfielder",
+            "rating": "6.3",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 1,
+            "bench": 6
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 36,
+            "key": null,
+            "accuracy": 91
+          },
+          "tackles": {
+            "total": 2,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 7,
+            "won": 2
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": 2
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 1454,
+        "name": "M. Guendouzi",
+        "firstname": "Mattéo Elias Kenzo",
+        "lastname": "Guendouzi Olié",
+        "age": 26,
+        "birth": {
+          "date": "1999-04-14",
+          "place": "Poissy",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "185",
+        "weight": "68",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/1454.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 1,
+            "lineups": 1,
+            "minutes": 79,
+            "number": 6,
+            "position": "Midfielder",
+            "rating": "6.3",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 1,
+            "bench": 6
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 32,
+            "key": null,
+            "accuracy": 81
+          },
+          "tackles": {
+            "total": 1,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 5,
+            "won": 3
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 1,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 2207,
+        "name": "E. Camavinga",
+        "firstname": "Eduardo",
+        "lastname": "Celmi Camavinga",
+        "age": 23,
+        "birth": {
+          "date": "2002-11-10",
+          "place": "Cabinda",
+          "country": "Angola"
+        },
+        "nationality": "France",
+        "height": "182",
+        "weight": "68",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/2207.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 2,
+            "lineups": 1,
+            "minutes": 139,
+            "number": 25,
+            "position": "Midfielder",
+            "rating": "7.6",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 0,
+            "bench": 6
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 88,
+            "key": 3,
+            "accuracy": 86
+          },
+          "tackles": {
+            "total": 14,
+            "blocks": null,
+            "interceptions": 3
+          },
+          "duels": {
+            "total": 33,
+            "won": 25
+          },
+          "dribbles": {
+            "attempts": 3,
+            "success": 1,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 8,
+            "committed": 2
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 508,
+        "name": "K. Coman",
+        "firstname": "Kingsley Junior",
+        "lastname": "Coman",
+        "age": 29,
+        "birth": {
+          "date": "1996-06-13",
+          "place": "Paris",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "181",
+        "weight": "76",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/508.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 6,
+            "lineups": 1,
+            "minutes": 165,
+            "number": 20,
+            "position": "Attacker",
+            "rating": "6.57",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 5,
+            "out": 1,
+            "bench": 6
+          },
+          "shots": {
+            "total": 1,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 58,
+            "key": 1,
+            "accuracy": 87
+          },
+          "tackles": {
+            "total": 3,
+            "blocks": null,
+            "interceptions": 2
+          },
+          "duels": {
+            "total": 27,
+            "won": 13
+          },
+          "dribbles": {
+            "attempts": 7,
+            "success": 6,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 2,
+            "committed": 1
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 22254,
+        "name": "Y. Fofana",
+        "firstname": "Youssouf",
+        "lastname": "Fofana",
+        "age": 26,
+        "birth": {
+          "date": "1999-01-10",
+          "place": "Paris",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "185",
+        "weight": "75",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/22254.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 6,
+            "lineups": 2,
+            "minutes": 225,
+            "number": 13,
+            "position": "Midfielder",
+            "rating": "6.62",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 4,
+            "out": 1,
+            "bench": 5
+          },
+          "shots": {
+            "total": 2,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 112,
+            "key": 1,
+            "accuracy": 85
+          },
+          "tackles": {
+            "total": 8,
+            "blocks": 1,
+            "interceptions": 3
+          },
+          "duels": {
+            "total": 22,
+            "won": 12
+          },
+          "dribbles": {
+            "attempts": 2,
+            "success": 2,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 1,
+            "committed": 3
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 21104,
+        "name": "R. Kolo Muani",
+        "firstname": "Randal",
+        "lastname": "Kolo Muani",
+        "age": 27,
+        "birth": {
+          "date": "1998-12-05",
+          "place": "Bondy",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "187",
+        "weight": "73",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/21104.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 3,
+            "lineups": 1,
+            "minutes": 180,
+            "number": 12,
+            "position": "Attacker",
+            "rating": "7.07",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 2,
+            "out": 0,
+            "bench": 6
+          },
+          "shots": {
+            "total": 3,
+            "on": 2
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 41,
+            "key": null,
+            "accuracy": 60
+          },
+          "tackles": {
+            "total": 7,
+            "blocks": null,
+            "interceptions": 1
+          },
+          "duels": {
+            "total": 44,
+            "won": 24
+          },
+          "dribbles": {
+            "attempts": 8,
+            "success": 3,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 5,
+            "committed": 4
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": 1,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 21509,
+        "name": "M. Thuram",
+        "firstname": "Marcus Lilian",
+        "lastname": "Thuram-Ulien",
+        "age": 28,
+        "birth": {
+          "date": "1997-08-06",
+          "place": "Parma",
+          "country": "Italy"
+        },
+        "nationality": "France",
+        "height": "192",
+        "weight": "90",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/21509.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 5,
+            "lineups": 0,
+            "minutes": 180,
+            "number": 12,
+            "position": "Attacker",
+            "rating": "7.07",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 5,
+            "out": 0,
+            "bench": 7
+          },
+          "shots": {
+            "total": 3,
+            "on": 2
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 41,
+            "key": null,
+            "accuracy": 60
+          },
+          "tackles": {
+            "total": 7,
+            "blocks": null,
+            "interceptions": 1
+          },
+          "duels": {
+            "total": 44,
+            "won": 24
+          },
+          "dribbles": {
+            "attempts": 8,
+            "success": 3,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 5,
+            "committed": 4
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": 1,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 33,
+        "name": "L. Hernández",
+        "firstname": "Lucas François Bernard",
+        "lastname": "Hernández",
+        "age": 29,
+        "birth": {
+          "date": "1996-02-14",
+          "place": "Marseille",
+          "country": "France"
+        },
+        "nationality": "France",
+        "height": "184",
+        "weight": "79",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/33.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 2,
+            "name": "France",
+            "logo": "https://media.api-sports.io/football/teams/2.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 1,
+            "lineups": 1,
+            "minutes": 13,
+            "number": 21,
+            "position": "Defender",
+            "rating": "6.3",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 1,
+            "bench": 0
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 9,
+            "key": null,
+            "accuracy": 55
+          },
+          "tackles": {
+            "total": 1,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 2,
+            "won": 1
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    }
+  ]
+}

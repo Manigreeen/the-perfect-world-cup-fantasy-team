@@ -1,0 +1,2476 @@
+{
+  "nation": "Spain",
+  "team_id": 9,
+  "players": [
+    {
+      "player": {
+        "id": 47270,
+        "name": "Unai Simón",
+        "firstname": "Unai",
+        "lastname": "Simón Mendibil",
+        "age": 28,
+        "birth": {
+          "date": "1997-06-11",
+          "place": "Vitoria-Gasteiz",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "190",
+        "weight": "88",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/47270.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 4,
+            "minutes": 390,
+            "number": 23,
+            "position": "Goalkeeper",
+            "rating": "6.68",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 0
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 3,
+            "assists": 0,
+            "saves": 6
+          },
+          "passes": {
+            "total": 141,
+            "key": null,
+            "accuracy": 92
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 2,
+            "won": 2
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": 0
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 733,
+        "name": "Dani Carvajal",
+        "firstname": "Daniel",
+        "lastname": "Carvajal Ramos",
+        "age": 33,
+        "birth": {
+          "date": "1992-01-11",
+          "place": "Leganés",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "173",
+        "weight": "73",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/733.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 2,
+            "lineups": 1,
+            "minutes": 135,
+            "number": 20,
+            "position": "Defender",
+            "rating": "6.45",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 0,
+            "bench": 3
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 116,
+            "key": null,
+            "accuracy": 88
+          },
+          "tackles": {
+            "total": 1,
+            "blocks": null,
+            "interceptions": 2
+          },
+          "duels": {
+            "total": 5,
+            "won": 2
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 1,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 44,
+        "name": "Rodri",
+        "firstname": "Rodrigo",
+        "lastname": "Hernández Cascante",
+        "age": 29,
+        "birth": {
+          "date": "1996-06-22",
+          "place": "Madrid",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "190",
+        "weight": "82",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/44.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 4,
+            "minutes": 390,
+            "number": 16,
+            "position": "Defender",
+            "rating": "7.7",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 0
+          },
+          "shots": {
+            "total": 1,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 684,
+            "key": 4,
+            "accuracy": 93
+          },
+          "tackles": {
+            "total": 5,
+            "blocks": 2,
+            "interceptions": 3
+          },
+          "duels": {
+            "total": 32,
+            "won": 22
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 1,
+            "committed": 5
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 622,
+        "name": "Aymeric Laporte",
+        "firstname": "Aymeric Jean Louis Gérard Alph",
+        "lastname": "Laporte",
+        "age": 31,
+        "birth": {
+          "date": "1994-05-27",
+          "place": "Agen",
+          "country": "France"
+        },
+        "nationality": "Spain",
+        "height": "189",
+        "weight": "86",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/622.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 3,
+            "lineups": 3,
+            "minutes": 300,
+            "number": 24,
+            "position": "Midfielder",
+            "rating": "7.23",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 1
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 435,
+            "key": 1,
+            "accuracy": 94
+          },
+          "tackles": {
+            "total": 2,
+            "blocks": null,
+            "interceptions": 3
+          },
+          "duels": {
+            "total": 15,
+            "won": 9
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 2,
+            "committed": 3
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 128,
+        "name": "Jordi Alba",
+        "firstname": "Jordi",
+        "lastname": "Alba Ramos",
+        "age": 36,
+        "birth": {
+          "date": "1989-03-21",
+          "place": "L'Hospitalet de Llobregat",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "170",
+        "weight": "68",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/128.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 3,
+            "minutes": 266,
+            "number": 18,
+            "position": "Defender",
+            "rating": "7.28",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 3,
+            "bench": 1
+          },
+          "shots": {
+            "total": 1,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 2,
+            "saves": null
+          },
+          "passes": {
+            "total": 322,
+            "key": 5,
+            "accuracy": 90
+          },
+          "tackles": {
+            "total": 6,
+            "blocks": null,
+            "interceptions": 3
+          },
+          "duels": {
+            "total": 21,
+            "won": 11
+          },
+          "dribbles": {
+            "attempts": 3,
+            "success": 2,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 3,
+            "committed": 4
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": 1,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 296667,
+        "name": "Gavi",
+        "firstname": "Pablo Martín",
+        "lastname": "Páez Gavira",
+        "age": 21,
+        "birth": {
+          "date": "2004-08-05",
+          "place": "Los Palacios y Villafranca",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "174",
+        "weight": "69",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/296667.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 4,
+            "minutes": 287,
+            "number": 9,
+            "position": "Midfielder",
+            "rating": "6.95",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 3,
+            "bench": 0
+          },
+          "shots": {
+            "total": 1,
+            "on": 1
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 150,
+            "key": 1,
+            "accuracy": 88
+          },
+          "tackles": {
+            "total": 8,
+            "blocks": null,
+            "interceptions": 1
+          },
+          "duels": {
+            "total": 50,
+            "won": 27
+          },
+          "dribbles": {
+            "attempts": 4,
+            "success": 3,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 14,
+            "committed": 9
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 144,
+        "name": "Sergio Busquets",
+        "firstname": "Sergio",
+        "lastname": "Busquets Burgos",
+        "age": 37,
+        "birth": {
+          "date": "1988-07-16",
+          "place": "Sabadell",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "189",
+        "weight": "74",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/144.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 4,
+            "minutes": 364,
+            "number": 5,
+            "position": "Defender",
+            "rating": "6.8",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 1,
+            "bench": 0
+          },
+          "shots": {
+            "total": 1,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 288,
+            "key": 3,
+            "accuracy": 90
+          },
+          "tackles": {
+            "total": 7,
+            "blocks": null,
+            "interceptions": 1
+          },
+          "duels": {
+            "total": 31,
+            "won": 19
+          },
+          "dribbles": {
+            "attempts": 1,
+            "success": 1,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 3,
+            "committed": 3
+          },
+          "cards": {
+            "yellow": 1,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 133609,
+        "name": "Pedri",
+        "firstname": "Pedro",
+        "lastname": "González López",
+        "age": 23,
+        "birth": {
+          "date": "2002-11-25",
+          "place": "Tegueste",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "174",
+        "weight": "68",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/133609.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 4,
+            "minutes": 357,
+            "number": 26,
+            "position": "Midfielder",
+            "rating": "7.15",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 1,
+            "bench": 0
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 430,
+            "key": 5,
+            "accuracy": 90
+          },
+          "tackles": {
+            "total": 4,
+            "blocks": null,
+            "interceptions": 4
+          },
+          "duels": {
+            "total": 32,
+            "won": 15
+          },
+          "dribbles": {
+            "attempts": 11,
+            "success": 6,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 3,
+            "committed": 2
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 931,
+        "name": "Ferran Torres",
+        "firstname": "Ferran",
+        "lastname": "Torres García",
+        "age": 25,
+        "birth": {
+          "date": "2000-02-29",
+          "place": "Foios",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "182",
+        "weight": "80",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/931.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 3,
+            "minutes": 219,
+            "number": 11,
+            "position": "Attacker",
+            "rating": "6.73",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 3,
+            "bench": 1
+          },
+          "shots": {
+            "total": 2,
+            "on": 2
+          },
+          "goals": {
+            "total": 2,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 76,
+            "key": 1,
+            "accuracy": 76
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 28,
+            "won": 6
+          },
+          "dribbles": {
+            "attempts": 10,
+            "success": 1,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 5,
+            "committed": 1
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 1,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 746,
+        "name": "Marco Asensio",
+        "firstname": "Marco",
+        "lastname": "Asensio Willemsen",
+        "age": 30,
+        "birth": {
+          "date": "1996-01-21",
+          "place": "Palma de Mallorca",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "182",
+        "weight": "76",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/746.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 3,
+            "minutes": 231,
+            "number": 10,
+            "position": "Attacker",
+            "rating": "6.73",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 3,
+            "bench": 1
+          },
+          "shots": {
+            "total": 7,
+            "on": 2
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 109,
+            "key": 2,
+            "accuracy": 80
+          },
+          "tackles": {
+            "total": 1,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 13,
+            "won": 4
+          },
+          "dribbles": {
+            "attempts": 2,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 3,
+            "committed": 3
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 1323,
+        "name": "Dani Olmo",
+        "firstname": "Daniel",
+        "lastname": "Olmo Carvajal",
+        "age": 27,
+        "birth": {
+          "date": "1998-05-07",
+          "place": "Terrassa",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "182",
+        "weight": "73",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/1323.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 4,
+            "minutes": 368,
+            "number": 21,
+            "position": "Attacker",
+            "rating": "6.98",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 1,
+            "bench": 0
+          },
+          "shots": {
+            "total": 10,
+            "on": 6
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 187,
+            "key": 5,
+            "accuracy": 85
+          },
+          "tackles": {
+            "total": 5,
+            "blocks": null,
+            "interceptions": 1
+          },
+          "duels": {
+            "total": 45,
+            "won": 15
+          },
+          "dribbles": {
+            "attempts": 17,
+            "success": 4,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 6,
+            "committed": 5
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 18959,
+        "name": "Robert Sánchez",
+        "firstname": "Robert",
+        "lastname": "Lynch Sánchez",
+        "age": 28,
+        "birth": {
+          "date": "1997-11-18",
+          "place": "Cartagena",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "197",
+        "weight": "90",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/18959.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 0,
+            "lineups": 0,
+            "minutes": null,
+            "number": 1,
+            "position": "Goalkeeper",
+            "rating": null,
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 4
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": null,
+            "key": null,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": null,
+            "won": null
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 19465,
+        "name": "David Raya",
+        "firstname": "David",
+        "lastname": "Raya Martin",
+        "age": 30,
+        "birth": {
+          "date": "1995-09-15",
+          "place": "Barcelona",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "183",
+        "weight": "80",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/19465.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 0,
+            "lineups": 0,
+            "minutes": null,
+            "number": 13,
+            "position": "Goalkeeper",
+            "rating": null,
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 4
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": null,
+            "key": null,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": null,
+            "won": null
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 2280,
+        "name": "César Azpilicueta",
+        "firstname": "César",
+        "lastname": "Azpilicueta Tanco",
+        "age": 36,
+        "birth": {
+          "date": "1989-08-28",
+          "place": "Pamplona",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "178",
+        "weight": "76",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/2280.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 2,
+            "lineups": 2,
+            "minutes": 135,
+            "number": 2,
+            "position": "Defender",
+            "rating": "7.25",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 1,
+            "bench": 2
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 166,
+            "key": 4,
+            "accuracy": 95
+          },
+          "tackles": {
+            "total": 1,
+            "blocks": null,
+            "interceptions": 1
+          },
+          "duels": {
+            "total": 7,
+            "won": 3
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": 2
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 46815,
+        "name": "Pau Torres",
+        "firstname": "Pau",
+        "lastname": "Francisco Torres",
+        "age": 28,
+        "birth": {
+          "date": "1997-01-16",
+          "place": "Villarreal",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "191",
+        "weight": "80",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/46815.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 1,
+            "lineups": 1,
+            "minutes": 90,
+            "number": 4,
+            "position": "Defender",
+            "rating": "7",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 3
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 189,
+            "key": null,
+            "accuracy": 91
+          },
+          "tackles": {
+            "total": null,
+            "blocks": 1,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 3,
+            "won": 1
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": 1
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 161928,
+        "name": "Alejandro Balde",
+        "firstname": "Alejandro",
+        "lastname": "Balde Martínez",
+        "age": 22,
+        "birth": {
+          "date": "2003-10-18",
+          "place": "Barcelona",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "177",
+        "weight": "76",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/161928.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 1,
+            "minutes": 124,
+            "number": 14,
+            "position": "Defender",
+            "rating": "6.68",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 3,
+            "out": 1,
+            "bench": 3
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 110,
+            "key": null,
+            "accuracy": 94
+          },
+          "tackles": {
+            "total": 6,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 14,
+            "won": 7
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 1,
+            "committed": 2
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 619,
+        "name": "Eric García",
+        "firstname": "Eric",
+        "lastname": "García Martret",
+        "age": 24,
+        "birth": {
+          "date": "2001-01-09",
+          "place": "Martorell",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "180",
+        "weight": "77",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/619.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 0,
+            "lineups": 0,
+            "minutes": null,
+            "number": 3,
+            "position": "Defender",
+            "rating": null,
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 4
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": null,
+            "key": null,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": null,
+            "won": null
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 184226,
+        "name": "Yeremy Pino",
+        "firstname": "Yeremy Jesús",
+        "lastname": "Pino Santos",
+        "age": 23,
+        "birth": {
+          "date": "2002-10-20",
+          "place": "Las Palmas de Gran Canaria",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "172",
+        "weight": "65",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/184226.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 0,
+            "lineups": 0,
+            "minutes": null,
+            "number": 17,
+            "position": "Midfielder",
+            "rating": null,
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 4
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": null,
+            "key": null,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": null,
+            "won": null
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 50,
+        "name": "Koke",
+        "firstname": "Jorge",
+        "lastname": "Resurrección Merodio",
+        "age": 33,
+        "birth": {
+          "date": "1992-01-08",
+          "place": "Madrid",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "176",
+        "weight": "77",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/50.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 2,
+            "lineups": 0,
+            "minutes": 50,
+            "number": 8,
+            "position": "Midfielder",
+            "rating": "6.45",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 2,
+            "out": 0,
+            "bench": 4
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 60,
+            "key": null,
+            "accuracy": 93
+          },
+          "tackles": {
+            "total": 1,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 1,
+            "won": 1
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 753,
+        "name": "Marcos Llorente",
+        "firstname": "Marcos",
+        "lastname": "Llorente Moreno",
+        "age": 30,
+        "birth": {
+          "date": "1995-01-30",
+          "place": "Madrid",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "183",
+        "weight": "74",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/753.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 1,
+            "lineups": 1,
+            "minutes": 120,
+            "number": 6,
+            "position": "Midfielder",
+            "rating": "6.5",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 3
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 90,
+            "key": null,
+            "accuracy": 91
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 5,
+            "won": null
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 919,
+        "name": "Hugo Guillamón",
+        "firstname": "Hugo",
+        "lastname": "Guillamón Sanmartín",
+        "age": 25,
+        "birth": {
+          "date": "2000-01-31",
+          "place": "L'Eliana",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "178",
+        "weight": "62",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/919.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 0,
+            "lineups": 0,
+            "minutes": null,
+            "number": 15,
+            "position": "Defender",
+            "rating": null,
+            "captain": false
+          },
+          "substitutes": {
+            "in": 0,
+            "out": 0,
+            "bench": 4
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": null,
+            "key": null,
+            "accuracy": null
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": null,
+            "won": null
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 930,
+        "name": "Carlos Soler",
+        "firstname": "Carlos",
+        "lastname": "Soler Barragán",
+        "age": 28,
+        "birth": {
+          "date": "1997-01-02",
+          "place": "Valencia",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "180",
+        "weight": "76",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/930.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 2,
+            "lineups": 0,
+            "minutes": 90,
+            "number": 19,
+            "position": "Midfielder",
+            "rating": "7.05",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 2,
+            "out": 0,
+            "bench": 4
+          },
+          "shots": {
+            "total": 2,
+            "on": 1
+          },
+          "goals": {
+            "total": 1,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 78,
+            "key": 2,
+            "accuracy": 96
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 5,
+            "won": 2
+          },
+          "dribbles": {
+            "attempts": 2,
+            "success": 1,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 1,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 183799,
+        "name": "Nico Williams",
+        "firstname": "Nicholas",
+        "lastname": "Williams Arthuer",
+        "age": 23,
+        "birth": {
+          "date": "2002-07-12",
+          "place": "Pamplona",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "181",
+        "weight": "67",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/183799.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 1,
+            "minutes": 145,
+            "number": 12,
+            "position": "Attacker",
+            "rating": "6.63",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 3,
+            "out": 2,
+            "bench": 3
+          },
+          "shots": {
+            "total": 1,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 54,
+            "key": null,
+            "accuracy": 88
+          },
+          "tackles": {
+            "total": 4,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 25,
+            "won": 11
+          },
+          "dribbles": {
+            "attempts": 15,
+            "success": 5,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 1,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 2056,
+        "name": "Pablo Sarabia",
+        "firstname": "Pablo",
+        "lastname": "Sarabia García",
+        "age": 33,
+        "birth": {
+          "date": "1992-05-11",
+          "place": "Madrid",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "174 cm",
+        "weight": "70 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/2056.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 1,
+            "lineups": 0,
+            "minutes": 2,
+            "number": 22,
+            "position": "Midfielder",
+            "rating": null,
+            "captain": false
+          },
+          "substitutes": {
+            "in": 1,
+            "out": 0,
+            "bench": 4
+          },
+          "shots": {
+            "total": 1,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 2,
+            "key": 2,
+            "accuracy": 50
+          },
+          "tackles": {
+            "total": null,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": null,
+            "won": null
+          },
+          "dribbles": {
+            "attempts": null,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 59,
+        "name": "Álvaro Morata",
+        "firstname": "Álvaro Borja",
+        "lastname": "Morata Martín",
+        "age": 33,
+        "birth": {
+          "date": "1992-10-23",
+          "place": "Madrid",
+          "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "190",
+        "weight": "84",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/59.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 4,
+            "lineups": 1,
+            "minutes": 183,
+            "number": 7,
+            "position": "Attacker",
+            "rating": "7.1",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 3,
+            "out": 1,
+            "bench": 3
+          },
+          "shots": {
+            "total": 8,
+            "on": 5
+          },
+          "goals": {
+            "total": 3,
+            "conceded": 0,
+            "assists": 1,
+            "saves": null
+          },
+          "passes": {
+            "total": 41,
+            "key": 2,
+            "accuracy": 68
+          },
+          "tackles": {
+            "total": 1,
+            "blocks": 1,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 14,
+            "won": 5
+          },
+          "dribbles": {
+            "attempts": 3,
+            "success": 1,
+            "past": null
+          },
+          "fouls": {
+            "drawn": 2,
+            "committed": 1
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    },
+    {
+      "player": {
+        "id": 135775,
+        "name": "Ansu Fati",
+        "firstname": "Anssumane",
+        "lastname": "Fati Vieira",
+        "age": 23,
+        "birth": {
+          "date": "2002-10-31",
+          "place": "Bissau",
+          "country": "Guinea-Bissau"
+        },
+        "nationality": "Spain",
+        "height": "178",
+        "weight": "66",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/135775.png"
+      },
+      "statistics": [
+        {
+          "team": {
+            "id": 9,
+            "name": "Spain",
+            "logo": "https://media.api-sports.io/football/teams/9.png"
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022
+          },
+          "games": {
+            "appearences": 2,
+            "lineups": 0,
+            "minutes": 44,
+            "number": 25,
+            "position": "Attacker",
+            "rating": "6.3",
+            "captain": false
+          },
+          "substitutes": {
+            "in": 2,
+            "out": 0,
+            "bench": 4
+          },
+          "shots": {
+            "total": null,
+            "on": null
+          },
+          "goals": {
+            "total": 0,
+            "conceded": 0,
+            "assists": 0,
+            "saves": null
+          },
+          "passes": {
+            "total": 28,
+            "key": null,
+            "accuracy": 89
+          },
+          "tackles": {
+            "total": 1,
+            "blocks": null,
+            "interceptions": null
+          },
+          "duels": {
+            "total": 4,
+            "won": 2
+          },
+          "dribbles": {
+            "attempts": 2,
+            "success": null,
+            "past": null
+          },
+          "fouls": {
+            "drawn": null,
+            "committed": null
+          },
+          "cards": {
+            "yellow": 0,
+            "yellowred": 0,
+            "red": 0
+          },
+          "penalty": {
+            "won": null,
+            "commited": null,
+            "scored": 0,
+            "missed": 0,
+            "saved": null
+          }
+        }
+      ]
+    }
+  ]
+}
