@@ -42,12 +42,17 @@ de datos + matchups + priors históricos listos. **Siguiente: motor de proyecci�
       a selecciones vivas, cacheado/resumible/throttled, **peso bajo decayente**
       (`strategy.blend_rate`). Cobertura: **26 selecciones cacheadas, 10/15 de mi squad con prior**
       (los 5 sin prior no jugaron el WC2022). *(2026-06-13)*
-- [ ] Proyección v0 de puntos esperados por jugador para MD2 (heurística, sin ML). Insumos:
-      FIFA `roundPoints`/`form` (señal viva) + matchup de `rounds.json` + priors históricos
-      (peso bajo). *Calidad plena recién el 18 jun, cuando MD1 cierre y haya 1 dato real/jugador.*
-- [ ] Modelo de fuerza de selección (Elo con histórico free) → P2/P4 y dificultad de matchup
-- [ ] Ranking de profitability v0: proyección + flag scouting (<5% y P(pts≥5)) + horizonte MD3
-- [ ] Recomendador de transfers: mejor par salir/entrar con las 2 libres (+rollover), con justificación
+- [x] Proyección v0 de puntos esperados (`projection.py`): top-down FIFA (avgPoints/form + prior
+      por precio con shrinkage) × disponibilidad (P1) × matchup, + término de volumen del prior
+      histórico (P7, peso bajo). Constantes v0 calibrables tras MD1 *(2026-06-13)*
+- [x] Fuerza de selección v0 = proxy por precio del top-15 (z-scores) → matchup. *(Elo con
+      histórico free queda como mejora futura.)* *(2026-06-13)*
+- [x] Ranking de profitability + `wcf rank` (`--by value|proj`, `--pos`, `--risk`): marca squad y
+      scouting <5% *(2026-06-13)*
+- [ ] Recomendador de transfers: mejor par salir/entrar con las 2 libres (+rollover), con
+      justificación, usando los umbrales del dial de riesgo (`strategy.RISK_PROFILES`)
+- [ ] Plan de capitanía MD2: orden de switches por horario con umbrales stick-or-twist
+- [ ] Reporte legible en `outputs/md2-reporte.md`
 - [ ] Plan de capitanía MD2: orden de switches por horario con umbrales stick-or-twist
 - [ ] Reporte legible en `outputs/md2-reporte.md`
 - [ ] Refresco pre-lockout: `wcf pool` justo antes de decidir (ownership al día)

@@ -3,7 +3,7 @@
 import argparse
 import sys
 
-from . import historical, myteam, pool, store
+from . import historical, myteam, pool, projection, store, strategy
 from .config import ROUND_LABELS
 from .sources import api_football, fifa_fantasy
 from .sources import news as news_src
@@ -173,6 +173,42 @@ def cmd_news(args) -> None:
     show("🌍 Contexto de tus selecciones (ruido posible)", context)
 
 
+def _my_squad_ids() -> set[int]:
+    squad_names = {sid: s["name"] for sid, s in pool.load_squads().items()}
+    _, players = pool.load_players()
+    ids = set()
+    for row in myteam.parse_my_team():
+        p = myteam.find_player(row, players, squad_names)
+        if p:
+            ids.add(p["id"])
+    return ids
+
+
+def cmd_rank(args) -> None:
+    """Ranking de profitability para la próxima ronda: proyección, valor, scouting."""
+    try:
+        risk = strategy.active_profile(args.risk)
+        data = projection.rank_pool(risk)
+    except (pool.NoSnapshotError, ValueError) as exc:
+        sys.exit(f"error: {exc}")
+
+    rows = data["rows"]
+    if args.pos:
+        rows = [r for r in rows if r["pos"] == args.pos.upper()]
+    rows.sort(key=lambda r: r[args.by], reverse=True)
+    mine = _my_squad_ids()
+    label = ROUND_LABELS.get(data["round"]["id"], f"R{data['round']['id']}")
+
+    print(f"Ranking {label} · orden por {args.by} · riesgo {risk.name} · pool {data['captured_at'][:10]}")
+    print(f"(proj = pts esperados; val = proj/precio; ★ = tu squad; ⭐ = scouting <5%)\n")
+    print(f"  {'#':>2}  {'jugador':<20} {'pos':>3} {'sel':<14} {'$':>5} {'proj':>5} {'val':>5}  own")
+    for i, r in enumerate(rows[: args.limit], 1):
+        star = "★" if r["id"] in mine else " "
+        scout = "⭐" if r["ownership"] < 5 else " "
+        print(f"{star}{scout}{i:>2}  {r['name']:<20.20} {r['pos']:>3} {r['nation']:<14.14} "
+              f"{r['price']:>5} {r['proj']:>5} {r['value']:>5}  {r['ownership']}%")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(prog="wcf", description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
@@ -190,6 +226,11 @@ def main() -> None:
     p_hist.add_argument("--max-requests", type=int, default=80, help="tope de requests por corrida (quota free: 100/día)")
     p_news = sub.add_parser("news", help="Titulares RSS gratis (BBC/Guardian/Sky) filtrados a tu squad")
     p_news.add_argument("--limit", type=int, default=15, help="máximo de titulares a mostrar")
+    p_rank = sub.add_parser("rank", help="Ranking de profitability (proyección v0) para la próxima ronda")
+    p_rank.add_argument("--by", choices=["proj", "value"], default="value", help="ordenar por pts esperados o valor")
+    p_rank.add_argument("--pos", choices=["GK", "DEF", "MID", "FWD"], help="filtrar por posición")
+    p_rank.add_argument("--limit", type=int, default=25, help="cuántos mostrar")
+    p_rank.add_argument("--risk", choices=["conservative", "moderate", "aggressive"], help="override del dial de riesgo")
 
     args = parser.parse_args()
     handler = {
@@ -203,6 +244,7 @@ def main() -> None:
         "matchups": cmd_matchups,
         "history": cmd_history,
         "news": cmd_news,
+        "rank": cmd_rank,
     }[args.command]
     try:
         handler(args)
