@@ -31,6 +31,9 @@ VALID_FORMATIONS = [
     (5, 4, 1), (5, 3, 2),
 ]
 
+# id de ronda (rounds.json de FIFA) → etiqueta del torneo
+ROUND_LABELS = {1: "MD1", 2: "MD2", 3: "MD3", 4: "R32", 5: "R16", 6: "QF", 7: "SF", 8: "F"}
+
 # Máx. jugadores por selección, por fase. Ojo: R32 sigue en 3 pese al reset.
 MAX_PER_COUNTRY = {"MD1": 3, "MD2": 3, "MD3": 3, "R32": 3, "R16": 4, "QF": 5, "SF": 6, "F": 8}
 

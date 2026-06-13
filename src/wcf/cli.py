@@ -3,7 +3,8 @@
 import argparse
 import sys
 
-from . import myteam, store
+from . import myteam, pool, store
+from .config import ROUND_LABELS
 from .sources import api_football, fifa_fantasy
 
 
@@ -64,6 +65,36 @@ def cmd_myteam(_args) -> None:
         sys.exit(f"error: {exc}")
 
 
+def cmd_matchups(_args) -> None:
+    try:
+        data = pool.my_team_matchups()
+    except pool.NoSnapshotError as exc:
+        sys.exit(f"error: {exc}")
+    r = data["round"]
+    label = ROUND_LABELS.get(r["id"], f"Ronda {r['id']}")
+    print(f"Matchups de {label} · lockout {pool.fmt_kickoff(r['startDate'])} · "
+          f"pool del {data['captured_at'][:10]}\n")
+
+    def sort_key(row):  # titulares primero, luego por horario (insight de capitanía)
+        fx = row.get("fixture")
+        return (0 if row["role"].lower().startswith("titular") else 1,
+                fx["date"] if fx else "9999")
+
+    for row in sorted(data["rows"], key=sort_key):
+        if not row["found"]:
+            print(f"  ✗ {row['name']}: no encontrado en el pool")
+            continue
+        fx = row["fixture"]
+        if not fx:
+            print(f"  {row['name']}: sin partido en {label} (¿eliminado?)")
+            continue
+        loc = "vs" if fx["home"] else " @"
+        scout = " ⭐<5%" if row["ownership"] < 5 else ""
+        print(f"  {row['role'][:3]:<3} {row['name']:<19} {row['pos']:>3}  "
+              f"{loc} {fx['opponent']:<15} {pool.fmt_kickoff(fx['date'])}  "
+              f"own {row['ownership']}%{scout}")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(prog="wcf", description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
@@ -76,6 +107,7 @@ def main() -> None:
     sub.add_parser("pool", help="Snapshot del pool fantasy de FIFA (precios, ownership) — sin auth")
     sub.add_parser("rounds", help="Rondas con lockouts reales y fixtures, desde play.fifa.com")
     sub.add_parser("myteam", help="Valida data/my-team.md contra el último snapshot del pool")
+    sub.add_parser("matchups", help="Fixtures de la próxima ronda para tu squad (rival, horario, ownership)")
 
     args = parser.parse_args()
     handler = {
@@ -86,6 +118,7 @@ def main() -> None:
         "pool": cmd_pool,
         "rounds": cmd_rounds,
         "myteam": cmd_myteam,
+        "matchups": cmd_matchups,
     }[args.command]
     try:
         handler(args)

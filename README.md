@@ -37,7 +37,9 @@ puerta de entrada a todo el pipeline.
 src/wcf/
 ├── config.py        # paths, .env y constantes del torneo (presupuestos, límites, lockouts reales)
 ├── scoring.py       # tabla oficial de puntos (docs/01-reglas.md §8) como datos
+├── strategy.py      # dial de riesgo (WCF_RISK) y horizonte del recomendador (docs/05)
 ├── store.py         # snapshots versionables: save/load en data/snapshots/<fecha>/
+├── pool.py          # capa de datos: une pool + selecciones + fixtures de la próxima ronda
 ├── myteam.py        # parsea data/my-team.md y lo valida contra el pool oficial
 ├── cli.py           # comandos `wcf <comando>` (argparse)
 └── sources/
@@ -74,6 +76,7 @@ cp .env.example .env        # pegar API_FOOTBALL_KEY (gratis en dashboard.api-fo
 | `wcf pool` | Snapshot del pool fantasy: 1.487 jugadores con precio, posición y ownership | No |
 | `wcf rounds` | Las 8 rondas con lockouts reales y fixtures, desde el juego | No |
 | `wcf myteam` | Valida `data/my-team.md` contra el pool (precios, posiciones, límites, presupuesto) | No |
+| `wcf matchups` | Fixtures de la próxima ronda para tu squad: rival, horario, ownership, flag scouting <5% | No |
 | `wcf status` | Plan y cuota usada de API-Football | Sí |
 | `wcf fixtures` / `injuries` / `players` | Descarga y snapshotea datos de API-Football | Sí |
 

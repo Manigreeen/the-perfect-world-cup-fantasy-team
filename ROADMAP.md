@@ -29,9 +29,14 @@ optimización diseñado, falta proyección v0.
 ## Fase 2 — MVP de decisión para MD2 (→ 18 jun 17:00 UTC+1)
 
 - [x] **Diseño del loop de optimización dinámica** → [docs/05](docs/05-loop-de-optimizacion.md)
-      *(2026-06-13; 2 decisiones pendientes de Mani: horizonte y apetito de riesgo)*
+      *(2026-06-13)*
+- [x] Decisiones de estrategia (Mani): horizonte **lookahead por bloque** + apetito de riesgo
+      **moderate, dial ajustable** (`WCF_RISK`) → `src/wcf/strategy.py` *(2026-06-13)*
+- [x] Capa de datos `pool.py` + `wcf matchups`: fixtures de la próxima ronda para mi squad
+      (rival, horario, flag scouting <5%) *(2026-06-13)*
 - [ ] Proyección v0 de puntos esperados por jugador para MD2 (heurística, sin ML; sale con
-      datos de FIFA solos: `roundPoints` + `form` + matchup de `rounds.json`)
+      datos de FIFA solos: `roundPoints` + `form` + matchup de `rounds.json`).
+      *Calidad plena recién el 18 jun, cuando MD1 cierre y haya 1 dato real por jugador.*
 - [ ] Ranking de profitability v0: proyección + flag scouting (<5% y P(pts≥5)) + horizonte MD3
 - [ ] Recomendador de transfers: mejor par salir/entrar con las 2 libres (+rollover), con justificación
 - [ ] Plan de capitanía MD2: orden de switches por horario con umbrales stick-or-twist

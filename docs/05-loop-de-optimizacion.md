@@ -4,8 +4,9 @@
 > ownership cambia intradía), pero las transfers son escasas y el hit cuesta −3. ¿Cuándo
 > recalcular, con qué horizonte, y con qué umbral para no hacer cambios nerviosos?
 >
-> **Estado:** borrador con recomendaciones. Las decisiones marcadas **[DECIDIR]** son de Mani;
-> el resto son defaults defendibles que se ajustan con el primer backtest.
+> **Estado:** decidido (2026-06-13). Horizonte = **lookahead por bloque**; apetito de riesgo =
+> **moderate por default, pero es un dial ajustable** (`WCF_RISK` en `.env` o `--risk` en el CLI).
+> Ambos están encodeados en `src/wcf/strategy.py`. Los números se recalibran con el backtest de MD2.
 
 ## Principio rector: optimizar ≠ reaccionar
 
@@ -57,7 +58,7 @@ Qué evento obliga a recalcular el plan **antes** del refresco diario normal:
 Sin trigger activo, el equipo no se toca aunque el ranking se mueva un poco. Esa es la defensa
 anti-nerviosismo.
 
-## 3. Horizonte de decisión — **[DECIDIR]**
+## 3. Horizonte de decisión — ✅ lookahead por bloque
 
 Dos modos:
 
@@ -68,23 +69,25 @@ Dos modos:
   de que el equipo siga vivo en el siguiente. Evita gastar una transfer en alguien que juega un
   partido y se va a casa.
 
-**Recomendación:** lookahead por bloque con descuento — peso 1.0 al próximo MD, ~0.5 al siguiente.
-El R32 es el reset donde se vuelve a planear desde cero (transfers ilimitadas).
+**Decidido:** lookahead por bloque con descuento — peso **1.0** al próximo MD, **0.5** al
+siguiente (`strategy.HORIZON_WEIGHTS`). El R32 es el reset donde se planea desde cero.
 
-## 4. Umbrales de estabilidad — **[DECIDIR: apetito de riesgo]**
+## 4. Umbrales de estabilidad — ✅ dial de riesgo (default moderate)
 
-El gatillo que convierte "el ranking cambió" en "vale la pena el cambio". Default propuesto
-(perfil **moderado** — ajustable según qué tan agresivo quieras jugar la mini-league):
+El gatillo que convierte "el ranking cambió" en "vale la pena el cambio". **Es un parámetro
+ajustable, no fijo** — `WCF_RISK` en `.env` o `--risk` en el CLI; vive en `strategy.RISK_PROFILES`.
+Default **moderate**:
 
-| Decisión | Umbral propuesto |
-|---|---|
-| Transfer dentro de la asignación libre | Entrante supera al saliente en **≥ +2 pts proyectados** sobre el horizonte del bloque |
-| Transfer pagando el hit (−3) | La ganancia proyectada debe superar **+4 pts** (cubre el −3 con margen) |
-| Romper el plan de capitanía | El nuevo capitán supera al actual en **≥ +1.5 pts** esperados *y* aún no juega |
-| Sacar a un titular por su suplente (in-play) | Solo si el titular hizo DNP o su proyección viva cae bajo la del banca |
+| Decisión | conservative | **moderate** | aggressive |
+|---|---|---|---|
+| Transfer libre (entrante supera al saliente) | ≥ +3.0 | **≥ +2.0** | ≥ +1.0 |
+| Transfer pagando el hit −3 (ganancia neta) | ≥ +5.0 | **≥ +4.0** | ≥ +3.5 |
+| Romper el plan de capitanía | ≥ +2.5 | **≥ +1.5** | ≥ +1.0 |
+| Peso del scouting bonus (<5%) en el ranking | 0.5× | **1.0×** | 1.5× |
 
-Perfil **conservador** sube todos los umbrales (~+1); **agresivo** los baja y prioriza más el
-ownership <5%. Es lo primero que se recalibra con el backtest de MD2.
+(Todos en puntos esperados sobre el horizonte del bloque.) La sub in-play es aparte: solo si el
+titular hizo DNP o su proyección viva cae bajo la del banca. Estos números son el punto de
+partida; se recalibran con el backtest de MD2.
 
 ## 5. Loop de calibración
 
@@ -115,11 +118,12 @@ en vivo    asistente in-play (Fase 5)    # subs/switches por valor esperado
 
 ---
 
-## Decisiones pendientes para Mani
+## Decisiones tomadas (2026-06-13)
 
-1. **Horizonte (§3):** ¿lookahead por bloque como recomiendo, o greedy más simple para el MVP?
-2. **Apetito de riesgo (§4):** ¿conservador / moderado / agresivo? Define los umbrales de transfer
-   y cuánto perseguir el ownership <5%. Estás en mini-league con amigos — ¿jugar a ganar agresivo
-   o a no regalar puntos?
+1. **Horizonte (§3):** lookahead por bloque (pesos 1.0 / 0.5).
+2. **Apetito de riesgo (§4):** moderate por default, **ajustable** vía `WCF_RISK` — Mani lo sube a
+   aggressive para perseguir diferenciales o lo baja a conservative para proteger el squad, sin
+   tocar código.
 
-Con eso fijo, el resto del modelo (proyección v0 → ranking → recomendador) se construye encima.
+Ambas viven en `src/wcf/strategy.py`. Con esto fijo, el modelo (proyección v0 → ranking →
+recomendador) se construye encima.
