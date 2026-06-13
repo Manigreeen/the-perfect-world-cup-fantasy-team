@@ -8,6 +8,7 @@ __pycache__/
 .venv/
 venv/
 .pytest_cache/
+*.egg-info/
 
 # Data snapshots (large / regenerable) — versionar selectivamente si se necesita backtest
 # data/raw/

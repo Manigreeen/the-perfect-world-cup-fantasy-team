@@ -37,17 +37,21 @@ API de API-Sports. Endpoints relevantes para nosotros:
 
 ### 3. El propio juego (play.fifa.com) — datos fantasy que NINGUNA otra fuente tiene
 
-El frontend del fantasy consume endpoints JSON propios. Datos exclusivos que necesitamos de ahí:
+**✅ Endpoints descubiertos (2026-06-12): JSON estáticos públicos, SIN auth.** Cliente en
+`src/wcf/sources/fifa_fantasy.py`; snapshot con `wcf pool` y `wcf rounds`.
 
-| Dato | Para qué |
-|---|---|
-| **Pool de jugadores con precios** | Restricción del optimizador (P9) — precios fijos, se captura una vez |
-| **% selected (ownership) por jugador** | P5 (scouting bonus) — hay que refrescarlo antes de CADA deadline |
-| **Posición listada en el juego** (GK/DEF/MID/FWD) | El scoring depende de la posición del juego, no de la real (P3) |
-| Puntos fantasy oficiales por jugador/ronda | Validar/backtestear nuestro modelo de proyección |
+| Endpoint (`play.fifa.com/json/fantasy/`) | Trae | Alimenta |
+|---|---|---|
+| `players.json` | Pool completo (~1.487): **precio**, **posición del juego**, **percentSelected** total Y por ronda, puntos oficiales, form, status, squadId | P5, P9, P3, backtest |
+| `squads.json` | Las 48 selecciones: grupo, abbr, `isEliminated` | P2 |
+| `rounds.json` | Las 8 rondas con **fechas exactas (lockout = startDate)** y fixtures con estadio, horario, marcador, status | P6, deadlines |
 
-- **Pendiente:** inspeccionar el network tab del sitio para identificar los endpoints (suelen ser
-  públicos sin auth para el pool de jugadores). Si no, captura manual periódica.
+- Otros nombres probados (`fixtures`, `settings`, `constants`, `teams`, ...) → 403. Solo esos
+  tres están abiertos, y cubren todo lo que necesitábamos de esta fuente.
+- `percentSelected` cambia entre deadlines → correr `wcf pool` antes de CADA lockout (y queda
+  el histórico en `data/snapshots/<fecha>/`).
+- Bonus inesperado: `rounds.json` también sirve de respaldo de fixtures/resultados, reduciendo
+  la dependencia de API-Football a stats por jugador, injuries y odds.
 
 ### 4. Candidatas de respaldo (si falta algo)
 

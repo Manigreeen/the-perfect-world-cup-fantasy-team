@@ -1,51 +1,114 @@
 # The Perfect World Cup Fantasy Team
 
-Motor de análisis y optimización para armar la mejor plantilla posible en **FIFA World Cup Fantasy 2026** (play.fifa.com), maximizando puntos a lo largo del torneo.
+Motor de análisis y optimización para armar la mejor plantilla posible en **FIFA World Cup
+Fantasy 2026** (play.fifa.com), maximizando puntos a lo largo del torneo.
 
 ## La idea
 
 1. **Entender las reglas a la perfección** — estructura del torneo, sistema de puntos, transfers, boosters, gestión in-play.
 2. **Identificar y priorizar los factores que influyen en los puntos** — qué hace que un jugador sea "rentable".
 3. **Fórmula de profitability por jugador** — score que combina proyección de puntos esperados, precio, ownership (scouting bonus), probabilidad de avance del equipo, riesgo de lesión/rotación.
-4. **Modelo dinámico, no estático** — se actualiza con la información más reciente (lesiones, ratings, resultados) vía APIs antes de cada deadline.
+4. **Modelo dinámico, no estático** — se actualiza con la información más reciente (lesiones, ratings, resultados) antes de cada deadline.
 5. **Output: la plantilla óptima del momento** — optimización combinatoria sujeta a presupuesto, posiciones, límite por país y transfers disponibles.
+
+**Estado de las tareas:** ver [ROADMAP.md](ROADMAP.md) (tracker vivo, qué está hecho y qué falta).
+
+## Arquitectura
+
+Es un **pipeline de decisión por CLI**, no una app web: una sola persona (Mani), 5 semanas de
+vida útil, y cada ronda exige el mismo ciclo — refrescar datos → modelar → decidir → documentar.
+
+```
+play.fifa.com (JSON públicos, sin auth)──┐      data/snapshots/<fecha>/*.json
+  precios · ownership · posiciones ·     ├──→   (todo dato que alimenta una        ──→  modelo        ──→  outputs/
+  puntos oficiales · rondas/lockouts     │       recomendación queda versionado)        proyección +       <ronda>-reporte.md
+                                         │                                              profitability +    (transfers, XI,
+API-Football (key en .env)───────────────┘                                              optimizador         capitán, porqués)
+  stats por jugador · injuries · odds
+```
+
+### El paquete `wcf`
+
+`wcf` (World Cup Fantasy) es el código Python del proyecto, en `src/wcf/`, instalable con pip.
+Instalarlo registra el comando de terminal `wcf` (definido en `pyproject.toml`), que es la
+puerta de entrada a todo el pipeline.
+
+```
+src/wcf/
+├── config.py        # paths, .env y constantes del torneo (presupuestos, límites, lockouts reales)
+├── scoring.py       # tabla oficial de puntos (docs/01-reglas.md §8) como datos
+├── store.py         # snapshots versionables: save/load en data/snapshots/<fecha>/
+├── myteam.py        # parsea data/my-team.md y lo valida contra el pool oficial
+├── cli.py           # comandos `wcf <comando>` (argparse)
+└── sources/
+    ├── fifa_fantasy.py   # endpoints públicos del juego: players/squads/rounds.json
+    └── api_football.py   # cliente API-Football: fixtures, players, injuries, odds
+```
+
+Capas y regla de dependencia: `sources/` (HTTP crudo) → `store` (persistencia) → modelo
+(proyección/ranking, llega en Fase 2) → `cli` (orquesta). Los módulos de modelo nunca llaman
+HTTP directo: leen snapshots, para que toda recomendación sea reproducible después (backtest).
+
+### Decisiones de stack
+
+| Decisión | Porqué |
+|---|---|
+| Python 3.12+, deps mínimas (`requests`, `python-dotenv`) | Lo que el problema pide hoy; `pandas` entra en Fase 2 y `pulp` (ILP) en Fase 4 |
+| JSON versionado en git como "base de datos" | Datos diminutos (~1.500 jugadores); reproducibilidad gratis; sin servidor que mantener |
+| CLI + reportes markdown, sin UI | El deliverable es una decisión documentada antes de cada lockout, no una interfaz |
+| play.fifa.com como fuente primaria | Endpoints públicos sin auth con los datos que nadie más tiene (ownership, precios, posiciones del juego, puntos oficiales) — descubierto 2026-06-12 |
+| API-Football solo para lo que FIFA no da | Stats granulares (tiros, tackles, chances), injuries, odds |
+
+## Setup
+
+```bash
+python3 -m venv .venv
+.venv/bin/pip install -e .
+cp .env.example .env        # pegar API_FOOTBALL_KEY (gratis en dashboard.api-football.com)
+```
+
+### Comandos
+
+| Comando | Hace | Necesita key |
+|---|---|---|
+| `wcf pool` | Snapshot del pool fantasy: 1.487 jugadores con precio, posición y ownership | No |
+| `wcf rounds` | Las 8 rondas con lockouts reales y fixtures, desde el juego | No |
+| `wcf myteam` | Valida `data/my-team.md` contra el pool (precios, posiciones, límites, presupuesto) | No |
+| `wcf status` | Plan y cuota usada de API-Football | Sí |
+| `wcf fixtures` / `injuries` / `players` | Descarga y snapshotea datos de API-Football | Sí |
+
+Ritual mínimo por ronda: `wcf pool` antes de cada lockout (el ownership cambia intradía) — todo
+queda en `data/snapshots/<fecha>/` para auditar después qué sabía el modelo al recomendar.
 
 ## Documentación
 
 | Doc | Qué contiene |
 |---|---|
-| [docs/00-onboarding.md](docs/00-onboarding.md) | El juego explicado desde cero (para quien nunca jugó fantasy) y su conexión con este proyecto |
-| [docs/01-reglas.md](docs/01-reglas.md) | Reglas **oficiales** completas (fuente: FIFA, verificado 2026-06-11) + discrepancias vs. la guía de FPL Mate |
-| [docs/02-factores-de-puntos.md](docs/02-factores-de-puntos.md) | Los 10 factores priorizados que influyen en los puntos + borrador de la fórmula de profitability |
-| [docs/03-fuentes-de-datos.md](docs/03-fuentes-de-datos.md) | APIs y fuentes: API-Football, news aggregator, endpoints del propio juego (ownership, precios) |
-| [docs/04-plan-de-ejecucion.md](docs/04-plan-de-ejecucion.md) | Plan por fases anclado a los deadlines reales del torneo |
-
-## Estado
-
-- [x] **Fase 0** — Reglas oficiales documentadas, factores priorizados, onboarding, mapa de datos
-- [ ] **Fase 1** — Base de datos: API-Football validada, endpoints fantasy descubiertos, equipo actual registrado (→ 14 jun)
-- [ ] **Fase 2** — MVP de decisión para las transfers del MD2 (→ deadline MD2, ~18 jun)
-- [ ] **Fase 3** — Pipeline repetible por ronda (→ deadline MD3)
-- [ ] **Fase 4** — Optimizador completo para el gran reset del Round of 32
-- [ ] **Fase 5** — Loop de knockout + asistente in-play
-- [ ] **Fase 6** — Post-mortem y backtest
+| [ROADMAP.md](ROADMAP.md) | **Tracker vivo**: tareas por fase, qué está hecho, brainstorm pendiente del loop de optimización |
+| [docs/00-onboarding.md](docs/00-onboarding.md) | El juego explicado desde cero y su conexión con este proyecto |
+| [docs/01-reglas.md](docs/01-reglas.md) | Reglas **oficiales** completas (fuente: FIFA, verificado 2026-06-11) |
+| [docs/02-factores-de-puntos.md](docs/02-factores-de-puntos.md) | Los 10 factores priorizados + borrador de la fórmula de profitability |
+| [docs/03-fuentes-de-datos.md](docs/03-fuentes-de-datos.md) | Fuentes y endpoints (incluye los descubiertos de play.fifa.com) |
+| [docs/04-plan-de-ejecucion.md](docs/04-plan-de-ejecucion.md) | El porqué de cada fase, anclado a los deadlines reales, y los principios de trabajo |
 
 ## El torneo de un vistazo (reglas oficiales)
 
-| Ronda | Fase | Transfers libres antes | Máx. jugadores/país |
+| Ronda | Lockout (UTC+1) | Transfers libres antes | Máx. jugadores/país |
 |---|---|---|---|
-| MD1 | Grupos R1 (desde 11 jun 2026) | Ilimitadas | 3 |
-| MD2 | Grupos R2 | 2 | 3 |
-| MD3 | Grupos R3 | 2 (+1 rollover) | 3 |
-| R32 | Dieciseisavos | **Ilimitadas** | **3** |
-| R16 | Octavos | 4 | 4 |
-| QF | Cuartos | 4 | 5 |
-| SF | Semifinales | 5 | 6 |
-| F | Final | 6 | 8 |
+| MD1 | 11 jun 20:00 (en juego) | Ilimitadas | 3 |
+| MD2 | **18 jun 17:00** | 2 | 3 |
+| MD3 | 24 jun 20:00 | 2 (+1 rollover) | 3 |
+| R32 | 28 jun 20:00 | **Ilimitadas** | **3** |
+| R16 | 4 jul 18:00 | 4 | 4 |
+| QF | 9 jul 21:00 | 4 | 5 |
+| SF | 14 jul 20:00 | 5 | 6 |
+| F | 18 jul 22:00 | 6 | 8 |
 
-Presupuesto: $100M, sube a **$105M** al abrir el R32. Precios fijos todo el torneo. Transfer extra: **−3 pts**. Scouting bonus: **+2** si el jugador hace >4 pts y está en <5% de equipos.
+Presupuesto: $100M, sube a **$105M** al abrir el R32. Precios fijos todo el torneo. Transfer
+extra: **−3 pts**. Scouting bonus: **+2** si el jugador hace >4 pts y está en <5% de equipos.
 
 ## Contexto de juego (Mani)
 
 - Equipo MD1 ya inscrito (en juego desde el 11 jun). Próxima decisión: **transfers de MD2**.
 - Compitiendo en mini-league privada con amigos.
+- Estado del equipo: [data/my-team.md](data/my-team.md) (validar con `wcf myteam`).

@@ -1,0 +1,23 @@
+[project]
+name = "wcf"
+version = "0.1.0"
+description = "Motor de análisis y optimización para FIFA World Cup Fantasy 2026"
+requires-python = ">=3.12"
+dependencies = [
+    "requests>=2.32",
+    "python-dotenv>=1.0",
+]
+
+# Dependencias por fase (se agregan cuando la fase las necesita):
+#   Fase 2 → pandas (ranking de profitability)
+#   Fase 4 → pulp (optimizador ILP del squad R32)
+
+[project.scripts]
+wcf = "wcf.cli:main"
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
