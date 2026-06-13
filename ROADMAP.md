@@ -4,7 +4,8 @@
 > El *porqué* de cada fase y los principios de trabajo viven en
 > [docs/04-plan-de-ejecucion.md](docs/04-plan-de-ejecucion.md).
 
-**Ahora:** cerrando Fase 1, arrancando Fase 2.
+**Ahora:** Fase 1 cerrada salvo la key de API-Football (Mani). Fase 2 en marcha: loop de
+optimización diseñado, falta proyección v0.
 **Próximo deadline: lockout MD2 — 18 jun 2026, 17:00 (UTC+1).** Fuente viva: `wcf rounds`.
 
 ---
@@ -18,16 +19,19 @@
 - [x] Verificado que `players.json` es **data viva**: puntos oficiales cargados por partido,
       ownership cambia intradía *(2026-06-12)*
 - [x] `wcf myteam`: validador de la plantilla contra el pool oficial *(2026-06-12)*
-- [ ] **Mani:** completar [data/my-team.md](data/my-team.md) (va 3/15) — validar con `wcf myteam`
-- [ ] **Mani:** crear cuenta API-Football y pegar la key en `.env`
+- [x] Squad MD1 completo y validado: 15/15, $99.3M, 4-3-3 *(2026-06-13, commit f121d22)*
+- [ ] **Mani:** crear cuenta API-Football y pegar la key en `.env` *(no bloquea el MVP de MD2 —
+      ver hallazgo en [docs/05](docs/05-loop-de-optimizacion.md): FIFA solo alcanza para v0)*
 - [ ] Validar cobertura API-Football WC2026: stats por jugador en selecciones, `injuries`,
-      cuota del free tier → decidir si toca plan pago
+      cuota del free tier → decidir si toca plan pago *(mejora, no prerrequisito)*
 - [ ] *(opcional, fuera del camino crítico)* Evaluar news aggregator de RapidAPI
 
 ## Fase 2 — MVP de decisión para MD2 (→ 18 jun 17:00 UTC+1)
 
-- [ ] **Brainstorm: loop de optimización dinámica** (preguntas abajo) → decisión en `docs/05-loop-de-optimizacion.md`
-- [ ] Proyección v0 de puntos esperados por jugador para MD2 (heurística, sin ML)
+- [x] **Diseño del loop de optimización dinámica** → [docs/05](docs/05-loop-de-optimizacion.md)
+      *(2026-06-13; 2 decisiones pendientes de Mani: horizonte y apetito de riesgo)*
+- [ ] Proyección v0 de puntos esperados por jugador para MD2 (heurística, sin ML; sale con
+      datos de FIFA solos: `roundPoints` + `form` + matchup de `rounds.json`)
 - [ ] Ranking de profitability v0: proyección + flag scouting (<5% y P(pts≥5)) + horizonte MD3
 - [ ] Recomendador de transfers: mejor par salir/entrar con las 2 libres (+rollover), con justificación
 - [ ] Plan de capitanía MD2: orden de switches por horario con umbrales stick-or-twist
@@ -63,21 +67,12 @@
 
 ---
 
-## Brainstorm pendiente — cómo se adapta la estrategia (optimización dinámica)
+## Loop de optimización — ✅ diseñado en [docs/05](docs/05-loop-de-optimizacion.md)
 
-La data es viva (FIFA carga puntos tras cada partido y el ownership cambia intradía), pero la
-estrategia **no debe ser nerviosa**: las transfers son escasas y el hit cuesta −3. Preguntas a
-resolver en el brainstorm (primera tarea de Fase 2):
+Cadencia de refresco, triggers de re-decisión, calibración y el ritual por ronda quedaron
+resueltos ahí. **Faltan 2 decisiones de Mani** antes de construir la proyección v0:
 
-1. **Cadencia de refresco:** ¿`wcf pool` 1× al día + siempre justo antes del lockout? ¿stats de
-   API-Football solo tras cada matchday? ¿injuries diario únicamente en ventana de decisión?
-2. **Triggers de re-decisión:** ¿qué cambio amerita recalcular el plan? (lesión/banca de un
-   titular propio, caída de proyección sobre un umbral, un target cruzando el 5% de ownership)
-3. **Horizonte:** ¿greedy por ronda o lookahead por bloque (grupos / R32→final)? ¿cuánto pesa
-   la ronda siguiente vs las posteriores?
-4. **Calibración:** tras cada ronda, comparar proyección vs puntos oficiales (vienen en
-   `players.json`) y ajustar pesos. ¿Proceso manual documentado o automático?
-5. **Estabilidad vs reactividad:** umbral mínimo de ganancia esperada para justificar una
-   transfer (¿+X pts proyectados sobre el que sale?) y para romper el plan de capitanía.
-
-Resultado esperado: `docs/05-loop-de-optimizacion.md` con cadencia, triggers y umbrales decididos.
+1. **Horizonte:** greedy por ronda vs lookahead por bloque *(recomendado: lookahead, peso 1.0 al
+   próximo MD y ~0.5 al siguiente)*.
+2. **Apetito de riesgo:** conservador / moderado / agresivo — fija los umbrales de transfer y
+   cuánto perseguir el ownership <5% *(default propuesto: moderado)*.
