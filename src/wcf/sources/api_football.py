@@ -1,6 +1,11 @@
 """Cliente mínimo de API-Football (v3.football.api-sports.io).
 
 Cada respuesta cruda se puede volcar a data/ vía store.save_snapshot desde el CLI.
+
+⚠️ Validado 2026-06-13: el **plan Free NO accede a la season 2026** (solo 2022-2024) — las
+llamadas al Mundial 2026 devuelven el error "Free plans do not have access to this season".
+Estos endpoints solo sirven con plan pago. Además `injuries` no está cubierto para el Mundial
+ni pagando. Mientras tanto, la fuente del torneo es FIFA (sources/fifa_fantasy.py). Ver docs/03.
 Free tier: ~100 requests/día — cachear agresivo y no refrescar lo que no cambia.
 """
 
@@ -42,7 +47,8 @@ def fixtures() -> dict:
 
 
 def injuries() -> dict:
-    """Lesionados/sancionados del torneo (P1). Validar cobertura en selecciones."""
+    """Lesionados/sancionados (P1). ⚠️ NO cubierto para el Mundial (injuries=False) — devolverá
+    vacío. La señal de disponibilidad sale del pool de FIFA (status/matchStatus). Ver docs/03."""
     return _get("injuries", league=API_FOOTBALL_LEAGUE_ID, season=SEASON)
 
 

@@ -4,8 +4,9 @@
 > El *porqué* de cada fase y los principios de trabajo viven en
 > [docs/04-plan-de-ejecucion.md](docs/04-plan-de-ejecucion.md).
 
-**Ahora:** Fase 1 cerrada salvo la key de API-Football (Mani). Fase 2 en marcha: loop de
-optimización diseñado, falta proyección v0.
+**Ahora:** Fase 1 ✅ cerrada (datos validados: FIFA es la fuente del torneo; API-Football
+requiere plan pago, diferido al R32). Fase 2 en marcha: loop diseñado y estrategia encodeada;
+sigue la proyección v0.
 **Próximo deadline: lockout MD2 — 18 jun 2026, 17:00 (UTC+1).** Fuente viva: `wcf rounds`.
 
 ---
@@ -20,11 +21,13 @@ optimización diseñado, falta proyección v0.
       ownership cambia intradía *(2026-06-12)*
 - [x] `wcf myteam`: validador de la plantilla contra el pool oficial *(2026-06-12)*
 - [x] Squad MD1 completo y validado: 15/15, $99.3M, 4-3-3 *(2026-06-13, commit f121d22)*
-- [ ] **Mani:** crear cuenta API-Football y pegar la key en `.env` *(no bloquea el MVP de MD2 —
-      ver hallazgo en [docs/05](docs/05-loop-de-optimizacion.md): FIFA solo alcanza para v0)*
-- [ ] Validar cobertura API-Football WC2026: stats por jugador en selecciones, `injuries`,
-      cuota del free tier → decidir si toca plan pago *(mejora, no prerrequisito)*
-- [ ] *(opcional, fuera del camino crítico)* Evaluar news aggregator de RapidAPI
+- [x] **Mani:** key de API-Football en `.env` *(2026-06-13)*
+- [x] Validar cobertura API-Football WC2026 *(2026-06-13)*: liga id=1 + season 2026 OK, pero
+      **el plan Free NO accede a 2026** (solo 2022-2024) e **`injuries` no se cubre** ni pagando.
+      → El Mundial requiere plan pago; FIFA queda como única fuente accesible. Detalle en
+      [docs/03](docs/03-fuentes-de-datos.md). **Decisión de upgrade diferida al R32.**
+- [ ] *(opcional, fuera del camino crítico)* Evaluar news aggregator de RapidAPI — único forward-
+      looking de lesiones dado `injuries=False`
 
 ## Fase 2 — MVP de decisión para MD2 (→ 18 jun 17:00 UTC+1)
 
