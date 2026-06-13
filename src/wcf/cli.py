@@ -3,7 +3,7 @@
 import argparse
 import sys
 
-from . import historical, myteam, pool, projection, recommender, store, strategy
+from . import historical, myteam, pool, projection, recommender, report, store, strategy
 from .config import FREE_TRANSFERS, ROUND_LABELS
 from .sources import api_football, fifa_fantasy
 from .sources import news as news_src
@@ -233,6 +233,20 @@ def cmd_transfers(args) -> None:
     print(f"  Ganancia proyectada total: +{rec['total_gain']} pts · banco resultante ${rec['bank']}M")
 
 
+def cmd_report(args) -> None:
+    """Genera el reporte completo de la ronda (transfers + XI + capitán + banca) en outputs/."""
+    try:
+        risk = strategy.active_profile(args.risk)
+        path, r = report.write_report(risk, free_transfers=args.free)
+    except (pool.NoSnapshotError, ValueError) as exc:
+        sys.exit(f"error: {exc}")
+    xi_total = round(sum(p["proj"] for p in r["xi"]), 1)
+    n = len(r["rec"]["swaps"])
+    print(f"Reporte {r['label']} → {path}")
+    print(f"  {n} transfer(s) · formación {'-'.join(map(str, r['formation']))} (proj {xi_total}) "
+          f"· capitán {r['captain']['name']}")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(prog="wcf", description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
@@ -258,6 +272,9 @@ def main() -> None:
     p_tr = sub.add_parser("transfers", help="Recomienda las transfers de la próxima ronda (o plantarse)")
     p_tr.add_argument("--risk", choices=["conservative", "moderate", "aggressive"], help="override del dial de riesgo")
     p_tr.add_argument("--free", type=int, help="transfers libres disponibles (default: las de la ronda)")
+    p_rep = sub.add_parser("report", help="Genera el reporte completo de la ronda en outputs/<ronda>-reporte.md")
+    p_rep.add_argument("--risk", choices=["conservative", "moderate", "aggressive"], help="override del dial de riesgo")
+    p_rep.add_argument("--free", type=int, help="transfers libres disponibles (default: las de la ronda)")
 
     args = parser.parse_args()
     handler = {
@@ -273,6 +290,7 @@ def main() -> None:
         "news": cmd_news,
         "rank": cmd_rank,
         "transfers": cmd_transfers,
+        "report": cmd_report,
     }[args.command]
     try:
         handler(args)

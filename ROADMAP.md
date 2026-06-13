@@ -4,10 +4,10 @@
 > El *porqué* de cada fase y los principios de trabajo viven en
 > [docs/04-plan-de-ejecucion.md](docs/04-plan-de-ejecucion.md).
 
-**Ahora:** Fase 1 ✅ cerrada. Fase 2 casi completa: proyección v0, ranking (`wcf rank`) y
-recomendador de transfers (`wcf transfers`) funcionando end-to-end, con priors históricos y
-noticias RSS integrados. **Falta para cerrar Fase 2:** plan de capitanía + reporte MD2 en
-`outputs/`. Los coeficientes v0 se calibran cuando MD1 cierre (18 jun) y haya datos reales.
+**Ahora:** Fase 1 ✅ y Fase 2 ✅ cerradas — el pipeline corre end-to-end: `wcf report` genera la
+recomendación MD2 completa (transfers + XI + capitán + banca) en `outputs/`. **Pendiente clave:**
+re-correrlo el **18 jun** con MD1 cerrado para la primera salida calibrada (hoy los coeficientes
+v0 se apoyan en datos parciales). Luego, Fase 3 (pipeline de un comando + backtest).
 **Próximo deadline: lockout MD2 — 18 jun 2026, 17:00 (UTC+1).** Fuente viva: `wcf rounds`.
 
 ---
@@ -53,8 +53,14 @@ noticias RSS integrados. **Falta para cerrar Fase 2:** plan de capitanía + repo
 - [x] Recomendador de transfers (`recommender.py` + `wcf transfers`): greedy del mejor par
       salir/entrar sujeto a posición/presupuesto/máx-país, con umbral del dial de riesgo y
       justificación; "plantarse" es salida válida *(2026-06-13)*
-- [ ] Plan de capitanía MD2: orden de switches por horario con umbrales stick-or-twist
-- [ ] Reporte legible en `outputs/md2-reporte.md` (XI + banca + capitán + transfers)
+- [x] Plan de capitanía: capitán/vice = top-2 proyección del XI, con timing de kickoff (P6) para
+      la ventana de switch *(2026-06-13)*
+- [x] Selección de XI + formación óptima (maximiza proyección entre las 7 válidas) + orden de
+      banca para auto-subs *(2026-06-13)*
+- [x] Reporte completo `outputs/md2-reporte.md` vía `wcf report` (transfers + XI + capitán +
+      banca) *(2026-06-13)*
+- [ ] **Refresco pre-lockout (18 jun):** correr `wcf pool` + `wcf report` con MD1 cerrado →
+      primera recomendación calibrada con datos reales. **← acción con fecha**
 - [ ] Plan de capitanía MD2: orden de switches por horario con umbrales stick-or-twist
 - [ ] Reporte legible en `outputs/md2-reporte.md`
 - [ ] Refresco pre-lockout: `wcf pool` justo antes de decidir (ownership al día)

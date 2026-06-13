@@ -44,7 +44,8 @@ def recommend(risk: strategy.RiskProfile, free_transfers: int = 2, phase: str = 
             continue
         r = by_id.get(p["id"])
         my_squad.append({
-            "id": p["id"], "name": p.get("knownName") or f"{p['firstName']} {p['lastName']}",
+            "id": p["id"], "squad_id": p["squadId"],
+            "name": p.get("knownName") or f"{p['firstName']} {p['lastName']}",
             "pos": p["position"], "price": p["price"],
             "nation": squad_names.get(p["squadId"], ""),
             "proj": r["proj"] if r else 0.0,  # 0 si su selección no juega esta ronda
@@ -84,12 +85,13 @@ def recommend(risk: strategy.RiskProfile, free_transfers: int = 2, phase: str = 
         my_ids.discard(out_p["id"])
         my_ids.add(in_p["id"])
         my_squad = [s for s in my_squad if s["id"] != out_p["id"]] + [{
-            "id": in_p["id"], "name": in_p["name"], "pos": in_p["pos"], "price": in_p["price"],
-            "nation": in_p["nation"], "proj": in_p["proj"], "components": in_p["components"],
+            "id": in_p["id"], "squad_id": in_p["squad_id"], "name": in_p["name"],
+            "pos": in_p["pos"], "price": in_p["price"], "nation": in_p["nation"],
+            "proj": in_p["proj"], "components": in_p["components"],
             "ownership": in_p["ownership"], "scouting": in_p["scouting"],
         }]
         candidates[in_p["pos"]] = [c for c in candidates[in_p["pos"]] if c["id"] != in_p["id"]]
 
     return {"round": ranked["round"], "captured_at": ranked["captured_at"], "swaps": swaps,
             "bank": round(bank, 1), "threshold": threshold, "free_transfers": free_transfers,
-            "total_gain": round(sum(s["gain"] for s in swaps), 2)}
+            "total_gain": round(sum(s["gain"] for s in swaps), 2), "squad": my_squad}

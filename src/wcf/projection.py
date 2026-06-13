@@ -128,7 +128,7 @@ def rank_pool(risk: strategy.RiskProfile) -> dict:
         scout = expected_scouting(p, proj["proj"], risk)
         total = round(proj["proj"] + scout, 2)
         rows.append({
-            "id": p["id"],
+            "id": p["id"], "squad_id": p["squadId"],
             "name": p.get("knownName") or f"{p['firstName']} {p['lastName']}",
             "pos": p["position"], "nation": nation, "price": p["price"],
             "ownership": p["percentSelected"],
