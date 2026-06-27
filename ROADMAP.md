@@ -4,11 +4,14 @@
 > El *porqué* de cada fase y los principios de trabajo viven en
 > [docs/04-plan-de-ejecucion.md](docs/04-plan-de-ejecucion.md).
 
-**Ahora:** Fase 1 ✅ y Fase 2 ✅ cerradas — el pipeline corre end-to-end: `wcf report` genera la
-recomendación MD2 completa (transfers + XI + capitán + banca) en `outputs/`. **Pendiente clave:**
-re-correrlo el **18 jun** con MD1 cerrado para la primera salida calibrada (hoy los coeficientes
-v0 se apoyan en datos parciales). Luego, Fase 3 (pipeline de un comando + backtest).
-**Próximo deadline: lockout MD2 — 18 jun 2026, 17:00 (UTC+1).** Fuente viva: `wcf rounds`.
+**Ahora:** Fase 1 ✅ y Fase 2 ✅ cerradas — el pipeline corre end-to-end (`wcf report`). **Realidad
+del torneo al 26 jun (`wcf rounds`):** rondas 1 y 2 completas, **ronda 3 en juego**, **ronda 4 es el
+próximo lockout: 28 jun 2026, 20:00 (UTC+1)**. Las rondas 2 y 3 pasaron **sin correr el pipeline en
+el repo** (decisiones tomadas a mano en el juego), así que el "refresco pre-MD2" del plan original
+quedó superado por los hechos. **Pendiente clave:** correr `wcf report` para la **ronda 4** con el
+squad real ya actualizado (`data/my-team.md`, al 26 jun) → primera recomendación calibrada con 3
+rondas de datos. Luego, Fase 3 (pipeline de un comando + backtest v0 vs puntos reales).
+**Próximo deadline: lockout ronda 4 — 28 jun 2026, 20:00 (UTC+1).** Fuente viva: `wcf rounds`.
 
 ---
 
@@ -59,11 +62,11 @@ v0 se apoyan en datos parciales). Luego, Fase 3 (pipeline de un comando + backte
       banca para auto-subs *(2026-06-13)*
 - [x] Reporte completo `outputs/md2-reporte.md` vía `wcf report` (transfers + XI + capitán +
       banca) *(2026-06-13)*
-- [ ] **Refresco pre-lockout (18 jun):** correr `wcf pool` + `wcf report` con MD1 cerrado →
-      primera recomendación calibrada con datos reales. **← acción con fecha**
-- [ ] Plan de capitanía MD2: orden de switches por horario con umbrales stick-or-twist
-- [ ] Reporte legible en `outputs/md2-reporte.md`
-- [ ] Refresco pre-lockout: `wcf pool` justo antes de decidir (ownership al día)
+- [~] ~~Refresco pre-lockout (18 jun) con MD1 cerrado~~ — **superado:** las rondas 2 y 3 se
+      decidieron a mano en el juego sin correr el repo. El primer refresco real del pipeline se hace
+      ahora para la **ronda 4** (ver abajo). *(2026-06-26)*
+- [x] Squad real actualizado en `data/my-team.md` y validado con `wcf myteam` (15/15, $99.3M,
+      quedan $0.7M) — entrando a ronda 4 *(2026-06-26)*
 
 ## Fase 3 — Pipeline repetible (→ 24 jun 20:00 UTC+1)
 
