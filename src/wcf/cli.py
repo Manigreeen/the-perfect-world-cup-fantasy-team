@@ -3,7 +3,7 @@
 import argparse
 import sys
 
-from . import historical, myteam, pool, projection, recommender, report, store, strategy
+from . import historical, myteam, optimizer, pool, projection, recommender, report, store, strategy
 from .config import FREE_TRANSFERS, ROUND_LABELS
 from .sources import api_football, fifa_fantasy
 from .sources import news as news_src
@@ -247,6 +247,23 @@ def cmd_report(args) -> None:
           f"· capitán {r['captain']['name']}")
 
 
+def cmd_optimize(args) -> None:
+    """Arma el squad óptimo desde cero (ILP) para la próxima ronda — el reset del knockout."""
+    try:
+        risk = strategy.active_profile(args.risk)
+        path, o = optimizer.write_report(risk, budget=args.budget)
+    except (pool.NoSnapshotError, ValueError) as exc:
+        sys.exit(f"error: {exc}")
+    if not o["squad"]:
+        print(f"Sin solución factible para {o['label']}: pool parcial "
+              f"({o['candidates']} jugadores de {o['nations']} selecciones, "
+              f"máx {o['max_per_country']}/país). Correr cuando los cruces estén definidos.")
+        return
+    print(f"Squad óptimo {o['label']} → {path}")
+    print(f"  formación {'-'.join(map(str, o['formation']))} · XI proj {o['xi_proj']} "
+          f"(capitán {o['captain']['name']}) · costo ${o['cost']}M · banco ${o['bank']}M")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(prog="wcf", description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
@@ -275,6 +292,9 @@ def main() -> None:
     p_rep = sub.add_parser("report", help="Genera el reporte completo de la ronda en outputs/<ronda>-reporte.md")
     p_rep.add_argument("--risk", choices=["conservative", "moderate", "aggressive"], help="override del dial de riesgo")
     p_rep.add_argument("--free", type=int, help="transfers libres disponibles (default: las de la ronda)")
+    p_opt = sub.add_parser("optimize", help="Squad óptimo desde cero (ILP) — el gran reset del knockout")
+    p_opt.add_argument("--risk", choices=["conservative", "moderate", "aggressive"], help="override del dial de riesgo")
+    p_opt.add_argument("--budget", type=float, help="presupuesto (default: $105M en knockout, $100M en grupos)")
 
     args = parser.parse_args()
     handler = {
@@ -291,6 +311,7 @@ def main() -> None:
         "rank": cmd_rank,
         "transfers": cmd_transfers,
         "report": cmd_report,
+        "optimize": cmd_optimize,
     }[args.command]
     try:
         handler(args)

@@ -88,6 +88,7 @@ cp .env.example .env        # pegar API_FOOTBALL_KEY (gratis en dashboard.api-fo
 | `wcf rank` | Ranking de profitability (proyección v0) para la próxima ronda: `--by value\|proj`, `--pos`, `--risk` | No |
 | `wcf transfers` | Recomienda las transfers de la próxima ronda (o plantarse) según el dial de riesgo | No |
 | `wcf report` | Reporte completo de la ronda → `outputs/<ronda>-reporte.md` (transfers + XI + capitán + banca) | No |
+| `wcf optimize` | Squad óptimo desde cero (ILP/PuLP) → `outputs/<ronda>-reset.md` — para el gran reset del knockout (transfers ilimitadas): `--budget`, `--risk` | No |
 | `wcf fixtures` / `injuries` / `players` | Datos en vivo de API-Football **(plan pago — 2026 bloqueado en Free)** | Sí (pago) |
 
 Ritual por ronda (antes de cada lockout): `wcf pool` (ownership al día) → `wcf history` (priors de

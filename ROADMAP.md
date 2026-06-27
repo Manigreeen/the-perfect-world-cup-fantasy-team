@@ -8,9 +8,10 @@
 del torneo al 26 jun (`wcf rounds`):** rondas 1 y 2 completas, **ronda 3 en juego**, **ronda 4 es el
 próximo lockout: 28 jun 2026, 20:00 (UTC+1)**. Las rondas 2 y 3 pasaron **sin correr el pipeline en
 el repo** (decisiones tomadas a mano en el juego), así que el "refresco pre-MD2" del plan original
-quedó superado por los hechos. **Pendiente clave:** correr `wcf report` para la **ronda 4** con el
-squad real ya actualizado (`data/my-team.md`, al 26 jun) → primera recomendación calibrada con 3
-rondas de datos. Luego, Fase 3 (pipeline de un comando + backtest v0 vs puntos reales).
+quedó superado por los hechos. **Pendiente clave:** la ronda 4 es el **R32, el gran reset** (transfers
+ilimitadas, budget $105M). Ya está listo el **optimizador ILP** (`wcf optimize`, Fase 4 adelantada);
+correrlo cuando R3 cierre y el bracket esté fijado, antes del lockout del 28 jun. Luego, Fase 3
+(pipeline de un comando + backtest v0 vs puntos reales).
 **Próximo deadline: lockout ronda 4 — 28 jun 2026, 20:00 (UTC+1).** Fuente viva: `wcf rounds`.
 
 ---
@@ -77,7 +78,10 @@ rondas de datos. Luego, Fase 3 (pipeline de un comando + backtest v0 vs puntos r
 
 ## Fase 4 — El gran reset: optimizador R32 (→ 28 jun 20:00 UTC+1)
 
-- [ ] Optimizador ILP (PuLP): maximizar pts esperados sujeto a $105M, 2/5/5/3, máx 3/país, formaciones válidas
+- [x] Optimizador ILP (PuLP): maximizar pts esperados sujeto a $105M, 2/5/5/3, máx 3/país,
+      formaciones válidas → `src/wcf/optimizer.py` + `wcf optimize`. Modelo de dos niveles
+      (squad + XI + capitán x2); reusa `report.select_xi`. Validado: 15/15, composición y cap
+      exactos, formación válida. *(2026-06-26)*
 - [ ] Modelo de avance multi-ronda (odds de casas o simulación Elo del bracket)
 - [ ] Valor de opcionalidad por horario dentro de la ronda (P6)
 - [ ] Plan de boosters del knockout (incluye el Mystery, que se revela al abrir el R32)
