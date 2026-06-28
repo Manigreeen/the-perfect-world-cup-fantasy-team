@@ -29,11 +29,19 @@ from .config import (BUDGET_GROUPS, BUDGET_KNOCKOUT, MAX_PER_COUNTRY, OUTPUTS_DI
 STARTER_RANGE = {"GK": (1, 1), "DEF": (3, 5), "MID": (3, 5), "FWD": (1, 3)}
 
 
-def solve(rows: list[dict], budget: float, max_per_country: int) -> list[dict] | None:
+def solve(rows: list[dict], budget: float, max_per_country: int,
+          forced_ids: set | None = None, excluded_ids: set | None = None) -> list[dict] | None:
     """Resuelve el ILP sobre `rows` (candidatos ya proyectados). Devuelve los 15 elegidos, o None
-    si el problema es infactible (p. ej. el pool aún es parcial y no alcanza para 15 con el cap)."""
+    si el problema es infactible (p. ej. el pool aún es parcial y no alcanza para 15 con el cap).
+
+    forced_ids: IDs de jugadores que deben estar en el squad (x_i == 1).
+    excluded_ids: IDs de jugadores que no pueden estar en el squad (x_i == 0).
+    """
     if not rows:
         return None
+    forced = forced_ids or set()
+    excluded = excluded_ids or set()
+    rows = [r for r in rows if r["id"] not in excluded]
     R = {r["id"]: r for r in rows}
     ids = list(R)
 
@@ -54,6 +62,8 @@ def solve(rows: list[dict], budget: float, max_per_country: int) -> list[dict] |
     for i in ids:
         prob += y[i] <= x[i]
         prob += c[i] <= y[i]
+        if i in forced:
+            prob += x[i] == 1
     prob += pulp.lpSum(y[i] for i in ids) == 11
     prob += pulp.lpSum(c[i] for i in ids) == 1
     for pos, (lo, hi) in STARTER_RANGE.items():
