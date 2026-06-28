@@ -1,7 +1,7 @@
 # Mi equipo — estado actual
 
 > Estado inicial de toda recomendación. Actualizar tras cada deadline.
-> Última actualización: 2026-06-26 — squad vigente entrando a la **ronda 4** (lockout 28 jun 20:00).
+> Última actualización: 2026-06-28 — squad vigente entrando a la **ronda 4 / R32** (lockout 28 jun 20:00).
 > Validar con `wcf myteam` contra el snapshot del pool del día.
 
 ## Cómo llenar esto
@@ -23,29 +23,29 @@ avisa de typos, precios distintos, posiciones mal anotadas y límites violados.
 
 | # | Jugador | Selección | Pos (juego) | Precio | Rol | Ownership |
 |---|---------|-----------|-------------|--------|-----|-----------|
-| 1 | Emiliano Martínez | Argentina | GK | $5m | Titular | 26.3% |
-| 2 | Joshua Kimmich | Germany | DEF | $5.5m | Titular | 25.8% |
-| 3 | Lisandro Martínez | Argentina | DEF | $4.6m | Titular | 5.5% |
-| 4 | Nahuel Molina | Argentina | DEF | $4.4m | Titular | 2.8% |
-| 5 | Alexander Freeman | USA | DEF | $4m | Titular | 4.9% |
-| 6 | Luis Díaz | Colombia | MID | $8.1m | Titular | 14.3% |
-| 7 | Johan Manzambi | Switzerland | MID | $5.6m | Titular | 0.7% |
-| 8 | Bruno Fernandes | Portugal | MID | $8.5m | Titular | 37.5% |
-| 9 | Kylian Mbappé | France | FWD | $10.5m | Titular | 54.8% |
-| 10 | Erling Haaland | Norway | FWD | $10.5m | Titular | 26.3% |
-| 11 | Mikel Oyarzabal | Spain | FWD | $8.1m | Titular | 11.7% |
-| 12 | Thibaut Courtois | Belgium | GK | $4.9m | Banca | 12.5% |
-| 13 | Kim Min-Jae | Korea Republic | DEF | $5m | Banca | 2.2% |
-| 14 | Vitinha | Portugal | MID | $6.4m | Banca | 9.5% |
-| 15 | Raphinha | Brazil | MID | $8.2m | Banca | 11.5% |
+| 1 | Unai Simón | Spain | GK | $5.0m | Titular | 7.8% |
+| 2 | Aymeric Laporte | Spain | DEF | $5.5m | Titular | 7.8% |
+| 3 | Ezri Konsa | England | DEF | $4.8m | Titular | 2.2% |
+| 4 | Marcos Llorente | Spain | DEF | $5.5m | Titular | 4.4% |
+| 5 | Ousmane Dembélé | France | MID | $10.0m | Titular | 19.1% |
+| 6 | Vinícius Júnior | Brazil | MID | $10.0m | Titular | 31.8% |
+| 7 | Jude Bellingham | England | MID | $8.3m | Titular | 14.2% |
+| 8 | Johan Manzambi | Switzerland | MID | $5.6m | Titular | 1.9% |
+| 9 | Lionel Messi | Argentina | FWD | $10.0m | Titular | 37.4% |
+| 10 | Kylian Mbappé | France | FWD | $10.5m | Titular | 57.4% |
+| 11 | Deniz Undav | Germany | FWD | $6.6m | Titular | 3.3% |
+| 12 | Emiliano Martínez | Argentina | GK | $5.0m | Banca | 28.4% |
+| 13 | Felix Nmecha | Germany | MID | $5.6m | Banca | 8.5% |
+| 14 | Rúben Dias | Portugal | DEF | $5.0m | Banca | — |
+| 15 | Facundo Medina | Argentina | DEF | $4.0m | Banca | 7.8% |
 
-- **Formación:** 4-3-3 (XI: E. Martínez · Kimmich, L. Martínez, Molina, Freeman · Luis Díaz, Manzambi, Bruno Fernandes · Mbappé, Haaland, Oyarzabal)
-- **Capitán:** Mbappé · **Vice:** Haaland _(ambos ya jugaron en la ronda en curso)_
-- **Orden de banca:** Courtois (GK) + campo: Raphinha, Vitinha, Kim Min-Jae _(confirmar orden 1–3)_
-- **Costo total:** $99.3M · **Presupuesto sin gastar:** _(confirmar con `wcf myteam`)_
+- **Formación:** 3-4-3 (XI: Simón · Laporte, Konsa, Llorente · Dembélé, Vini, Bellingham, Manzambi · Messi, Mbappé, Undav)
+- **Capitán:** Messi · **Vice:** Dembélé
+- **Orden de banca:** E. Martínez (GK) + campo: Nmecha, Rúben Dias, Facundo Medina
+- **Costo total:** $101.4M · **Presupuesto sin gastar:** $3.6M
 
 ## Recursos
 
-- **Transfers libres para ronda 4:** _(confirmar en el juego)_
+- **Transfers libres para ronda 4:** ilimitadas (reset knockout)
 - **Boosters intactos:** Wildcard · 12th Man · Maximum Captain · Qualification · Mystery
   _(ninguno usado hasta la ronda 3)_

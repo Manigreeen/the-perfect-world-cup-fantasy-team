@@ -6,37 +6,59 @@
 
 ---
 
-## R3 — MD3 (grupos) · lockout 24 jun 20:00 · **PARCIAL (ronda en juego al 26 jun)**
+## R3 — MD3 (grupos) · lockout 24 jun 20:00 · **CERRADA**
 
-Capitán: **Mbappé** (x2) · Vice: **Haaland** · Formación 4-3-3 · Budget restante: $3.1M (cap $105M en R32)
+Capitán: **Mbappé** (x2) · Vice: **Haaland** · Formación 4-3-3 · **XI: 44 pts**
 
 | # | Jugador | Sel | Pos | Rol | Pts R3 |
 |---|---------|-----|-----|-----|-------:|
-| 1 | Emiliano Martínez | Argentina | GK | XI | — |
+| 1 | Emiliano Martínez | Argentina | GK | XI | 2 |
 | 2 | Joshua Kimmich | Germany | DEF | XI | 2 |
-| 3 | Lisandro Martínez | Argentina | DEF | XI | — |
-| 4 | Nahuel Molina | Argentina | DEF | XI | — |
+| 3 | Lisandro Martínez | Argentina | DEF | XI | 0 |
+| 4 | Nahuel Molina | Argentina | DEF | XI | 0 |
 | 5 | Alexander Freeman | USA | DEF | XI | 1 |
-| 6 | Luis Díaz | Colombia | MID | XI | — |
+| 6 | Luis Díaz | Colombia | MID | XI | 3 |
 | 7 | Johan Manzambi | Switzerland | MID | XI | **13** |
-| 8 | Bruno Fernandes | Portugal | MID | XI | — |
+| 8 | Bruno Fernandes | Portugal | MID | XI | 3 |
 | 9 | Kylian Mbappé (C) | France | FWD | XI | 9 → **18** (x2) |
 | 10 | Erling Haaland | Norway | FWD | XI | 0 (DNP) |
-| 11 | Mikel Oyarzabal | Spain | FWD | XI | — |
-| 12 | Thibaut Courtois | Belgium | GK | Banca | — |
+| 11 | Mikel Oyarzabal | Spain | FWD | XI | 2 |
+| 12 | Thibaut Courtois | Belgium | GK | Banca | 2 |
 | 13 | Kim Min-Jae | Korea Republic | DEF | Banca | 2 |
-| 14 | Vitinha | Portugal | MID | Banca | — |
-| 15 | Raphinha | Brazil | MID | Banca | — |
+| 14 | Vitinha | Portugal | MID | Banca | 3 |
+| 15 | Raphinha | Brazil | MID | Banca | 0 |
 
-- **XI cargado hasta ahora (parcial):** Kimmich 2 + Freeman 1 + Manzambi 13 + Mbappé 18 + Haaland 0 (DNP) = **34 pts**, con 6 titulares con partido de R3 aún pendiente (E. Martínez, L. Martínez, Molina, Luis Díaz, Bruno, Oyarzabal).
-- **Acumulado del jugador (R1+R2+R3):** Mbappé 36 · Haaland 30 · Manzambi 29 · Freeman 24 · L. Martínez 18 · Oyarzabal 17 · E. Martínez 14 · Luis Díaz 14 · Kimmich 12 · Molina 10 · Courtois 10 · Kim Min-Jae 6 · Vitinha 5 · Raphinha 3 · Bruno 1.
-- **Notas:** Manzambi es el gran diferencial (0.2-0.7% own, 15+13 en R2/R3). Bruno Fernandes es el lastre (1 pt en 3 rondas, 37.5% own). **Haaland no jugó R3 (DNP) → 0 pts** (acumulado se queda en 30).
-- **Pendiente:** actualizar este bloque cuando R3 cierre (todos los partidos jugados).
+- **XI total R3:** E.Martínez 2 + Kimmich 2 + L.Martínez 0 + Molina 0 + Freeman 1 + Luis Díaz 3 + Manzambi 13 + Bruno 3 + Mbappé 18 + Haaland 0 + Oyarzabal 2 = **44 pts**
+- **Acumulado (R1+R2+R3, del pool):** Mbappé 36 · Haaland 30 · Manzambi 29 · Freeman 24 · Oyarzabal 19 · L. Martínez 18 · Luis Díaz 17 · E. Martínez 16 · Bruno 13 · Kimmich 12 · Courtois 12 · Molina 10 · Vitinha 8 · Kim Min-Jae 6 · Raphinha 3.
+- **Notas:** Manzambi sigue siendo el gran diferencial (29 pts en 3 rondas, ~0.7% own). Haaland 0 en R3 (DNP). Argentina entera en blanco (L. Martínez y Molina = 0) — probablemente rotación en partido ya clasificado.
 
 ---
 
-## R4 — R32 (octavos-32) · lockout 28 jun 20:00 · **POR DEFINIR**
+## R4 — R32 (octavos-32) · lockout 28 jun 20:00 · **SQUAD REGISTRADO**
 
-- Transfers: **ilimitadas** · Budget: **$105M** (reset del knockout, +$5M).
-- **No construido aún a propósito:** al 26 jun el bracket de R32 no está cerrado (solo 2/15 jugadores tienen cruce asignado). Reconstruir cuando R3 termine y se fijen los cruces, antes del lockout.
-- Boosters disponibles: Wildcard · 12th Man · Maximum Captain · Qualification · Mystery (ninguno usado).
+Capitán: **Messi** (x2) · Vice: **Dembélé** · Formación 3-4-3
+
+| # | Jugador | Sel | Pos | Rol | Pts R4 |
+|---|---------|-----|-----|-----|-------:|
+| 1 | Unai Simón | Spain | GK | XI | — |
+| 2 | Aymeric Laporte | Spain | DEF | XI | — |
+| 3 | Ezri Konsa | England | DEF | XI | — |
+| 4 | Marcos Llorente | Spain | DEF | XI | — |
+| 5 | Ousmane Dembélé (V) | France | MID | XI | — |
+| 6 | Vinícius Júnior | Brazil | MID | XI | — |
+| 7 | Jude Bellingham | England | MID | XI | — |
+| 8 | Johan Manzambi | Switzerland | MID | XI | — |
+| 9 | Lionel Messi (C) | Argentina | FWD | XI | — |
+| 10 | Kylian Mbappé | France | FWD | XI | — |
+| 11 | Deniz Undav | Germany | FWD | XI | — |
+| 12 | Emiliano Martínez | Argentina | GK | Banca | — |
+| 13 | Felix Nmecha | Germany | MID | Banca | — |
+| 14 | Rúben Dias | Portugal | DEF | Banca | — |
+| 15 | Facundo Medina | Argentina | DEF | Banca | — |
+
+- **Costo:** $101.4M · **banco:** $3.6M · XI proj (incl. cap×2, modelo v1): **104.2 pts**
+- **Orden banca:** E. Martínez (GK) → campo: Nmecha, Rúben Dias, Medina
+- **Transfers:** ilimitadas (reset knockout) · Budget: $105M
+- **Boosters disponibles:** Wildcard · 12th Man · Maximum Captain · Qualification · Mystery (ninguno usado).
+- **Matchups XI:** Inglaterra vs Congo DR (+2.83) · Argentina vs Cabo Verde (+2.62) · Francia vs Suecia (+2.42) · España vs Austria (+2.04) · Brasil vs Japón (+1.90) · Alemania vs Paraguay (+1.76) · Suiza vs Argelia (+0.93).
+- **Cambios vs primera versión:** Haaland → Undav (fix DNP inflaba proj de Haaland) · Sánchez México → Konsa Inglaterra (modelo CS revela valor de DEF vs Congo DR, diff +2.83).

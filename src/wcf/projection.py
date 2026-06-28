@@ -10,11 +10,12 @@ como un pequeño término de volumen vía el scoring oficial, con peso bajo (dec
 en el prior por precio; gana señal viva con cada ronda.
 """
 
+import math
 import statistics
 from collections import defaultdict
 
 from . import historical, pool, strategy
-from .scoring import SCOUTING_MAX_OWNERSHIP
+from .scoring import CLEAN_SHEET, SCOUTING_MAX_OWNERSHIP
 
 # --- Constantes v0 (calibrar) ---
 PRICE_TO_PPG = 0.60        # prior: un jugador de $10.5M ≈ 6.3 pts/partido esperados
@@ -24,6 +25,13 @@ MATCHUP_CLAMP = (0.75, 1.25)
 SHOT_ON_RATIO = 0.35       # fracción de tiros que van al arco (aprox., para el término de volumen)
 HIST_VOLUME_WEIGHT = 0.30  # peso bajo del término de volumen histórico (P7)
 SCOUT_PROJ_THRESHOLD = 4.0  # proyección mínima para esperar el scouting bonus (P5)
+
+# Clean sheet: la proyección de base ya captura el promedio histórico de CS, pero no calibra
+# según el matchup específico. CS_ALPHA/CS_INTERCEPT modelan P(CS) vía logística; se suma
+# solo el delta respecto a la tasa base (CS_BASE_RATE) para evitar doble conteo con base_ppg.
+CS_ALPHA = 0.45            # sensibilidad logística de P(CS) al z-diff del matchup
+CS_INTERCEPT = -0.85       # → P(CS | z_diff=0) ≈ 0.30 (tasa base histórica en torneos)
+CS_BASE_RATE = 0.30        # fracción del CS ya embebida en base_ppg (tasa de CS promedio)
 
 
 def team_strength(players: list[dict]) -> dict[int, float]:
@@ -49,10 +57,12 @@ def availability(player: dict) -> float:
 
 
 def base_ppg(player: dict) -> float:
-    """Puntos/partido base: mezcla la salida observada de FIFA (avgPoints) con el prior por precio,
-    con shrinkage según partidos jugados. Poca muestra → manda el precio; más rondas → manda lo visto."""
+    """Puntos/partido base: mezcla la salida observada de FIFA con el prior por precio.
+    Usa `form` en lugar de `avgPoints`: FIFA calcula form dividiendo por rondas totales (incluyendo
+    DNPs como 0), mientras que avgPoints solo divide por partidos jugados — infla jugadores que
+    descansaron una fecha. Si form no existe cae a avgPoints como fallback."""
     prior = player["price"] * PRICE_TO_PPG
-    observed = player["stats"].get("avgPoints") or 0.0
+    observed = player["stats"].get("form") or player["stats"].get("avgPoints") or 0.0
     g = games_played(player)
     return (PRIOR_STRENGTH * prior + g * observed) / (PRIOR_STRENGTH + g)
 
@@ -72,6 +82,17 @@ def matchup_factor(squad_id: int, opp_id: int | None, z: dict[int, float]) -> fl
     return max(lo, min(hi, 1.0 + MATCHUP_ALPHA * diff))
 
 
+def cs_incremental(player: dict, z_diff: float) -> float:
+    """Delta de puntos esperados de clean sheet, sobre la tasa base ya embebida en base_ppg.
+    Solo aplica a GK y DEF (5 pts) y marginalmente a MID (1 pt). FWD = 0.
+    Usa logística calibrada: P(CS|z_diff=0) ≈ 30%, P(CS|diff=+2) ≈ 52%, P(CS|diff=-2) ≈ 13%."""
+    cs_pts = CLEAN_SHEET.get(player["position"], 0)
+    if not cs_pts:
+        return 0.0
+    p_cs = 1.0 / (1.0 + math.exp(-(CS_ALPHA * z_diff + CS_INTERCEPT)))
+    return (p_cs - CS_BASE_RATE) * cs_pts
+
+
 def volume_points(player: dict, prior: dict | None) -> float:
     """Puntos de volumen esperados (P7) desde el prior histórico, vía el scoring oficial.
     FWD: +1 cada 2 tiros al arco · MID: +1 cada 2 chances (key passes) y +1 cada 3 tackles."""
@@ -87,14 +108,17 @@ def volume_points(player: dict, prior: dict | None) -> float:
 
 def project(player: dict, z: dict[int, float], fixture: dict | None, prior: dict | None) -> dict:
     """Puntos esperados del jugador para la próxima ronda, con sus componentes (transparencia)."""
+    squad_id = player["squadId"]
     opp = fixture["opponent_id"] if fixture else None
     base = base_ppg(player)
     avail = availability(player)
-    mf = matchup_factor(player["squadId"], opp, z)
+    mf = matchup_factor(squad_id, opp, z)
     vol = HIST_VOLUME_WEIGHT * volume_points(player, prior)
-    proj = (base * mf + vol) * avail
+    z_diff = z.get(squad_id, 0.0) - z.get(opp, 0.0) if opp is not None else 0.0
+    cs = cs_incremental(player, z_diff)
+    proj = (base * mf + vol + cs) * avail
     return {"proj": round(proj, 2), "base": round(base, 2), "matchup": round(mf, 2),
-            "avail": avail, "volume": round(vol, 2)}
+            "avail": avail, "volume": round(vol, 2), "cs": round(cs, 2)}
 
 
 def expected_scouting(player: dict, proj: float, risk: strategy.RiskProfile) -> float:
